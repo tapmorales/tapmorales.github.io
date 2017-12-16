@@ -188,7 +188,7 @@ Se voce digitar no seu terminal algo:
 
 <p>Depois, basta eu acrescentar um script para criar os diretórios necessários antes de tentar copiar os arquivos da pasta node_modules, Assim:
 
-<pre><code>"preinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/",</code></pre>
+<pre><code>"postinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/",</code></pre>
 </p>
 
 <p>
@@ -196,12 +196,11 @@ Se voce digitar no seu terminal algo:
 Segue o código inteiro para sua referência:
 
 <pre><code>"scripts": {
-    "test": "echo \"Error: no test specified\" &amo;&amo; exit 1",
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
     "start": "echo startando",
     "prestart": "echo prestart",
     "poststart": "echo post start",
-    "preinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/",
-    "postinstall": "cp -r node_modules/bootstrap/dist src/components/bootstrap/ &amo;&amo; cp -r node_modules/font-awesome/css src/components/font-awesome/ &amo;&amo; cp -r node_modules/font-awesome/fonts src/components/font-awesome/",
+    "postinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/ &amp;&amp; cp -r node_modules/bootstrap/dist src/components/bootstrap/ &amp;&amp; cp -r node_modules/font-awesome/css src/components/font-awesome/ &amp;&amp; cp -r node_modules/font-awesome/fonts src/components/font-awesome/",
     "gulp": "gulp"
   }</code></pre>
 </p>
