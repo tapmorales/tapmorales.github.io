@@ -142,7 +142,7 @@ Quando estamos aprendendo Javascript uma das coisas mais complicadas para entend
 </p><p>
 Eu sempre ficava na dúvida se aquele this que eu estava escrevendo no código representava o que eu queria que representasse. E isso me fez escrever muitos consoles.log() e colocar vários breakpoints no meu código que hoje se tornaram desnecessários na maior parte das vezes.
 </p><p>
-O meu intuito com este artigo é elucidar as várias formas que o this se apresenta e apresentar alguns padrões de escrita no código que refletem diretamente no valor que será armazenado em this. 
+O meu intuito com este artigo é elucidar as várias formas que o this se apresenta e mostrar alguns padrões de escrita no código que refletem diretamente no valor que será armazenado em this. 
 </p><p>
 Antes de responder o que o "this" está referenciando, precisamos responder várias questões previamente, a saber:
 </p>
@@ -154,7 +154,7 @@ Antes de responder o que o "this" está referenciando, precisamos responder vár
 	<li>A função está atrelada a algum evento?</li>
 	<li>A função é literal ou arrow function?</li>
 	<li>A função está dentro de um objeto literal?</li>
-	<li>A função está dentro de um objeto criado a partir de uma função construtora?</li>
+	<li>A função está dentro de um objeto criado a partir de uma função construtora ou classe?</li>
 </ul>
 
 <p>
@@ -164,7 +164,7 @@ E ai? Estamos prontos para entender que raios este "this" representa? Então vam
 </p><p>
 <h2>This no escopo global</h2>
 <p>
-O lugar mais fácil para entender o this é estando no escopo global ou ainda dentro de uma IIFE que foi executada pelo - advinha - escopo global. Nesses casos, o "this" representa o próprio escopo global que, no caso do javascript estar sendo interpretado por um browser, é o objeto window.
+O lugar mais fácil para entender o this é estando no escopo global ou ainda dentro de uma IIFE que foi executada pelo - advinha - escopo global. Nesses casos, o "this" representa o próprio escopo global que, no caso do javascript estar sendo interpretado por um browser, é o objeto window. Já se você estiver desenvolvendo para para o node o objeto "pai de todos" chama-se global. 
 </p>
 <pre><code class="javascript">console.log(this); //window
 
@@ -173,8 +173,13 @@ O lugar mais fácil para entender o this é estando no escopo global ou ainda de
 })();
 </code></pre>
 <p>
-	
-Até aqui creio que não haja nenhuma novidade. A grande questão é quando usamos a diretiva "use strict" dentro de uma função, pois isso muda completamente o que o "this" representa:
+Obs 1: Ao longo deste artigo vou me referir várias vezes ao objeto global, mas enteda que este é o objeto acima de todos que, no caso do browser é o window e no caso do node chama-se simplesmente global. Não confunda "objeto global" com o "global" do node, ok?</p>
+<p>Obs 2: Vou supor que você está testando os códigos no console do browser, portanto, o seu objeto global é o window.</p>
+
+<p>O objeto global é onde ficam todas as variáveis e funções que são acessíveis por toda a aplicação. É por isso que alert('uma coisa') ou window.alert('outra coisa') são comandos válidos. Uma observação importante: as variáveis que ficam no objeto global são aquelas definidas com a palavra <code>var</code>. O mesmo não vale para <code>let</code> e <code> const</code>. Obrigado <a href="https://medium.com/@felquis/javascript-o-global-object-e-o-this-ceda36059cff">@felquis</a></p>
+
+<p>
+Até aqui creio que não haja nenhuma novidade. A grande questão é quando usamos a diretiva <code>"use strict"</code> dentro de uma função, pois isso muda completamente o que o "this" representa:
 
 <pre><code class="javascript">console.log(this); //window
 
@@ -184,7 +189,7 @@ Até aqui creio que não haja nenhuma novidade. A grande questão é quando usam
 })();
 </code></pre>
 <p>
-A diretiva "use strict" foi acrescentada na javascript para resolver algumas falhas na linguagem. Mais a frente veremos onde a sua ausência pode gerar problemas, mas por hora, vamos entender que dentro de uma função, seja auto-invocável ou não, a presença do "use strict" faz com que o "this" assuma o valor <code>undefined</code>.
+A diretiva "use strict" foi acrescentada na javascript para resolver algumas falhas da linguagem. Mais a frente veremos onde a sua ausência pode gerar problemas, mas por hora, vamos entender que dentro de uma função, seja auto-invocável ou não, a presença do "use strict" faz com que o "this" assuma o valor <code>undefined</code>.
 </p><p>
 Um outro ponto que temos que prestar atenção é a partir de quem foi executada determinada função. Veja mais um exemplo:
 
@@ -207,6 +212,9 @@ minhaFunc(); //window
 Repare que está claro quando olhamos para a implementação da função quem é o this. Então vamos obscurecer um pouco as coisas.
 </p>
 
+<p>Atenção: O motivo de eu estar utilizando o "var" e não o "let" para criar algumas variáveis é que se você copiar e colar o código no console para testar, você não conseguirá criar duas variáveis com mesmo nome se usar o "let". Utilizando o "var" pode copiar e colar a vontade para testar a saída no console.</p>
+
+<p>Voltando ao código: </p>
 <pre><code class="javascript">var obj = {
   minhaFunc2: minhaFunc
 }
@@ -221,7 +229,7 @@ minhaFunc(); //window
 </code></pre>
 
 <p>
-Repare que agora atrelamos a função <code>minhaFunc()</code> como método do objeto, ou seja, temos agora uma única função, portando, apenas um <code>console.log(this)</code>. Mas isso não impede que a natureza dinâmica do this venha a tona. A lição aprendida aqui é que não importa COMO você escreveu a função literal. O que importa é QUEM chamou esta função. Isso porque o escopo de funções literais é dinâmico. O mesmo "this" pode representar o window ou qualquer outro objeto, tudo depende de quem executou a função.
+Repare que agora atrelamos a <b>mesma</b> função <code>minhaFunc()</code> como método do objeto, ou seja, temos agora <b>uma única função</b> e  portando, apenas um <code>console.log(this)</code>. Mas isso não impede que a natureza dinâmica do this venha brilhar aos nossos olhos. A lição aprendida aqui é que não importa COMO você escreveu a função literal. O que importa é QUEM chamou esta função. Isso porque o escopo de funções literais é dinâmico. O mesmo "this" pode representar o window ou qualquer outro objeto, tudo depende de quem executou a função.
 </p>
 
 <h2>Mas dá pra mudar o this?</h2>
@@ -298,7 +306,7 @@ No exemplo acima o this por padrão é o dono do evento, ou seja, o elemento o q
 </p>
 <pre><code class="javascript">document.addEventListener("click", minhaFunc);</code></pre>
 <p>
-Entretanto, o que será mostrado no console se alterarmos ligeiramente inserindo o bind na jogada?
+Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso código inserindo o bind na jogada?
 </p>
 <pre><code class="javascript">function minhaFunc(){
   console.log(this);
@@ -320,13 +328,13 @@ $elemento.addEventListener("click", minhaFunc.bind(this));
 <p>
 Perceba que o this do exemplo acima que foi passado por parâmetro no bind() está fora da função atrelada, portanto, esse this, que é dinâmico, pode representar o window (se no escopo global, sem a diretiva "use strict" ou undefined se no escopo global com a diretiva "use strict").
 </p><p>
-Mas será que existe maneira do this não ter escopo dinâmico? em outras palavras, podemos impedir que o this sofra variações dependendo do contexto em que foi executado?
+Mas será que existe alguma maneira de mudarmos o escopo dinâmico do "this"? em outras palavras, podemos impedir que o this sofra variações dependendo do contexto em que foi executado?
 </p>
 <h2>
 	O escopo léxico das arrows functions
 </h2>
 <p>
-No EcmaScript2015 (versão moderninha do Javascript, antigamente chamado de ES6) foi introduzido o conceito de Arrow function. A princípio pode parecer somente uma maneira mais enxuta de escrever funções (e é mesmo), mas também é uma maneira de deixarmos o this com escopo léxico, ou seja, não mais dinâmico como acontece com as nossas funções literais.
+No EcmaScript2015 (antigamente chamado de ES6) foi introduzido o conceito de Arrow function. A princípio pode parecer somente uma maneira mais enxuta de escrever funções (e é mesmo), mas também é uma maneira de deixarmos o this com escopo léxico, ou seja, não mais dinâmico como acontece com as nossas funções literais.
 </p><p>
 Vamos ao código:
 <pre><code class="javascript">function minhaFunc(){
@@ -344,7 +352,9 @@ $elemento.addEventListener("click",() =>{
 <p>
 Ou seja, ao criar suas arrows functions o this será representado pelo valor que ele tinha no momento da implementação da função (escopo léxico) e não mais no momento da invocação (escopo dinâmico).
 </p><p>
-Isso significa que você não deve usar as arrow functions só pra se sentir mais moderno. Use-as sabendo desse efeito. Normalmente, nós queremos que funções atreladas a eventos tenham escopo dinâmico, portanto, nesses casos devemos usar as boas e velhas funções literais.
+Isso significa que você não deve usar as arrow functions só pra se sentir mais moderno. Use-as sabendo desse efeito. </p>
+
+<p>Se você precisar que dentro de funcões atreladas a eventos o "this" seja o próprio elemento que disparou tal evento, você deverá usar as boas e velhas funções literais.
 </p><p>
 Contudo, quero mostrar dois exemplos em que arrow functions são especialmente úteis:
 </p>
@@ -377,7 +387,7 @@ obj.foo = function(){
 <p>
 Se não fosse pelas arrow functions você teria que criar uma variavel adicional (normalmente _self ou _this) e acessá-la dentro do clousure, mas isso é outra historia.
 </p><p>
-Para encerrar, vou explicar o que acontece quando usamos o this dentro de uma função que foi invocada com o operador new, aka, função construtora. Veja o código
+Para encerrar, vou explicar o que acontece quando usamos o this dentro de uma função que foi invocada com o operador new, aka, função construtora ou classe. Veja o código
 </p>
 <pre><code class="javascript">function MeuConstruct(){
     this.ts = +new Date(),
@@ -387,8 +397,21 @@ Para encerrar, vou explicar o que acontece quando usamos o this dentro de uma fu
     }
 }
 
+class MeuConstructNovo {
+    constructor(){
+        this.ts = +new Date();
+        this.foo = "bar";
+        this.mostraThis = function(){
+            console.log(this)
+        }
+    }
+}
+
 let obj1 = new MeuConstruct();
 obj1.mostraThis() // Objeto do tipo MeuConstruct.
+
+let obj2 = new MeuConstructNovo();
+obj2.mostraThis() // Objeto do tipo MeuConstruct.
 </code></pre>
 <p>
 No exemplo acima, ao criarmos um objeto novo com o operador new, o javascript criou um objeto vazio e atribuiu as propriedades e métodos à esse objeto recém-criado através da palavra this, ou seja, este this aponta para o objeto criado.
@@ -396,6 +419,7 @@ No exemplo acima, ao criarmos um objeto novo com o operador new, o javascript cr
 <p>
 Um fato curioso é que, se alguém atribuir a uma variável qualquer a função MeuConstruct SEM utilizar o operador new, o this de dentro da função irá representar o objeto window, o que pode gerar uma série de problemas imprevisíveis. Para impedir que isso aconteça temos que usar a diretiva "use strict".
 </p>
+
 <pre><code class="javascript">function MeuConstruct(){
     "use strict";
     this.ts = +new Date(),
@@ -409,6 +433,7 @@ let obj1 = new MeuConstruct(); // funfa e o this aponta para o objeto obj1
 
 let obj2 = MeuConstruct(); // dispara um erro no console porque o this é undefined
 </code></pre>
+<p>O mesmo não acontece se você utilizar a palavra reservada class para criar suas classes. Se você tentar atribuir uma classe a uma variável sem utilizar o operador new um erro será apresentado no console. </p>
 <p>
 Espero ter sanado possíveis dúvidas quanto ao que representa o this dentro das mais diversas situações. Fique a vontade para dar sua opinião e me avise se eu escrevi alguma besteira.
 </p><p>
