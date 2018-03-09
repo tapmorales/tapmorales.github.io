@@ -1,0 +1,26 @@
+{
+  "name": "serfrontend.blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hexo": "echo \"Para nao instalar o hexo globalmente, usar $ npm run hexo -- paramentros. Ex: $ npm run hexo -- init blog \" && hexo",
+    "server": "http-server ./_site/public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapmorales/tapmorales.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tapmorales/tapmorales.github.io/issues"
+  },
+  "homepage": "https://github.com/tapmorales/tapmorales.github.io#readme",
+  "devDependencies": {
+    "hexo-cli": "^1.1.0",
+    "http-server": "^0.11.1"
+  }
+}
