@@ -1,6 +1,7 @@
 ---
 title: Como se tornar um desenvolvedor frontend
-date: 2018-03-07 11:38:50
+date: 2017-09-03 11:38:50
+description: Nesse artigo dou meu pitaco sobre como se tornar um desenvolvedor frontend mesmo sendo bombardeado no novas tecnologias a todo instante
 tags:
 - javascript
 - frontend

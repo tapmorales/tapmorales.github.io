@@ -1,6 +1,7 @@
 ---
 title: Como usar npm-scripts para criar diretórios no ambiente windows
-date: 2018-03-07 11:39:37
+date: 2017-09-27 11:39:37
+description: Meu objetivo é mostrar como é possível criar diretórios a partir do npm-scripts no ambiente Windows
 tags:
 - npm-script
 - workflow

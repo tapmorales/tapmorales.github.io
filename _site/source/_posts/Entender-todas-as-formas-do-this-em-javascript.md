@@ -1,6 +1,7 @@
 ---
 title: Entender todas as formas do this em javascript
-date: 2018-03-07 11:40:25
+date: 2017-09-27 11:40:25
+description: Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça
 tags:
 - javascript
 ---
