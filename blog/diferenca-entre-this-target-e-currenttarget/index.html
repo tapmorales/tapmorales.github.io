@@ -11,7 +11,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="Meu objetivo é mostrar como é possível criar diretórios a partir do npm-scripts no ambiente Windows">
+        <meta name="description" content="Saiba quando usar um ou outro">
     
 
     <!--Author-->
@@ -21,14 +21,14 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Como usar npm-scripts para criar diretórios no ambiente windows"/>
+        <meta property="og:title" content="diferenças entre this, target e currentTarget"/>
     
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="Meu objetivo é mostrar como é possível criar diretórios a partir do npm-scripts no ambiente Windows" />
+        <meta property="og:description" content="Saiba quando usar um ou outro" />
     
-    <meta property="og:url" content="https://serfrontend.com/blog/como-usar-npm-scripts-para-criar-diretorios-no-ambiente-windows/index.html"> 
+    <meta property="og:url" content="https://serfrontend.com/blog/diferenca-entre-this-target-e-currenttarget/index.html"> 
     <!-- <meta property="og:image" content="http://serfrontend.com/imagens/capa.jpg">  -->
     <meta property="og:site_name" content="SerFrontend"> 
     <meta property="og:locale" content="pt_br"/> 
@@ -41,10 +41,10 @@
         <meta property="og:type" content="article" />
     
 
-    <link rel='canonical' href='https://serfrontend.com/blog/como-usar-npm-scripts-para-criar-diretorios-no-ambiente-windows/index.html'>
+    <link rel='canonical' href='https://serfrontend.com/blog/diferenca-entre-this-target-e-currenttarget/index.html'>
     <!--<script>
         console.log('env', [object Object]);
-        console.log('path', blog/como-usar-npm-scripts-para-criar-diretorios-no-ambiente-windows/index.html);
+        console.log('path', blog/diferenca-entre-this-target-e-currenttarget/index.html);
     </script>-->
 
 
@@ -55,16 +55,16 @@
     
         <meta name="twitter:site" content="https://twitter.com/tapmorales>" />
     
-    <meta name="twitter:title" content="Como usar npm-scripts para criar diretórios no ambiente windows">
-    <meta name="twitter:description" content="Meu objetivo é mostrar como é possível criar diretórios a partir do npm-scripts no ambiente Windows">
+    <meta name="twitter:title" content="diferenças entre this, target e currentTarget">
+    <meta name="twitter:description" content="Saiba quando usar um ou outro">
 
-    <meta itemprop="name" content="Como usar npm-scripts para criar diretórios no ambiente windows"/>
-    <meta itemprop="description" content="Meu objetivo é mostrar como é possível criar diretórios a partir do npm-scripts no ambiente Windows">
+    <meta itemprop="name" content="diferenças entre this, target e currentTarget"/>
+    <meta itemprop="description" content="Saiba quando usar um ou outro">
 
 
     <!-- Title -->
     
-    <title>Como usar npm-scripts para criar diretórios no ambiente windows</title>
+    <title>diferenças entre this, target e currentTarget</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -171,13 +171,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Como usar npm-scripts para criar diretórios no ambiente windows</h1>
+                    <h1>diferenças entre this, target e currentTarget</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            27-09-2017
+                            12-03-2018
                         
                     </span>
                 </div>
@@ -200,7 +200,7 @@
                             
 
 
-<a href="/tags/npm-script/">#npm-script</a> <a href="/tags/workflow/">#workflow</a> <a href="/tags/frontend/">#frontend</a>
+<a href="/tags/javascript/">#javascript</a>
 
 
                         
@@ -214,21 +214,31 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Esse post nem é um post de verdade, mas sim uma dica rápida.<br>Meu objetivo é mostrar como é possível criar diretórios a partir do npm-scripts no ambiente Windows.</p>
-<h2 id="Por-que-este-post-foi-escrito"><a href="#Por-que-este-post-foi-escrito" class="headerlink" title="Por que este post foi escrito?"></a>Por que este post foi escrito?</h2><p>Na primeira versão do <a href="https://www.udemy.com/ferramentas-front-end-git-npm-script-gulp-e-sass/?couponCode=PROMOSITE20" title="Torne-se um desenvolvedor front-end" target="_blank" rel="noopener">projeto construído para este curso</a> eu utilizei o <a href="https://bower.io/" target="_blank">bower</a> como gerenciador de dependência do lado do front-end. Contudo, após finalizar a gravação de todas as aulas, resolvi voltar alguns commits anteriores e criei uma nova branch para regravar algumas aulas, substituindo o bower pelo npm.</p>
-<p>Para que as demais video-aulas continuassem a fazer sentido, criei um npm-script para copiar as dependências de node_modules para dentro de components. Fazendo isso, não precisaria regravar todas as aulas, pois a estrutura de pastas seria a mesma. Assim quem fosse assistir na sequência não se sentiria perdido.</p>
-<p>No final, este foi o npm-script criado:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"postinstall"</span>: <span class="string">"cp -r node_modules/bootstrap/dist src/components/bootstrap/ &amp;amp;&amp;amp; cp -r node_modules/font-awesome/css src/components/font-awesome/ &amp;amp;&amp;amp; cp -r node_modules/font-awesome/fonts src/components/font-awesome/"</span>,</span><br><span class="line">    <span class="string">"gulp"</span>: <span class="string">"gulp"</span></span><br><span class="line">  &#125;,</span><br><span class="line">&lt;</span><br></pre></td></tr></table></figure>
-<p>Tudo funcionou perfeitamente pois eu já tinha em meu projeto a estrutura de pastas criadas previamente e não me atentei ao detalhe de que, se essa estrutura de pasta não existisse, tudo falharia.</p>
-<h2 id="E-so-criar-a-estrutura-de-pasta-usando-mkdir-p"><a href="#E-so-criar-a-estrutura-de-pasta-usando-mkdir-p" class="headerlink" title="É só criar a estrutura de pasta usando mkdir -p"></a>É só criar a estrutura de pasta usando mkdir -p</h2><p>Pois é. Deveria funcionar. Mas não é assim que acontece no Windows. </p>
-<p>Se voce digitar no seu terminal algo:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir -p meu/caminho/que/nao/existe</span><br><span class="line">&lt;</span><br></pre></td></tr></table></figure></p>
-<p>Você verá que todo o path foi criado justamente por causa da flag -p.</p>
-<p>Mas se você tentar fazer o mesmo no npm-script e rodar o comando, verá um erro. </p>
-<h2 id="E-como-resolver"><a href="#E-como-resolver" class="headerlink" title="E como resolver."></a>E como resolver.</h2><p>Para resolver essa questão utilizei um módulo do node chamado mkdirp. Este módulo permite criarmos diretórios se for necessário. Sua utilização é muito fácil. Primeiro, vamos instalar o módulo e registrá-lo como dependência em nosso package.json.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm i mkdirp -D</span><br><span class="line">&lt;</span><br></pre></td></tr></table></figure></p>
-<p>Depois, basta eu acrescentar um script para criar os diretórios necessários antes de tentar copiar os arquivos da pasta node_modules, Assim:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"postinstall"</span>: <span class="string">"mkdirp src/components/bootstrap/ src/components/font-awesome/"</span>,</span><br><span class="line">&lt;</span><br></pre></td></tr></table></figure></p>
-<p>Segue o código inteiro para sua referência:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;amp;&amp;amp; exit 1"</span>,</span><br><span class="line">    <span class="string">"start"</span>: <span class="string">"echo startando"</span>,</span><br><span class="line">    <span class="string">"prestart"</span>: <span class="string">"echo prestart"</span>,</span><br><span class="line">    <span class="string">"poststart"</span>: <span class="string">"echo post start"</span>,</span><br><span class="line">    <span class="string">"postinstall"</span>: <span class="string">"mkdirp src/components/bootstrap/ src/components/font-awesome/ &amp;amp;&amp;amp; cp -r node_modules/bootstrap/dist src/components/bootstrap/ &amp;amp;&amp;amp; cp -r node_modules/font-awesome/css src/components/font-awesome/ &amp;amp;&amp;amp; cp -r node_modules/font-awesome/fonts src/components/font-awesome/"</span>,</span><br><span class="line">    <span class="string">"gulp"</span>: <span class="string">"gulp"</span></span><br><span class="line">  &#125;</span><br><span class="line">&lt;</span><br></pre></td></tr></table></figure></p>
-<p>Moleza, não!</p>
-<p>Forte abraço e até a próxima</p>
+                <p>Nós sabemos que a palavra reservada <code>this</code> no Javascript pode representar <a href="https://serfrontend.com/blog/entender-todas-as-formas-do-this-em-javascript/" title="entender todas as formas do this em javascript">coisas diferentes devido a sua natureza dinâmica</a>. Por esse motivo, gostaria de detalhar melhor as diferenças entre o this e duas propriedades - <code>target</code> e <code>currentTarget</code> - do objeto event.</p>
+<p>Para iniciarmos, o código abaixo não deve ser nenhuma novidade para voce.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">btn.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(e.target);</span><br><span class="line">  <span class="built_in">console</span>.log(e.currentTarget);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>Se você testar esse código e olhar no seu console, verá que qualquer um dos três representa o mesmo objeto, que neste caso, é o próprio botão clicado.</p>
+<h2 id="Mas-entao-qual-a-diferenca-entre-eles-Vamos-la"><a href="#Mas-entao-qual-a-diferenca-entre-eles-Vamos-la" class="headerlink" title="Mas então qual a diferença entre eles? Vamos lá"></a>Mas então qual a diferença entre eles? Vamos lá</h2><p>O this é quase sempre o “dono do evento”, ou seja, o elemento o qual foi atrelado o método addEventListener. As duas situações onde isso não acontece é quando utilizanos em nosso código:</p>
+<ul>
+<li>o <code>bind()</code> para definir o escopo do <code>this</code> programaticamente; </li>
+<li>abrimos mão do escopo dinâmico quando resolvermos adotar uma arrow function nos nossos ouvintes de evento;</li>
+</ul>
+<p>Veja os dois trechos de código a seguir:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">btn.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(e.target);</span><br><span class="line">  <span class="built_in">console</span>.log(e.currentTarget);</span><br><span class="line">&#125;.bind(<span class="keyword">this</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">btn.addEventListener(<span class="string">'click'</span>, (e) =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(e.target);</span><br><span class="line">  <span class="built_in">console</span>.log(e.currentTarget);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>Nos dois trechos de código acima o <code>this</code> representa um elemento diferente daquele mostrado inicialmente neste artigo. No meu caso esse objeto diferemte é o global <code>window</code> (pois não estou usando a diretiva <code>&quot;use strict&quot;</code>). </p>
+<p>De qualquer forma, as propriedades <code>target</code> e <code>currentTarget</code> ainda são o mesmo objeto. </p>
+<p>Então porque existem duas propriedades que aparentemente são a mesma coisa? Para entender isso, precisamos olhar para o que chamamos de <strong>delegação de eventos</strong>.</p>
+<h2 id="Utilizando-a-delegacao-de-eventos"><a href="#Utilizando-a-delegacao-de-eventos" class="headerlink" title="Utilizando a delegação de eventos"></a>Utilizando a delegação de eventos</h2><p>Imagine que voce tem uma tabela onde o usuário pode incluir ou remover uma ou várias linhas através da própria interface. Imagine também que em cada uma dessas linhas há um botão que pode ser clicado para executar uma ação qualquer.</p>
+<p>Se essa tabela possui 50 linhas (portanto, 50 botões) e em cada botão há um ouvinte de evento, você terá 50 EventListeners, o que pode comprometer a performance de sua aplicação.</p>
+<p>Quando isso acontece, uma abordagem melhor é atrelarmos o evento num elemento mais acima e então verificar quem foi o alvo da ação para decidir o que deve acontecer. Veja um exemplo:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">table.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//esse é dono do evento pois removi o bind e estou usando a expressão de funcao</span></span><br><span class="line">  <span class="built_in">console</span>.log(e.target);</span><br><span class="line">  <span class="built_in">console</span>.log(e.currentTarget);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>No trecho de código acima, o <code>currentTarget</code> é sempre o “dono do evento”, independente do <code>bind()</code> ou das arrow functions. Já o <code>target</code> é o último elemento na hieraquia do DOM que recebeu o evento, ou seja, no exemplo acima, é o alvo do click.</p>
+<p>Pensando ainda no exemplo de uma tabela, o <code>target</code> pode ser uma tag <code>tr</code>, <code>td</code> ou qualquer elemento dentro de uma <code>td</code>, como um <code>button</code>, por exemplo.</p>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>Escrever um simples addEventListener adotando o bind() ou as arrow functions em conjunto com o conceito de delegação de eventos para melhorar a performace de sua aplicação resultará em referências distintas tanto para o <code>this</code> quanto para as propriedades <code>target</code> e <code>currentTarget</code> do objeto Event.</p>
+<p>Essa foi uma dica bastante rápida mas que pode ser muito útil em algumas situações.</p>
+<p>Aproveito para fazer o meu jabá e dizer que qualquer um dos <a href="/cursos">meus cursos de frontend</a> tem um descontão se você utilizar o cupom de desconto <a href="/cursos">PROMOSITE20</a>.</p>
+<p>Um abraço</p>
 
 
                 
