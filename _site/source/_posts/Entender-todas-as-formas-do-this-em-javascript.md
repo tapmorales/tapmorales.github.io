@@ -295,7 +295,7 @@ O mesmo não acontece se você utilizar a palavra reservada class para criar sua
 
 Espero ter sanado possíveis dúvidas quanto ao que representa o this dentro das mais diversas situações. Fique a vontade para dar sua opinião e me avise se eu escrevi alguma besteira.
 
-Aproveito para fazer o meu jabá e dizer que o meu curso de <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROMOSITE20">Javascript Completo</a> tem um desconto bacanão se você utilizar o cupom <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROMOSITE20">PROMOSITE20</a>. 
+Aproveito para fazer o meu jabá e dizer que o meu curso de <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999">Javascript Completo</a> tem um desconto bacanão se você utilizar o cupom <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999">PROSITE1999</a>. 
 
 Um abraço
 

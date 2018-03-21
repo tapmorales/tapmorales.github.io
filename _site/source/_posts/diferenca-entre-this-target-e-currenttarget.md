@@ -74,6 +74,6 @@ Escrever um simples addEventListener adotando o bind() ou as arrow functions em 
 
 Essa foi uma dica bastante rápida mas que pode ser muito útil em algumas situações.
 
-Aproveito para fazer o meu jabá e dizer que qualquer um dos [meus cursos de frontend](/cursos) tem um descontão se você utilizar o cupom de desconto [PROMOSITE20](/cursos).
+Aproveito para fazer o meu jabá e dizer que qualquer um dos [meus cursos de frontend](/cursos) tem um descontão se você utilizar o cupom de desconto [PROSITE1999](/cursos).
 
 Um abraço

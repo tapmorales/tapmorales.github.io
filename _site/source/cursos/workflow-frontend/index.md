@@ -2,9 +2,9 @@
 title: Torne-se um desenvolvedor front-end
 subtitle: "Vá além do HTML, CSS e Javascript: aprenda Sass, Gulp, NPM-scripts e mais"
 layout: curso
-linkUdemy: "https://www.udemy.com/ferramentas-front-end-git-npm-script-gulp-e-sass/?couponCode=PROMOSITE20"
+linkUdemy: "https://www.udemy.com/ferramentas-front-end-git-npm-script-gulp-e-sass/?couponCode=PROSITE1999"
 normalPrice: 189.99
-price: 20
+price: 19.99
 horas: 13
 aulas: 92
 secoes: 17
