@@ -5,9 +5,9 @@ layout: curso
 linkUdemy: "https://www.udemy.com/curso-web-design-fundamentos-aprenda-html-css-e-javascript/?couponCode=PROSITE1999"
 normalPrice: 189.99
 price: 19.99
-horas: 8,5
-aulas: 43
-secoes: 5
+horas: 14
+aulas: 80
+secoes: 8
 
 
 ---

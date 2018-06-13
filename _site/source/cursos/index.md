@@ -11,6 +11,3 @@ courses: [
 ]
 ---
 
-# beluga
-## beluga 2
-<h3>teste</h3>
