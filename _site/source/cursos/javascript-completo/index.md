@@ -5,8 +5,8 @@ layout: curso
 linkUdemy: "https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999"
 normalPrice: 114.99
 price: 19.99
-horas: 34,5
-aulas: 198
+horas: 35
+aulas: 205
 secoes: 28
 
 

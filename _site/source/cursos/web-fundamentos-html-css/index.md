@@ -5,15 +5,13 @@ layout: curso
 linkUdemy: "https://www.udemy.com/curso-web-design-fundamentos-aprenda-html-css-e-javascript/?couponCode=PROSITE1999"
 normalPrice: 189.99
 price: 19.99
-horas: 14
-aulas: 80
-secoes: 8
+horas: 53
+aulas: 342
+secoes: 37
 
 
 ---
  ## Web Design Fundamentos: Aprenda HTML CSS e Javascript
-
-[Curso ainda em desenvolvimento. Novas aulas publicadas toda semana. Previsão de carga horária: 25 horas].
 
 Neste curso você irá aprender e desenvolver suas páginas web com HTML e CSS, além de ter uma boa noção da linguagem de programação Javascript.
 
@@ -21,7 +19,7 @@ Verá conceitos avançados de HTML, incluindo semântica, introdução ao SEO (o
 
 Com relação ao CSS você irá ver em detalhes todas as propriedades necessárias para criar layouts incríveis de suas páginas na web. Iremos também desenvolver um projeto responsivo, ou seja, que funciona bem em todos os dispositivos, mobiles, tablets e desktop.
 
-Dará os primeiros passos com Javascript e descobrirá o poder dessa linguagem, que atualmente é a mais utilizada entre os desenvolvedores web.
+Dará os primeiros passos com lógica de programação e Javascript, e descobrirá o poder dessa linguagem, que atualmente é a mais utilizada entre os desenvolvedores web.
 
 ### Pre-requisitos
 

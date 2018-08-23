@@ -5,9 +5,9 @@ layout: curso
 linkUdemy: "https://www.udemy.com/logica-de-programacao-com-javascript-iniciando-no-frontend/?couponCode=PROSITE1999"
 normalPrice: 129.99
 price: 19.99
-horas: 7
-aulas: 54
-secoes: 7
+horas: 8
+aulas: 66
+secoes: 8
 ---
 ## Lógica de programação com Javascript. Iniciando na carreira front-end</h2>
 
