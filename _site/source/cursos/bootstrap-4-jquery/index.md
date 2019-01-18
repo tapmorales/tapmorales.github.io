@@ -5,9 +5,9 @@ layout: curso
 linkUdemy: "https://www.udemy.com/curso-bootstrap-4-e-jquery-desenvolvimento-web-responsivo/?couponCode=PROSITE1999"
 normalPrice: 84.99
 price: 19.99
-horas: 10
-aulas: 71
-secoes: 7
+horas: 19
+aulas: 134
+secoes: 19
 
 
 ---
