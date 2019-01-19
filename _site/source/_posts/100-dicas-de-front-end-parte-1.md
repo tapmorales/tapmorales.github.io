@@ -24,7 +24,7 @@ Então, vamos às dicas:
 
 5 – Nós seres humanos sabemos que "22h00", "22:00" ou "10 horas da noite" representam o mesmo horário. Mas para informarmos à máquina que se trata de um horário, precisamos escrever a marcação correta, ou seja, ```<time datetime="22:00">22h00</time>```. Podemos, inclusive, acrescentar informações sobre o horário universal UTC:  ```<time datetime="22:00-03:00">22h00</time>```.
 
-6 – Quando você precisar representar uma tecla do teclado, use a tag ```<kbd>```. Exemplo: ```<p>Precione <kbd>Ctrl</kbd> + <kbd>P</kbd> Para imprimir</p>```.
+6 – Quando você precisar representar uma tecla do teclado, use a tag ```<kbd>```. Exemplo: ```<p>Pressione <kbd>Ctrl</kbd> + <kbd>P</kbd> Para imprimir</p>```.
 
 7 – Quando você precisar incluir alguma citação externa na sua página, utilize as tags [```<blockquote>```](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote), [```<cite>```](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite) ou [```<q>```](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q) para isso.
 
