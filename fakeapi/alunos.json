@@ -1,0 +1,62 @@
+[
+    {
+        "nome": "Daniel Raimundo",
+        "notas": [8,2,7,5]
+    },
+    {
+        "nome": "José Maria",
+        "notas": [7,2,7.5,5]
+    },
+    {
+        "nome": "Ricado Maria",
+        "notas": [7,10,7,5.5]
+    },
+    {
+        "nome": "Gertruda",
+        "notas": [7,10,7,10]
+    },
+    {
+        "nome": "Francisco Alves",
+        "notas": [3,10,8,5]
+    },
+    {
+        "nome": "Carolina Alves",
+        "notas": [5,10,8.5,10]
+    },
+    {
+        "nome": "Vanessa Garcia",
+        "notas": [2,10.5,7,5]
+    },
+    {
+        "nome": "Veronica Silva",
+        "notas": [8.5,10,10.5,5]
+    },
+    {
+        "nome": "Pedro Paulo Garcia",
+        "notas": [10,10,7,9]
+    },
+    {
+        "nome": "Rafael Feliz",
+        "notas": [2.5,10,9,5]
+    },
+    {
+        "nome": "Rafael Berilo",
+        "notas": [4,10,8,7]
+    },
+    {
+        "nome": "Lucas de Silva",
+        "notas": [4,10,8,7]
+    },
+    {
+        "nome": "Matheus Bicudo",
+        "notas": [6,10,8,4]
+    },
+    {
+        "nome": "Renata Naty",
+        "notas": [6,10,8,4]
+    },
+    {
+        "nome": "Alexandre Lex",
+        "notas": [6.5,10,2,4]
+    }
+]
