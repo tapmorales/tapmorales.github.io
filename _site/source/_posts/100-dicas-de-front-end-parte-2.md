@@ -1,7 +1,7 @@
 ---
 title: 100 dicas de front-end (parte 2)
 date: 2019-03-26 13:14:34
-description: Nessa primeira parte desse artigo, apresentarei 50 dicas rápidas sobre o desenvolvimento front-end
+description: Na segunda parte do artigo, apresentarei mais 50 dicas rápidas sobre o desenvolvimento front-end
 tags:
 - css
 - html
