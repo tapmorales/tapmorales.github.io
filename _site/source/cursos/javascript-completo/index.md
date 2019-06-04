@@ -2,12 +2,12 @@
 title: Seja Mestre em Javascript
 subtitle: "Desenvolva aplicações reais com Javascript com este curso 100% prático e direto ao ponto. Aprenda de verdade Javascript."
 layout: curso
-linkUdemy: "https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999"
+linkUdemy: "https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE23"
 normalPrice: 114.99
-price: 19.99
+price: 23.99
 horas: 35
-aulas: 205
-secoes: 28
+aulas: 211
+secoes: 30
 
 
 ---

@@ -2,12 +2,12 @@
 <html lang="pt">
 
 <!-- Head tag -->
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name='robots' content='index, follow'>
+    <meta name="robots" content="index, follow">
 
     <!--Description-->
     
@@ -21,27 +21,27 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Entender todas as formas do this em javascript"/>
+        <meta property="og:title" content="Entender todas as formas do this em javascript">
     
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça" />
+        <meta property="og:description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
     
     <meta property="og:url" content="https://serfrontend.com/blog/entender-todas-as-formas-do-this-em-javascript/index.html"> 
     <!-- <meta property="og:image" content="http://serfrontend.com/imagens/capa.jpg">  -->
     <meta property="og:site_name" content="SerFrontend"> 
-    <meta property="og:locale" content="pt_br"/> 
+    <meta property="og:locale" content="pt_br"> 
 
     <!--Open Graph Site Name-->
-    <!--<meta property="og:site_name" content="Blog serFrontend"/>-->
+    <!--<meta property="og:site_name" content="Blog sobre tecnologias Frontend"/>-->
 
     <!--Type page-->
     
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="article">
     
 
-    <link rel='canonical' href='https://serfrontend.com/blog/entender-todas-as-formas-do-this-em-javascript/index.html'>
+    <link rel="canonical" href="https://serfrontend.com/blog/entender-todas-as-formas-do-this-em-javascript/index.html">
     <!--<script>
         console.log('env', [object Object]);
         console.log('path', blog/entender-todas-as-formas-do-this-em-javascript/index.html);
@@ -51,23 +51,37 @@
     <!--Page Cover-->
     
 
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary">
     
-        <meta name="twitter:site" content="https://twitter.com/tapmorales>" />
+        <meta name="twitter:site" content="https://twitter.com/tapmorales>">
     
     <meta name="twitter:title" content="Entender todas as formas do this em javascript">
-    <meta name="twitter:description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
+    
+        <meta name="twitter:description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
+    
 
-    <meta itemprop="name" content="Entender todas as formas do this em javascript"/>
+
+    
+        <meta itemprop="description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
+    
+    
     <meta itemprop="description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
 
 
     <!-- Title -->
     
-    <title>Entender todas as formas do this em javascript</title>
+    
+    
+        <title>Entender todas as formas do this em javascript - Blog sobre tecnologias Frontend</title>
+    
+
+
+
+
+
 
     <!-- Bootstrap Core CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
@@ -158,7 +172,7 @@
 </header>
 <div id="navMob">
     <a href="#">
-        <img src="/img/menu.svg" alt="">
+        <img src="/img/menu.svg" alt>
     </a>
 </div>
 
@@ -280,7 +294,7 @@ Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso có
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MeuConstruct</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="meta">    "use strict"</span>;</span><br><span class="line">    <span class="keyword">this</span>.ts = +<span class="keyword">new</span> <span class="built_in">Date</span>(),</span><br><span class="line">    <span class="keyword">this</span>.foo = <span class="string">"bar"</span>,</span><br><span class="line">    <span class="keyword">this</span>.mostraThis = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj1 = <span class="keyword">new</span> MeuConstruct(); <span class="comment">// funfa e o this aponta para o objeto obj1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj2 = MeuConstruct(); <span class="comment">// dispara um erro no console porque o this é undefined</span></span><br></pre></td></tr></table></figure>
 <p>O mesmo não acontece se você utilizar a palavra reservada class para criar suas classes. Se você tentar atribuir uma classe a uma variável sem utilizar o operador new um erro será apresentado no console. </p>
 <p>Espero ter sanado possíveis dúvidas quanto ao que representa o this dentro das mais diversas situações. Fique a vontade para dar sua opinião e me avise se eu escrevi alguma besteira.</p>
-<p>Aproveito para fazer o meu jabá e dizer que o meu curso de <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999" target="_blank" rel="noopener">Javascript Completo</a> tem um desconto bacanão se você utilizar o cupom <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999" target="_blank" rel="noopener">PROSITE1999</a>. </p>
+<p>Aproveito para fazer o meu jabá e dizer que o meu curso de <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE23" target="_blank" rel="noopener">Javascript Completo</a> tem um desconto bacanão se você utilizar o cupom <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE23" target="_blank" rel="noopener">PROSITE23</a>. </p>
 <p>Um abraço</p>
 
 
@@ -291,7 +305,7 @@ Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso có
             
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     
-    <hr />
+    <hr>
     <h3>Comentários:</h3>
     <div id="disqus_thread">
         <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -327,6 +341,15 @@ Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso có
                         </li>
                     
 
+                    
+                        <li>
+                            <a href="https://www.facebook.com/serfrontend/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
                     
 
                     

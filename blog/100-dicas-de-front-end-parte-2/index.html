@@ -2,12 +2,12 @@
 <html lang="pt">
 
 <!-- Head tag -->
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name='robots' content='index, follow'>
+    <meta name="robots" content="index, follow">
 
     <!--Description-->
     
@@ -21,27 +21,27 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="100 dicas de front-end (parte 2)"/>
+        <meta property="og:title" content="100 dicas de front-end (parte 2)">
     
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="Na segunda parte do artigo, apresentarei mais 50 dicas rápidas sobre o desenvolvimento front-end" />
+        <meta property="og:description" content="Na segunda parte do artigo, apresentarei mais 50 dicas rápidas sobre o desenvolvimento front-end">
     
     <meta property="og:url" content="https://serfrontend.com/blog/100-dicas-de-front-end-parte-2/index.html"> 
     <!-- <meta property="og:image" content="http://serfrontend.com/imagens/capa.jpg">  -->
     <meta property="og:site_name" content="SerFrontend"> 
-    <meta property="og:locale" content="pt_br"/> 
+    <meta property="og:locale" content="pt_br"> 
 
     <!--Open Graph Site Name-->
-    <!--<meta property="og:site_name" content="Blog serFrontend"/>-->
+    <!--<meta property="og:site_name" content="Blog sobre tecnologias Frontend"/>-->
 
     <!--Type page-->
     
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="article">
     
 
-    <link rel='canonical' href='https://serfrontend.com/blog/100-dicas-de-front-end-parte-2/index.html'>
+    <link rel="canonical" href="https://serfrontend.com/blog/100-dicas-de-front-end-parte-2/index.html">
     <!--<script>
         console.log('env', [object Object]);
         console.log('path', blog/100-dicas-de-front-end-parte-2/index.html);
@@ -51,23 +51,37 @@
     <!--Page Cover-->
     
 
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary">
     
-        <meta name="twitter:site" content="https://twitter.com/tapmorales>" />
+        <meta name="twitter:site" content="https://twitter.com/tapmorales>">
     
     <meta name="twitter:title" content="100 dicas de front-end (parte 2)">
-    <meta name="twitter:description" content="Na segunda parte do artigo, apresentarei mais 50 dicas rápidas sobre o desenvolvimento front-end">
+    
+        <meta name="twitter:description" content="Na segunda parte do artigo, apresentarei mais 50 dicas rápidas sobre o desenvolvimento front-end">
+    
 
-    <meta itemprop="name" content="100 dicas de front-end (parte 2)"/>
+
+    
+        <meta itemprop="description" content="Na segunda parte do artigo, apresentarei mais 50 dicas rápidas sobre o desenvolvimento front-end">
+    
+    
     <meta itemprop="description" content="Na segunda parte do artigo, apresentarei mais 50 dicas rápidas sobre o desenvolvimento front-end">
 
 
     <!-- Title -->
     
-    <title>100 dicas de front-end (parte 2)</title>
+    
+    
+        <title>100 dicas de front-end (parte 2) - Blog sobre tecnologias Frontend</title>
+    
+
+
+
+
+
 
     <!-- Bootstrap Core CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
@@ -158,7 +172,7 @@
 </header>
 <div id="navMob">
     <a href="#">
-        <img src="/img/menu.svg" alt="">
+        <img src="/img/menu.svg" alt>
     </a>
 </div>
 
@@ -249,7 +263,7 @@
 <p><em>75 - Comparar objetos</em><br>Como comparar se um objeto é igual ao outro? Como sabemos <code>{} === {}</code> retorna false pois cada objeto, mesmo que contendo propriedades e valores iguais, ocupam posições diferentes na memória. Quando um objeto só possui propriedades, e não métodos, costumo transformar os dois objetos em strings com JSON.stringify() e comparar o resultado<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="attr">prop</span>: <span class="string">'value'</span> &#125; === &#123; <span class="attr">prop</span>: <span class="string">'value'</span> &#125; <span class="comment">//false</span></span><br><span class="line"><span class="built_in">JSON</span>.stringfy(&#123; <span class="attr">prop</span>: <span class="string">'value'</span> &#125;) === <span class="built_in">JSON</span>.stringfy(&#123; <span class="attr">prop</span>: <span class="string">'value'</span> &#125;) <span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
 <p><em>76 - array com valores únicos</em><br>Uma forma que você pode pensar para obter um array com valores únicos a partir de outro array talvez envolva loops ou, mais elegantemente, um callback dentro de um array.filter().</p>
 <p>Contudo, sabendo que agora podemos trabalhar com conjuntos (que não podem ter valores duplicados por definição) podemos obter um array contendo os valores de um conjunto.</p>
-<p>Por exemplo:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="literal">true</span>, <span class="literal">true</span>, <span class="string">'str'</span>, <span class="number">0</span>, <span class="string">'str'</span>]</span><br><span class="line"><span class="keyword">const</span> set = <span class="keyword">new</span> <span class="built_in">Set</span>(arr1)</span><br></pre></td></tr></table></figure></p>
+<p>Por exemplo:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="literal">true</span>, <span class="literal">true</span>, <span class="string">'str'</span>, <span class="number">0</span>, <span class="string">'str'</span>]</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">set</span> = new Set(arr1)</span><br></pre></td></tr></table></figure></p>
 <p>Agora podemos facilmente transformar um conjunto em um array novamente utilizando o spread operator<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr2 = [...set]</span><br></pre></td></tr></table></figure><br>Sem loops nem callbacks. Sucesso!</p>
 <p><em>77 - Evite usar setInterval</em><br>Para agendar uma função que será executada de tempos em tempos, prefira trabalhar com setTimeout recursivo. </p>
 <p>Essa é uma melhor prática devido a um mecanismo interno chamado event loop.</p>
@@ -303,7 +317,7 @@
             
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     
-    <hr />
+    <hr>
     <h3>Comentários:</h3>
     <div id="disqus_thread">
         <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -339,6 +353,15 @@
                         </li>
                     
 
+                    
+                        <li>
+                            <a href="https://www.facebook.com/serfrontend/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
                     
 
                     

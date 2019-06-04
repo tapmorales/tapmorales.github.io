@@ -2,12 +2,12 @@
 title: Por que meu CSS não funciona?
 subtitle: "Dicas e macetes para dominar o CSS e evitar aqueles resultados indesejados na renderização da sua página web."
 layout: curso
-linkUdemy: "https://www.udemy.com/por-que-meu-css-nao-funciona/?couponCode=PROSITE1999"
+linkUdemy: "https://www.udemy.com/por-que-meu-css-nao-funciona/?couponCode=PROSITE23"
 normalPrice: 84.99
-price: 19.99
+price: 23.99
 horas: 5
-aulas: 30
-secoes: 7
+aulas: 32
+secoes: 8
 
 ---
  ## Por que meu CSS não funciona?

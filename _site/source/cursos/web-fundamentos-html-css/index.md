@@ -2,12 +2,12 @@
 title: Web Design Fundamentos. Aprenda HTML CSS e Javascript
 subtitle: "Crie seus sites na internet. Aqui você irá aprender DE VERDADE o HTML e CSS e terá uma base do Javascript."
 layout: curso
-linkUdemy: "https://www.udemy.com/curso-web-design-fundamentos-aprenda-html-css-e-javascript/?couponCode=PROSITE1999"
+linkUdemy: "https://www.udemy.com/curso-web-design-fundamentos-aprenda-html-css-e-javascript/?couponCode=PROSITE23"
 normalPrice: 189.99
-price: 19.99
-horas: 53
-aulas: 342
-secoes: 37
+price: 23.99
+horas: 54
+aulas: 357
+secoes: 38
 
 
 ---

@@ -90,7 +90,7 @@ Pronto, resolvemos o problema de colisão de nomes das funções init().
 
 Para terminar gostaria de ressaltar que as funções auto-invocáveis eram a única forma de modularizarmos nosso site ou aplicação em arquivos javascript menores, visando facilitar a manutenção desses códigos. Entretanto, com a chegada do ES Modules da ES6 isso não é tão verdade assim. O problema é que essa abordagem [ainda não tem um bom suporte](https://caniuse.com/#search=modules), e se você acha que utilizar uma biblioteca como webpack ou parcel é matar uma mosca com uma bala de canhão, pode sim continuar a fazer uso das IIFEs sem medo. 
 
-Aproveito para fazer o meu jabá e dizer que o meu curso de <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999">Javascript Completo</a> tem um desconto bacanão se você utilizar o cupom <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999">PROSITE1999</a>. 
+Aproveito para fazer o meu jabá e dizer que o meu curso de <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE23">Javascript Completo</a> tem um desconto bacanão se você utilizar o cupom <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE23">PROSITE23</a>. 
 
 Um abraço
 

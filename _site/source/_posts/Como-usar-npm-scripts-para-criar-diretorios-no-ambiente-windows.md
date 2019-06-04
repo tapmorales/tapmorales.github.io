@@ -12,7 +12,7 @@ Meu objetivo é mostrar como é possível criar diretórios a partir do npm-scri
 
 ## Por que este post foi escrito?
 
-Na primeira versão do <a href="https://www.udemy.com/ferramentas-front-end-git-npm-script-gulp-e-sass/?couponCode=PROSITE1999" title="Torne-se um desenvolvedor front-end">projeto construído para este curso</a> eu utilizei o <a href="https://bower.io/" target="_blank">bower</a> como gerenciador de dependência do lado do front-end. Contudo, após finalizar a gravação de todas as aulas, resolvi voltar alguns commits anteriores e criei uma nova branch para regravar algumas aulas, substituindo o bower pelo npm.
+Na primeira versão do <a href="https://www.udemy.com/ferramentas-front-end-git-npm-script-gulp-e-sass/?couponCode=PROSITE23" title="Torne-se um desenvolvedor front-end">projeto construído para este curso</a> eu utilizei o <a href="https://bower.io/" target="_blank">bower</a> como gerenciador de dependência do lado do front-end. Contudo, após finalizar a gravação de todas as aulas, resolvi voltar alguns commits anteriores e criei uma nova branch para regravar algumas aulas, substituindo o bower pelo npm.
 
 Para que as demais video-aulas continuassem a fazer sentido, criei um npm-script para copiar as dependências de node_modules para dentro de components. Fazendo isso, não precisaria regravar todas as aulas, pois a estrutura de pastas seria a mesma. Assim quem fosse assistir na sequência não se sentiria perdido.
 

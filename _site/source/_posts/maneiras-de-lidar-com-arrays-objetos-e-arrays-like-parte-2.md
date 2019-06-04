@@ -174,6 +174,6 @@ Você pode ter percebido que utilizei um outro tipo de loop, o for ... of. Sabem
 Um abraço
 
 <code> &lt;jaba&gt; </code>
-Garanta <b>83% de desconto</b>  <small>( de <del>R$ 114,99</del> por apenas <b>R$ 20,00</b>)</small> no meu curso de [Javascript Completo do iniciante ao mestre](https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999) adquirindo-o pelo meu blog. [Compre agora](https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE1999) ou conheça [outros cursos](/cursos).
+Garanta <b>83% de desconto</b>  <small>( de <del>R$ 114,99</del> por apenas <b>R$ 20,00</b>)</small> no meu curso de [Javascript Completo do iniciante ao mestre](https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE23) adquirindo-o pelo meu blog. [Compre agora](https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE23) ou conheça [outros cursos](/cursos).
 <code> &lt;/jaba&gt; </code>
 
