@@ -18,7 +18,7 @@ Depois de saber como seria o design final, separei em componentes e dei nomes pa
 
 ![Separação dos componentes](../images/redux-para-iniciantes/todo-mockup-components.png "Separação dos componentes")
 
-Uma outra maneira de representar essa hierarquia de componentes seria em formato de floxograma.
+Uma outra maneira de representar essa hierarquia de componentes seria em formato de fluxograma.
 
 ![hierarquia de componentes](../images/redux-para-iniciantes/todo-components-fluxogram.png "hierarquia de componentes")
 
@@ -37,7 +37,7 @@ O Redux nada mais é do que um gerenciador de estado da aplicação inteira que 
 
 ![Armazenar os dados no Redux](../images/redux-para-iniciantes/todo-redux.png "Armazenar os dados no Redux")
 
-O estado da aplicação pode ser entendido como uma caracteristica num detereminado momento. No exemplo da todo-list, o estado são os dados (as tarefas) e o filtro para visualização (quais tarefas são visiveis na tela, as aguardando, as em progresso ou as finalizadas).
+O estado da aplicação pode ser entendido como uma característica num determinado momento. No exemplo da todo-list, o estado são os dados (as tarefas) e o filtro para visualização (quais tarefas são visíveis na tela, as aguardando, as em progresso ou as finalizadas).
 
 Então quer dizer que todos os dados da aplicação devem ficar sob responsabilidade do Redux?
 Calma lá jovem. O Redux é um gerenciador de estado que reside fora da aplicação. Ele cria uma única fonte de dados confiável para a aplicação inteira. Mas nem tudo precisa estar dentro do Redux, ou seja, coloque no Redux só o que deve ser compartilhado entre componentes.
@@ -45,7 +45,7 @@ Calma lá jovem. O Redux é um gerenciador de estado que reside fora da aplicaç
 Deixando de lado o exemplo da todo-list, vamos aos conceitos do Redux.
 
 ## State
-O estado, como já vimos, é uma caracteristica da aplicação num determinado momento. Pense numa página de um e-commerce. O usuário está visualizando um produto e está vendo o seu preço na tela. Mas o frete ainda não foi calculado. Então o usuário digita o CEP de sua residência e o preço muda. Ah! Mas o usuário possui um cupom de desconto. Então ele o digita também o código do cupom e o preço muda novamente. Percebeu quantas mudanças de estado essa mesma tela sofreu? "Preço sem frete", depois "preço com frete" e depois "preço com cupom de desconto". E poderia ter muito mais.
+O estado, como já vimos, é uma característica da aplicação num determinado momento. Pense numa página de um e-commerce. O usuário está visualizando um produto e está vendo o seu preço na tela. Mas o frete ainda não foi calculado. Então o usuário digita o CEP de sua residência e o preço muda. Ah! Mas o usuário possui um cupom de desconto. Então ele o digita também o código do cupom e o preço muda novamente. Percebeu quantas mudanças de estado essa mesma tela sofreu? "Preço sem frete", depois "preço com frete" e depois "preço com cupom de desconto". E poderia ter muito mais.
 
 ## Store
 Se você já desenvolveu algo com o React você sabe que componentes podem ter seus próprios states, que é encapsulado e 100% controlado pelos componentes que os contém. Pense no store como um state global. Alterar algum estado do store pode alterar qualquer um dos componentes da página.
@@ -54,7 +54,7 @@ No store, guardamos todas as informações que podem ser utilizadas por mais de 
 Agora sabemos que na store guardamos o state da aplicação. Mas como podemos fazer para alterar esse state? (se você já leu sobre Redux, sabe que o state é imutável, mas por enquanto quero deixar as coisas mais simples possível).
 
 ## Actions
-Conseguimos "alterar" o estado da aplicação através de actions. As actions são objetos javascript simples que descrevem o que deve ser feito. Esses objetos devem possuir uma propriedade type. No exemplo do ecommerce, uma action poderia ser {type: 'CALCULAR_FRETE'}, ou talvez {type: 'CALCULAR_DESCONTO'}.
+Conseguimos "alterar" o estado da aplicação através de actions. As actions são objetos javascript simples que descrevem o que deve ser feito. Esses objetos devem possuir uma propriedade type. No exemplo do e-commerce, uma action poderia ser {type: 'CALCULAR_FRETE'}, ou talvez {type: 'CALCULAR_DESCONTO'}.
 
 Se você tiver um olhar atento pode ter se perguntado: Como calcular o frete? Qual o código do cupom? Calma hora nessa, padawan! Um pouco por vez ;)
 
@@ -65,7 +65,7 @@ Store é o estado geral da aplicação inteira. Para que eu consiga "alterar" al
 
 Sim, isso mesmo, o Reducer.
 
-Apesar do nome assustador, o reducer é simplesmente uma função que descreve como nossas actions irão transformar o state no próximo state. Opa! Próximo state? Como assim? Isso mesmo, nós nunca alteramos diretamente um state porque ele é imutável conforme spolier acima. Na verdade, o reducer SEMPRE vai retornar o próximo state, nunca alterá-lo diretamente.
+Apesar do nome assustador, o reducer é simplesmente uma função que descreve como nossas actions irão transformar o state no próximo state. Opa! Próximo state? Como assim? Isso mesmo, nós nunca alteramos diretamente um state porque ele é imutável conforme spoiler acima. Na verdade, o reducer SEMPRE vai retornar o próximo state, nunca alterá-lo diretamente.
 
 **CUIDADO** com funções que alteram a origem dos dados dentro de funções reducers, como splice(), push(), pop() etc.
 
@@ -146,13 +146,13 @@ Algumas observações:
 - Agora store e reducer estão unidos, juntinhos, pois ao criar a store passamos a função reducer por parâmetro.
 
 ## Ei, quero mudar a store.
-Agora que store e reducer estão ligados, disparar uma action fará com que a função reducer seja execuatada. Para disparar uma action usamos o método dispatch da store
+Agora que store e reducer estão ligados, disparar uma action fará com que a função reducer seja executada. Para disparar uma action usamos o método dispatch da store
 
 {% codeblock lang:js %}
 store.dispatch(minha-action) 
 {% endcodeblock %}
 
-Mas o que é uma action mesmo? Se voce respondeu que é um simples objeto javascript com uma propriedade type, parabéns! Logo:
+Mas o que é uma action mesmo? Se você respondeu que é um simples objeto javascript com uma propriedade type, parabéns! Logo:
 
 {% codeblock lang:js %}
 store.dispatch({type: '...'})
@@ -169,7 +169,7 @@ store.dispatch({type: 'DOBRAR'})
 
 Opa! Temos a ação DOBRAR no nosso reducer? Não! O que vai acontecer? Nada. O state anterior será retornado.
 
-Para conseguir ver alguma coisa ao mudarmos o state, vamos mostrar no console. Mas tenha em mente que nessa hora voce deveria atualizar a interface do usuário. Se estiver usando o react pra valer, agora deveria chamar o setState.
+Para conseguir ver alguma coisa ao mudarmos o state, vamos mostrar no console. Mas tenha em mente que nessa hora você deveria atualizar a interface do usuário. Se estiver usando o react pra valer, agora deveria chamar o setState.
 
 {% codeblock lang:js %}
 store.subscribe( () => console.log( store.getState() ) )
@@ -179,7 +179,7 @@ Contudo, veremos como implementar o redux com react no próximo artigo. A atuali
 
 Agora vamos ver como passar parâmetro para o reducer.
 
-Sabemos que o reducer recebe o state anterior e uma action. A action possui o atributo type. Contudo, a action pode ter mais parametros. Comumente voce verá por aí o atributo data ou payload. Nesse exemplo, pra ficar didático, chamarei de parametro.
+Sabemos que o reducer recebe o state anterior e uma action. A action possui o atributo type. Contudo, a action pode ter mais parâmetros. Comumente você verá por aí o atributo data ou payload. Nesse exemplo, pra ficar didático, chamarei de parâmetro.
 
 {% codeblock lang:js %}
 store.dispatch({type: 'DECREMENTAR', parametro: 3})
