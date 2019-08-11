@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <!--Description-->
+    
+        <meta name="description" content="O que eu gostaria que alguém tivesse me dito quando comecei a estudar redux">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Daniel Tapias Morales">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="redux com react para iniciantes">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="O que eu gostaria que alguém tivesse me dito quando comecei a estudar redux">
+    
+    <meta property="og:url" content="https://serfrontend.com/blog/redux-com-react-para-iniciantes/index.html"> 
+    <!-- <meta property="og:image" content="http://serfrontend.com/imagens/capa.jpg">  -->
+    <meta property="og:site_name" content="SerFrontend"> 
+    <meta property="og:locale" content="pt_br"> 
+
+    <!--Open Graph Site Name-->
+    <!--<meta property="og:site_name" content="Blog sobre tecnologias Frontend"/>-->
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <link rel="canonical" href="https://serfrontend.com/blog/redux-com-react-para-iniciantes/index.html">
+    <!--<script>
+        console.log('env', [object Object]);
+        console.log('path', blog/redux-com-react-para-iniciantes/index.html);
+    </script>-->
+
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary">
+    
+        <meta name="twitter:site" content="https://twitter.com/tapmorales>">
+    
+    <meta name="twitter:title" content="redux com react para iniciantes">
+    
+        <meta name="twitter:description" content="O que eu gostaria que alguém tivesse me dito quando comecei a estudar redux">
+    
+
+
+    
+        <meta itemprop="description" content="O que eu gostaria que alguém tivesse me dito quando comecei a estudar redux">
+    
+    
+    <meta itemprop="description" content="O que eu gostaria que alguém tivesse me dito quando comecei a estudar redux">
+
+
+    <!-- Title -->
+    
+    
+    
+        <title>redux com react para iniciantes - Blog sobre tecnologias Frontend</title>
+    
+
+
+
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" /> -->
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-73075491-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="/favicon.ico">
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<header id="topo">
+    <div class="container topo__container">
+        
+        <div class="topo__logo"><a href="/" title="Ser Frontend">
+            <img class="topo__logo__img" src="/img/logo_ser-frontend.svg" alt="Ser Frontend"></a>
+        </div>
+        
+        
+        <nav class="topo__mainMenu">
+            <ul>
+
+                
+                    <li>
+                        <a href="/blog">
+                            
+                                Blog
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/cursos">
+                            
+                                Cursos
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+            
+            </ul>
+
+        </nav>
+    </div>
+</header>
+<div id="navMob">
+    <a href="#">
+        <img src="/img/menu.svg" alt>
+    </a>
+</div>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg4.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>redux com react para iniciantes</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            09-08-2019
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                
+                
+                    <div class="col-lg-10 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                        
+                            
+
+
+<a href="/tags/frontend/">#frontend</a> <a href="/tags/javascript/">#javascript</a> <a href="/tags/redux/">#redux</a> <a href="/tags/react/">#react</a>
+
+
+                        
+                    </div>
+                
+            
+
+            <!-- Gallery -->
+            
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Essa é a segunda parte de um tutorial para iniciantes em redux. Vale a pena ver, se você ainda não viu, a primeira parte <a href="https://serfrontend.com/blog/redux-para-iniciantes/">redux com react para iniciantes</a>.</p>
+<p>No primeiro artigo, discutimos alguns pontos importantes do redux e gostaria de recapitular.</p>
+<ul>
+<li>O Store do redux é o que gerencia o state. Ao criar um store, precisamos informar qual é a função reducer que irá manipular - ou não - os dados (também conhecidos como state).</li>
+<li>O state é imutável. Nenhuma alteração é feita diretamente no state. O reducer sempre precisa retornar um novo state.</li>
+<li>A store recebe uma action (<code>store.dispatch(minha-action)</code>), que é um objeto simples do javascript, que descreve a intensão de alterar algo no store. A action pode conter, opcionalmente, um parâmetro extra que é passado para o reducer. Comumente essa parâmetro chama-se payload em tutoriais que você pode encontrar na internet, aqui eu chamei simplesmente de ‘parametro’.</li>
+<li>Sempre que um novo state é gerado, a função de callback em store.subscribe(callback) é executada. Nesse momento a view pode ser atualizada.</li>
+</ul>
+<h2 id="conectando-o-redux-ao-react"><a href="#conectando-o-redux-ao-react" class="headerlink" title="conectando o redux ao react"></a>conectando o redux ao react</h2><p>O primeiro passo é instalarmos o react-redux, que é o responsável por permitir a conexão entre os dois. Se não tiver o redux instalado em seu projeto, instale-o também.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i react-redux</span><br></pre></td></tr></table></figure>
+<p>Eu estou prevendo que você já tem o redux instalado e já está no diretório first-redux, como fizemos no artigo anterior <a href="https://serfrontend.com/blog/redux-para-iniciantes/">redux com react para iniciantes</a>.</p>
+<p>Depois de termos o react-redux pronto para uso, precisamos do Provider. Eu poderia dizer que o Provider é um <em>hight order component</em> (porque é mesmo) mas eu prefiro dizer que o Provider é o componente que permite que o react tenha acesso ao redux. </p>
+<p>Para importá-lo em nosso projeto, basta:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Provider &#125; from &apos;react-redux&apos;</span><br></pre></td></tr></table></figure></p>
+<p>O Provider permite que o store se conecte à hierarquia de componentes a qual pertence. Mais fácil demonstrar com código:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ReactDOM.render(&lt;Provider&gt;</span><br><span class="line">			&lt;App/&gt;</span><br><span class="line">		&lt;/Provider&gt;, </span><br><span class="line">		<span class="built_in">document</span>.getElementById(<span class="string">'root'</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>Viu? Envolvemos todo o nosso componente App no componente Provider. Agora todo o App tem acesso ao store. É só isso? Não. Ainda não. Precisamos informar qual store o Provider fornecerá para o App. Então precisamos adicionar uma prop store ao Provider. Essa prop passa a store em si.</p>
+<p>Agora vou criar uma constante em português. Julguem-me.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> minhaStore = createStore(reducer)</span><br><span class="line">ReactDOM.render(&lt;Provider store=&#123;minhaStore&#125;&gt;</span><br><span class="line">			&lt;App/&gt;</span><br><span class="line">		&lt;/Provider&gt;, </span><br><span class="line">		<span class="built_in">document</span>.getElementById(<span class="string">'root'</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>Estou omitindo boa parte do código que já discutimos antes e estou focando somente no que interessa.</p>
+<p>Criei uma store usando o método createStore passando qual o reducer que deve olhar para as actions e os states. E passo essa store para o Provider.</p>
+<p>Agora é a parte onde devemos conectar as coisas. Porém, neste ponto do artigo, eu estou enfrentando um dilema pessoal. Mostro como faz do jeito antigo ou mostro como faz direto com React Hooks? Pois bem, escolhi mostrar direto com hooks (não se preocupe com a nomenclatura, ok!). Mas saiba que antes da versão 16.8 do React era usado dois argumentos em connect() que hoje não precisamos mais usar. Eram esses argumentos chamados mapStateToProps e mapDispatchToProps. O primeiro conecta uma parte do state em props do react. Já o segundo conecta as actions do Redux em props do react. Digo isso para o caso de você achar algum desses argumentos em materiais na internet.</p>
+<h2 id="Hooks"><a href="#Hooks" class="headerlink" title="Hooks"></a>Hooks</h2><p>A principal motivação da inclusão dos hooks ao react é a capacidade que os hooks nos dão para controlar o estado de um componente sem a necessidade de criar um componente com classe.</p>
+<p>Quem já fez um formulário com dois inputs ou mais sabe como é chato lidar com a alteração no input e setState ao mesmo tempo. Não é difícil, só é chato. É preciso escrever muito código para algo simples. Aliás, ponto para o Angular e o ngModel 😉. </p>
+<h3 id="useState"><a href="#useState" class="headerlink" title="useState"></a>useState</h3><p>O método useSate (que você deve importar de ‘react’) cria um estado no componente e disponibiliza uma função que deve ser chamada sempre que você quiser alterar o state.</p>
+<p>O código abaixo esclarece melhor os conceitos:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; useState &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">meuInput</span> </span>&#123;</span><br><span class="line">  <span class="comment">// cria um state name com o valor 'Daniel'. A função que deverá ser chamada para alterar o state é a setNome</span></span><br><span class="line">  <span class="keyword">const</span> [nome, setNome] = useState(<span class="string">'Daniel'</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// renderizar o componente</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;input </span><br><span class="line">        type=<span class="string">"text"</span></span><br><span class="line">        value=&#123;nome&#125;</span><br><span class="line">        onChange=&#123;e =&gt; setNome(e.target.value)&#125;</span><br><span class="line">      /&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  );</span></span><br><span class="line"><span class="regexp">&#125;;</span></span><br><span class="line"><span class="regexp"></span></span><br></pre></td></tr></table></figure>
+<h3 id="useSelector"><a href="#useSelector" class="headerlink" title="useSelector"></a>useSelector</h3><p>Esse método, que também deve ser importado de ‘react-redux’, recebe um callback como parâmetro. Esse callback deve retornar o state novo. Se o state novo for diferente do anterior, então o componente irá renderizar o novo valor na tela. Tentei deixar a explicação simples.</p>
+<p>O useSelector será executado sempre que houver um dispatch de uma action</p>
+<h3 id="useDispatch"><a href="#useDispatch" class="headerlink" title="useDispatch"></a>useDispatch</h3><p>Muito parecido com o dispatch do redux sem react, nos dá a possibilidade de disparar uma action.</p>
+<p>Estas são algumas possibilidades que temos usando o hooks, mas agora vamos voltar para o Redux.</p>
+<p>Já que apresentei todos os conceitos necessários, vou construir o mesmo código que fizemos no artigo anterior, só que agora usando react-redux. Os comentários terão propósitos didáticos para reforçar o que vimos até aqui.</p>
+<p>index.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'./index.css'</span>;</span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> serviceWorker <span class="keyword">from</span> <span class="string">'./serviceWorker'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; createStore &#125;  <span class="keyword">from</span> <span class="string">'redux'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// importamos o que precisamos de react-redux</span></span><br><span class="line"><span class="comment">// - Provider - disponibiliza a store para toda a hierarquia de </span></span><br><span class="line"><span class="comment">// componentes abaixo de &lt;Provider&gt;</span></span><br><span class="line"><span class="comment">// - useSelector executa o callback sempre que houver um dispatch. </span></span><br><span class="line"><span class="comment">// O retorno deve ser o state.</span></span><br><span class="line"><span class="comment">// - useDispatch nos dá a chance de disparar uma action para a store</span></span><br><span class="line"><span class="keyword">import</span> &#123; Provider, useSelector, useDispatch &#125; <span class="keyword">from</span> <span class="string">'react-redux'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// não há nenhuma alteração no nosso reducer</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">reducer</span>(<span class="params">state = <span class="number">0</span>, action</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> param = action.parametro || <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">switch</span> (action.type) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">'INCREMENTAR'</span>:</span><br><span class="line">          <span class="keyword">return</span> state + param</span><br><span class="line">        <span class="keyword">case</span> <span class="string">'DECREMENTAR'</span>:</span><br><span class="line">          <span class="keyword">return</span> state - param</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">          <span class="keyword">return</span> state</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Sem alteração aqui também</span></span><br><span class="line"><span class="keyword">const</span> store = createStore(reducer)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Criei um componente App em substituição do nosso element do artigo </span></span><br><span class="line"><span class="comment">// anterior.</span></span><br><span class="line"><span class="keyword">const</span> App = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// useSelector recebe uma função de callback. Como temos apenas um </span></span><br><span class="line">  <span class="comment">// state, então podemos retornar direto o mesmo state. </span></span><br><span class="line">  <span class="comment">// Por isso o 'state =&gt; state', que seria o mesmo que</span></span><br><span class="line">  <span class="comment">// state =&gt; &#123; return state &#125;</span></span><br><span class="line">  <span class="keyword">let</span> counter = useSelector(<span class="function"><span class="params">state</span> =&gt;</span> state)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Nos dá acesso ao dispatch na store. Esse dispatch será executado </span></span><br><span class="line">  <span class="comment">// no onClick da View</span></span><br><span class="line">  <span class="keyword">const</span> dispatch = useDispatch()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt; </span><br><span class="line">    &lt;p&gt;counter: &#123;counter&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">    &lt;button </span></span><br><span class="line"><span class="regexp">    	onClick=&#123; () =&gt; dispatch(&#123;type: 'INCREMENTAR'&#125;)&#125;&gt; </span></span><br><span class="line"><span class="regexp">    	Incrementar </span></span><br><span class="line"><span class="regexp">    &lt;/</span>button&gt;</span><br><span class="line">    &lt;button </span><br><span class="line">    	onClick=&#123; () =&gt; dispatch(&#123;<span class="attr">type</span>: <span class="string">'DECREMENTAR'</span>&#125;)&#125;&gt; </span><br><span class="line">    	Decrementar </span><br><span class="line">    &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;button </span></span><br><span class="line"><span class="regexp">    	onClick=&#123; () =&gt; dispatch(&#123;type: 'INCREMENTAR', parametro: 2&#125;)&#125;&gt; </span></span><br><span class="line"><span class="regexp">    	Incrementar </span></span><br><span class="line"><span class="regexp">    2&lt;/</span>button&gt;</span><br><span class="line">    &lt;button </span><br><span class="line">    	onClick=&#123; () =&gt; dispatch(&#123;<span class="attr">type</span>: <span class="string">'DECREMENTAR'</span>, <span class="attr">parametro</span>: <span class="number">2</span>&#125;)&#125;&gt; </span><br><span class="line">    	Decrementar </span><br><span class="line">    <span class="number">2</span>&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Tudo que está abaixo do Provider tem acesso ao store</span></span><br><span class="line">ReactDOM.render( &lt;Provider store=&#123;store&#125;&gt;</span><br><span class="line">  &lt;App /&gt;</span><br><span class="line">&lt;/Provider&gt;, <span class="built_in">document</span>.getElementById(<span class="string">'root'</span>));</span><br></pre></td></tr></table></figure></p>
+<p>Esse código ficou funcional. Claro que tem muitas coisas que poderíamos melhorar, mas quis deixar as coisas o mais simples possível. Contudo, só faltou um detalhe: digamos que eu tenha dois states. Dessa maneira, teríamos dois reducers. Como proceder?</p>
+<p>A primeira coisa que temos que saber é que a função createStore aceita somente um reducer. Por conta disso, existe um método muito conveniente no redux chamado combineReducers.</p>
+<p>Ele aceita um objeto como parâmetro, e cada propriedade desse objeto é um reducer. Digamos que agora temos o counterReducer, muito parecido com o que fizemos, e o nameReducer. Logo, poderíamos ter o seguinte código:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">counterReducer</span>(<span class="params">state = <span class="number">0</span>, action</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> param = action.parametro || <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">switch</span> (action.type) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">'INCREMENTAR'</span>:</span><br><span class="line">          <span class="keyword">return</span> state + param</span><br><span class="line">        <span class="keyword">case</span> <span class="string">'DECREMENTAR'</span>:</span><br><span class="line">          <span class="keyword">return</span> state - param</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">          <span class="keyword">return</span> state</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">nameReducer</span>(<span class="params">state = <span class="string">''</span>, action</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> param = action.parametro || state;</span><br><span class="line">    <span class="keyword">switch</span> (action.type) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">'ALTERAR'</span>:</span><br><span class="line">          <span class="keyword">return</span> param</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">          <span class="keyword">return</span> state</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Combinamos os dois reducers em um</span></span><br><span class="line"><span class="keyword">const</span> store = createStore(combineReducers(&#123;</span><br><span class="line">	counter: counterReducer,</span><br><span class="line">	name: nameReducer</span><br><span class="line">&#125;))</span><br></pre></td></tr></table></figure>
+<p>Agora o state não guarda apenas um valor, mas sim um objeto. Esse objeto possui duas propriedades (counter e name) que foram os nomes que demos ao passar o objeto para combineReducers().</p>
+<p>Isso significa que antes, para pegar um valor do state, fazíamos <code>let counter = useSelector(state =&gt; state)</code>. Agora esse código deve mudar, pois cada valor está dentro de sua respectiva propriedade.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> counter = useSelector(<span class="function"><span class="params">state</span> =&gt;</span> state.counter)</span><br><span class="line"><span class="keyword">let</span> name = useSelector(<span class="function"><span class="params">state</span> =&gt;</span> state.name)</span><br></pre></td></tr></table></figure>
+<p>Vamos testar?</p>
+<p>Mudei o nome do componente App para Counter e acrescentei o Name. Segue código comentado</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'./index.css'</span>;</span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> serviceWorker <span class="keyword">from</span> <span class="string">'./serviceWorker'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Importei o combineReducers</span></span><br><span class="line"><span class="keyword">import</span> &#123; createStore, combineReducers &#125;  <span class="keyword">from</span> <span class="string">'redux'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; Provider, useSelector, useDispatch &#125; <span class="keyword">from</span> <span class="string">'react-redux'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Criei dois reducers</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">counterReducer</span>(<span class="params">state = <span class="number">0</span>, action</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> param = action.parametro || <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">switch</span> (action.type) &#123;</span><br><span class="line">      <span class="keyword">case</span> <span class="string">'INCREMENTAR'</span>:</span><br><span class="line">        <span class="keyword">return</span> state + param</span><br><span class="line">      <span class="keyword">case</span> <span class="string">'DECREMENTAR'</span>:</span><br><span class="line">        <span class="keyword">return</span> state - param</span><br><span class="line">      <span class="keyword">default</span>:</span><br><span class="line">        <span class="keyword">return</span> state</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">nameReducer</span>(<span class="params">state = <span class="string">'Daniel'</span>, action</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> param = action.parametro || state;</span><br><span class="line">  <span class="keyword">switch</span> (action.type) &#123;</span><br><span class="line">      <span class="keyword">case</span> <span class="string">'ALTERAR'</span>:</span><br><span class="line">        <span class="keyword">return</span> param</span><br><span class="line">      <span class="keyword">default</span>:</span><br><span class="line">        <span class="keyword">return</span> state</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Combinamos os dois reducers em um só</span></span><br><span class="line"><span class="keyword">const</span> store = createStore(combineReducers(&#123;</span><br><span class="line">  counter: counterReducer,</span><br><span class="line">  name: nameReducer</span><br><span class="line">&#125;))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Counter = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// agora a função de callback, que é executada em cada dispatch, </span></span><br><span class="line">  <span class="comment">// deve retornar state.counter e sate.name.</span></span><br><span class="line">  <span class="keyword">let</span> counter = useSelector(<span class="function"><span class="params">state</span> =&gt;</span> state.counter)</span><br><span class="line">  <span class="keyword">let</span> name = useSelector(<span class="function"><span class="params">state</span> =&gt;</span> state.name)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> dispatch = useDispatch()</span><br><span class="line"></span><br><span class="line">  <span class="comment">// repare que, apesar de estar definido em outro componente, temos </span></span><br><span class="line">  <span class="comment">// acesso ao name que está no Redux</span></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt; </span><br><span class="line">    &lt;p&gt;counter: &#123;counter&#125; <span class="keyword">do</span> &#123;name&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">    &lt;button </span></span><br><span class="line"><span class="regexp">    	onClick=&#123; () =&gt; dispatch(&#123;type: 'INCREMENTAR'&#125;)&#125;&gt; </span></span><br><span class="line"><span class="regexp">    		Incrementar </span></span><br><span class="line"><span class="regexp">    &lt;/</span>button&gt;</span><br><span class="line">    &lt;button </span><br><span class="line">    	onClick=&#123; () =&gt; dispatch(&#123;<span class="attr">type</span>: <span class="string">'DECREMENTAR'</span>&#125;)&#125;&gt; </span><br><span class="line">    		Decrementar </span><br><span class="line">    &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;button </span></span><br><span class="line"><span class="regexp">    	onClick=&#123; () =&gt; dispatch(&#123;type: 'INCREMENTAR', parametro: 2&#125;)&#125;&gt; </span></span><br><span class="line"><span class="regexp">    		Incrementar </span></span><br><span class="line"><span class="regexp">    2&lt;/</span>button&gt;</span><br><span class="line">    &lt;button </span><br><span class="line">    	onClick=&#123; () =&gt; dispatch(&#123;<span class="attr">type</span>: <span class="string">'DECREMENTAR'</span>, <span class="attr">parametro</span>: <span class="number">2</span>&#125;)&#125;&gt; </span><br><span class="line">    		Decrementar </span><br><span class="line">    <span class="number">2</span>&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Name = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> name = useSelector(<span class="function"><span class="params">state</span> =&gt;</span> state.name);</span><br><span class="line">  <span class="keyword">const</span> dispatch = useDispatch();  </span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;div&gt; </span><br><span class="line">      &lt;input</span><br><span class="line">        type=<span class="string">"text"</span></span><br><span class="line">        value=&#123;name&#125;</span><br><span class="line">        onChange=&#123; (e) =&gt; dispatch(&#123;</span><br><span class="line">        	type: <span class="string">'ALTERAR'</span>, </span><br><span class="line">        	parametro: e.target.value&#125;)&#125;</span><br><span class="line">      /&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  )</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">ReactDOM.render( &lt;Provider store=&#123;store&#125;&gt;</span></span><br><span class="line"><span class="regexp">  &lt;Counter /</span>&gt;</span><br><span class="line">  &lt;Name /&gt;</span><br><span class="line">&lt;<span class="regexp">/Provider&gt;, document.getElementById('root'));</span></span><br></pre></td></tr></table></figure>
+<p><strong>Importante:</strong> viu como é facil a comunicação entre componentes? Repare que o componente Counter tem acesso ao valor name que foi definido em Name sem precisar criar props e criar um componente pai de todos só para armazenar o state. Lindo, não!?</p>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>É claro que dá para melhorar bastante. Dá pra dividir os reducers em arquivos separados e trabalhar com import e export. Dá pra criar uma função que retorna o objeto action. Dá também para criar um diretório só para armazenar as actions e outro diretório só para armazenar os reducers. Tem muita coisa que poderíamos fazer para não ficar num arquivo index.js gigante. Mas de qualquer forma, creio que meu objetivo foi cumprido, que foi desmistificar o Redux, que afinal de contas, nem é tão difícil assim.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr>
+    <h3>Comentários:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer style="background: #ccc">
+    <div class="container">
+        <div class="row">
+            <p class="copyright text-muted" style="margin: 0 0 15px;">
+                    &copy; 2019 - Tema original (<a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a>) editado por Daniel Tapias Morales
+                </p>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center" style="font-size: 14px;">
+                    
+                        <li>
+                            <a href="https://twitter.com/tapmorales" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.facebook.com/serfrontend/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/tapmorales" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/daniel-tapias-morales-87145621/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
+
+<!-- Bootstrap -->
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+<!-- Gallery -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'serfrontend';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>
