@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <!--Description-->
+    
+        <meta name="description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Daniel Tapias Morales">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Três dicas de performance javascript">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+    
+    <meta property="og:url" content="https://serfrontend.com/blog/tres-dicas-de-performance-javascript/index.html"> 
+    <!-- <meta property="og:image" content="http://serfrontend.com/imagens/capa.jpg">  -->
+    <meta property="og:site_name" content="SerFrontend"> 
+    <meta property="og:locale" content="pt_br"> 
+
+    <!--Open Graph Site Name-->
+    <!--<meta property="og:site_name" content="Blog sobre tecnologias Frontend"/>-->
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <link rel="canonical" href="https://serfrontend.com/blog/tres-dicas-de-performance-javascript/index.html">
+    <!--<script>
+        console.log('env', [object Object]);
+        console.log('path', blog/tres-dicas-de-performance-javascript/index.html);
+    </script>-->
+
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary">
+    
+        <meta name="twitter:site" content="https://twitter.com/tapmorales>">
+    
+    <meta name="twitter:title" content="Três dicas de performance javascript">
+    
+        <meta name="twitter:description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+    
+
+
+    
+        <meta itemprop="description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+    
+    
+    <meta itemprop="description" content>
+
+
+    <!-- Title -->
+    
+    
+    
+        <title>Três dicas de performance javascript - Blog sobre tecnologias Frontend</title>
+    
+
+
+
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" /> -->
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-73075491-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="/favicon.ico">
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<header id="topo">
+    <div class="container topo__container">
+        
+        <div class="topo__logo"><a href="/" title="Ser Frontend">
+            <img class="topo__logo__img" src="/img/logo_ser-frontend.svg" alt="Ser Frontend"></a>
+        </div>
+        
+        
+        <nav class="topo__mainMenu">
+            <ul>
+
+                
+                    <li>
+                        <a href="/blog">
+                            
+                                Blog
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/cursos">
+                            
+                                Cursos
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+            
+            </ul>
+
+        </nav>
+    </div>
+</header>
+<div id="navMob">
+    <a href="#">
+        <img src="/img/menu.svg" alt>
+    </a>
+</div>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg4.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Três dicas de performance javascript</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            09-07-2020
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                
+                
+                    <div class="col-lg-10 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                        
+                            
+
+
+<a href="/tags/javascript/">#javascript</a> <a href="/tags/frontend/">#frontend</a> <a href="/tags/performance/">#performance</a>
+
+
+                        
+                    </div>
+                
+            
+
+            <!-- Gallery -->
+            
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Neste post vamos aprender como evitar problemas de memory leaks em javascript no browser, evitando crashs indesejados.</p>
+<p><em>Memory leaks</em>, traduzido ao pé da letra significa vazamento de memória, o que, na prática significa que o Sistema operacional não está conseguindo gerenciar a memória utilizada de forma eficiente, o que pode fazer com que o Sistema fique lento ou até mesmo a aplicação (browser) trave.</p>
+<p>É verdade que na maioria das vezes em que programamos em javascript para rodar no browser não precisamos nos preocupar com esse tipo de problema pois há um mecanismo chamado <em>garbage collector</em> que “limpa” a memória de tempos em tempos quando há possibilidade: uma variável que não é mais utilizada, uma function que não será mais executada, etc.</p>
+<p>Se em algumas linguagens o programador precisa explicitamente dizer ao Sistema operacional quando determinada parte da memória pode ser limpa, há outras linguagens, como o javascript, em que o garbage collector faz o trabalho sujo pra gente. Mas nem sempre esse serviço pode ser feito de forma eficiente. E a raiz disso é o que chamamos referências indesejadas.</p>
+<p>##1 referência indesejada: objeto window (escopo global)</p>
+<p>Essa é fácil de entender. Para que o  garbage collector possa limpar uma variavel na memoria, nenhuma referencia à essa variavel pode existir no código, certo? O problema com variaveis e funções no escopo global é que esse tipo de dado pode ser lido ou executado em qualquer momento não previsto (click de um botão, tecla  pressionada, retorno de uma API etc). Tudo o que é global não pode ser limpo. Pois tudo o que pode ser lido ou executado por outra parte do código precisa estar disponível.</p>
+<p>De tempos em tempos o garbage collector procura por referencias na memória que não podem mais ser alcançadas por nenhuma outra parte do código e por esse motivo são marcadas como lixo e podem ser removidas.</p>
+<p>Evitar poliur o escopo global é fácil, mas as vezes fazemos isso sem querer, veja:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>) <span class="comment">//nesse caso, é Window</span></span><br><span class="line">    <span class="keyword">this</span>.variable = <span class="string">" global"</span>;</span><br><span class="line">&#125;</span><br><span class="line">foo()</span><br></pre></td></tr></table></figure>
+<p>Para evitar esse tipo de problema mascarado de normalidade, use “use stricit”.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="meta">"use strict"</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>) <span class="comment">//nesse caso, é undefiend</span></span><br><span class="line">    <span class="keyword">this</span>.variable = <span class="string">" global"</span>; <span class="comment">// vai gerar um erro, mas o escopo global está intacto</span></span><br><span class="line">&#125;</span><br><span class="line">foo()</span><br></pre></td></tr></table></figure>
+<p>##setInterval</p>
+<p>Todos nós que trabalhamos com javascript já precisamos criar uma função que fosse executada de tempos em tempos com o uso do setInterval. E não há nada de errado com isso, desde que você não se esqueça de limpar seu intervalo quando não for mais necessário.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">0</span></span><br><span class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  x++</span><br><span class="line">  <span class="keyword">if</span>(x &lt; <span class="number">10</span>) <span class="built_in">console</span>.log(x)</span><br><span class="line">&#125;, <span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
+<p>É fácil perceber nesse exemplo que será mostrado no console os números de 1 a 9 a cada 1 segundo. Porém, a função anônima continuará sendo executada enquanto a página estiver aberta e por esse motivo essa mesma função anônima não poderá ser limpa pelo garbage collector.</p>
+<p>Para corrigir isso, devemos sempre nos lembrar de limpar o interval com o uso do clearInterval</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> interval = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  x++</span><br><span class="line">  <span class="keyword">if</span>(x &lt; <span class="number">10</span>) <span class="keyword">return</span> <span class="built_in">console</span>.log(x)</span><br><span class="line">  interval = <span class="literal">null</span></span><br><span class="line">  clearInterval(interval)</span><br><span class="line">&#125;, <span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
+<p>Tente levar esse exemplo para um caso mais real, como um cronômetro com três botões, iniciar, pausar e parar.</p>
+<p>##Armazenar referencias do DOM</p>
+<p>As vezes queremos usar os métodos convenientes de uma array como filter ou map em uma coleção de objetos do DOM (nodeList ou HTMLCollection). Nesses casos precisamos armazenar as referencias do DOM numa array</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> dom = <span class="built_in">document</span>.querySelectorAll(<span class="string">'.item'</span>)</span><br><span class="line"><span class="keyword">const</span> arr = []</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; dom.length; i++) &#123; </span><br><span class="line">    arr[i] = dom[i]; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Nesse ponto você pode estar me chamando de antiquadro e se questionando se os meus conhecimentos de javascript são ultrapassados. Você pode ter pensado no seguinte código:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> dom = <span class="built_in">document</span>.querySelectorAll(<span class="string">'.item'</span>)</span><br><span class="line"><span class="keyword">const</span> arr = [...dom]</span><br></pre></td></tr></table></figure>
+<p>Muito mais elegante. Eu concordo. Mas eu pergunto: o seu código vai passar pelo babel?</p>
+<p><img src="../babel_performance.png" alt="tela do babel mostrando que o spread operator vira um loop for" title="tela do babel mostrando que o spread operator vira um loop for"></p>
+<p>Vou colar o trecho do código transpilado que nos interessa para esse exemplo</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> \<span class="title">_arrayLikeToArray</span>(<span class="params">arr, len</span>) </span>&#123; </span><br><span class="line">	<span class="keyword">if</span> (len == <span class="literal">null</span> || len &gt; arr.length) len = arr.length; </span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, arr2 = <span class="keyword">new</span> <span class="built_in">Array</span>(len); i &lt; len; i++) &#123; </span><br><span class="line">		arr2[i] = arr[i]; </span><br><span class="line">	&#125; </span><br><span class="line">	<span class="keyword">return</span> arr2; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>O bom e velho loop for é o que o babel faz por baixo dos panos. </p>
+<p>Mas vontando ao tópico do post, ao armazenar referências do DOM numa estrutura de dados como uma array ou um objeto, criamos uma referência para aquele elemento do DOM.</p>
+<p>Se removermos esse elemento da arvore do DOM precisamos lembrar de remover as referencias junto, caso contrário esta referência continuará ocupando espaço na memória, mesmo que o elemento em si já não exista mais na página.</p>
+<p>Há várias maneiras de fazer isso e a abordagem escolhida vai depender de caso a caso. Apenas tenha em mente que, se criou uma array com elementos do DOM e por algum motivo qualquer a árvore do DOM foi atualizada, atualize também a sua array com o DOM atualizado. Sendo assim, o espaço na memória que armazenava aquele objeto do DOM pode ser limpo.</p>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>Então é isso. Algumas dicas para você ter em mente quando precisar dar um gás na performance da sua aplicação web. </p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr>
+    <h3>Comentários:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer style="background: #ccc">
+    <div class="container">
+        <div class="row">
+            <p class="copyright text-muted" style="margin: 0 0 15px;">
+                    &copy; 2020 - Tema original (<a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a>) editado por Daniel Tapias Morales
+                </p>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center" style="font-size: 14px;">
+                    
+                        <li>
+                            <a href="https://twitter.com/tapmorales" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.facebook.com/serfrontend/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/tapmorales" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/daniel-tapias-morales-87145621/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
+
+<!-- Bootstrap -->
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+<!-- Gallery -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'serfrontend';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>

@@ -38,10 +38,6 @@ p {
   line-height: 1.5;
   margin: 30px 0;
 }
-p a,
-li a {
-  text-decoration: underline;
-}
 h1,
 h2,
 h3,
@@ -59,7 +55,7 @@ a:focus {
 }
 .normalPrice {
   text-decoration: line-through;
-  color: #808080;
+  color: #ac7f72;
 }
 .price {
   font-size: 2em;
@@ -68,21 +64,19 @@ a:focus {
 .thumbnail .priceContainer {
   font-size: 0.7em;
 }
+.getDiscount {
+  color: #fff;
+}
+.getDiscount:hover,
+.getDiscount:focus {
+  color: #f34e2a;
+}
 .thumbnail img {
   display: block;
   max-width: 100%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
-}
-.thumbnail .descontoContainer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #f34e2a;
-  padding: 5px 10px;
-  color: #fff;
-  font-size: 14px;
 }
 .course-overview .glyphicon {
   font-size: 1.7em;
