@@ -15,7 +15,7 @@ Neste post vamos aprender como evitar problemas de memory leaks em javascript no
 
 Se em algumas linguagens o programador precisa explicitamente dizer ao Sistema operacional quando determinada parte da memória pode ser limpa, há outras linguagens, como o javascript, em que o garbage collector faz o trabalho sujo pra gente. Mas nem sempre esse serviço pode ser feito de forma eficiente. E a raiz disso é o que chamamos referências indesejadas.
 
-##1 referência indesejada: objeto window (escopo global)
+## 1 referência indesejada: objeto window (escopo global)
 
 Essa é fácil de entender. Para que o  garbage collector possa limpar uma variavel na memoria, nenhuma referencia à essa variavel pode existir no código, certo? O problema com variaveis e funções no escopo global é que esse tipo de dado pode ser lido ou executado em qualquer momento não previsto (click de um botão, tecla  pressionada, retorno de uma API etc). Tudo o que é global não pode ser limpo. Pois tudo o que pode ser lido ou executado por outra parte do código precisa estar disponível.
 
@@ -43,7 +43,7 @@ foo()
 {% endcodeblock %}
 
 
-##setInterval
+## setInterval
 
 Todos nós que trabalhamos com javascript já precisamos criar uma função que fosse executada de tempos em tempos com o uso do setInterval. E não há nada de errado com isso, desde que você não se esqueça de limpar seu intervalo quando não for mais necessário.
 
@@ -71,7 +71,7 @@ let interval = setInterval(function(){
 Tente levar esse exemplo para um caso mais real, como um cronômetro com três botões, iniciar, pausar e parar.
 
 
-##Armazenar referencias do DOM
+## Armazenar referencias do DOM
 
 As vezes queremos usar os métodos convenientes de uma array como filter ou map em uma coleção de objetos do DOM (nodeList ou HTMLCollection). Nesses casos precisamos armazenar as referencias do DOM numa array
 
@@ -92,7 +92,7 @@ const arr = [...dom]
 
 Muito mais elegante. Eu concordo. Mas eu pergunto: o seu código vai passar pelo babel?
 
-![tela do babel mostrando que o spread operator vira um loop for](../babel_performance.png "tela do babel mostrando que o spread operator vira um loop for")
+![tela do babel mostrando que o spread operator vira um loop for](../images/tres-dicas-de-performance-javascript/babel_performance.png "tela do babel mostrando que o spread operator vira um loop for")
 
 Vou colar o trecho do código transpilado que nos interessa para esse exemplo
 
