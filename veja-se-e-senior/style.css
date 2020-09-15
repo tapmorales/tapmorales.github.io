@@ -1,5 +1,5 @@
 html{
-    height: calc(100% - 4.5em);
+    height: calc(100% - 5.75em);
 }
 
 @media screen and (max-width: 480px){
@@ -22,12 +22,15 @@ a:hover{
 }
 body{
     background-color: #442245;
+    /* background-color: #0a4249; */
     color: #c1bccd;
     text-align: center;
     margin: 0;
     padding: 1em;
     box-sizing: border-box;
     background-image: linear-gradient(165deg, #47274c 50%, transparent 50%);
+    /* background-image: linear-gradient(165deg, #06373d 50%, transparent 50%); */
+    
     height: 100%;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 300;
@@ -54,7 +57,9 @@ input[type="radio"]{
     flex-direction: column;
     padding: .5em 2em;
     background: rgba(255, 255, 255, .65);
+    /* background: #0d5155; */
     color: #442245;
+    /* color: #fefff0; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
@@ -62,6 +67,7 @@ input[type="radio"]{
 #congrats{
     opacity: 0;
     font-size: 2em;
+    color: #ffcf00
 }
 
 .ans{
@@ -90,6 +96,7 @@ label:first-child:after, label:last-child:after{
     width: 1em;
     height: 1em;
     background-color: #af67b1;
+    /* background-color: #c5d2ab; */
 }
 label:first-child{
     padding-left: 2em;
@@ -101,7 +108,7 @@ label:last-child{
 }
 label:first-child:after{
     left: 0;
-}
+}  
 label:last-child:after{
     right: 0;
 }
@@ -113,7 +120,9 @@ label:last-child:after{
 #heigth:checked ~ main [for="heigth"]:first-child:after,
 #height:checked ~ main [for="height"]:last-child:after{
     background-color: #441a45;
-    box-shadow: 0 0 0 2px #bcafbc, 0 0 0 5px #442245;
+    /* background-color: #d6ff00; */
+    box-shadow: 0 0 0 2px #bcafbc, 0 0 0 5px #442245;    
+    /* box-shadow: 0 0 0 2px #bcafbc, 0 0 0 5px #d6ff00;     */
 }
 
 #length:checked ~ #width:checked ~ #height:checked ~ main #congrats {
@@ -129,6 +138,6 @@ footer{
     text-align: center;
     color: #97739d;
     background-color: rgba(0,0,0, .15);
-    height: 4.5em;
+    height: 5.75em;
     box-sizing: border-box;
 }
