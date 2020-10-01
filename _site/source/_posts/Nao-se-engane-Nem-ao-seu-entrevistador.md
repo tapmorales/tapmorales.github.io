@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: Não se engane. Nem ao seu entrevistador
-=======
-title: Não se engane Nem ao seu entrevistador
->>>>>>> 562b4c8da066a624eec84e03224a9f9f8a3c6197
 date: 2020-10-01 20:01:29
 tags:
 - carreira
