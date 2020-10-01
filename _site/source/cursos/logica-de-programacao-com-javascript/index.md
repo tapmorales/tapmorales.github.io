@@ -2,9 +2,9 @@
 title: Crie seus primeiros códigos com Javascript
 subtitle: Aprenda Lógica de Programação e desenvolva suas habilidades resolvendo problemas reais.
 layout: curso
-linkUdemy: "https://www.udemy.com/logica-de-programacao-com-javascript-iniciando-no-frontend/?couponCode=PROSITE23"
+linkUdemy: "https://www.udemy.com/logica-de-programacao-com-javascript-iniciando-no-frontend/?couponCode=20201001"
 normalPrice: 129.99
-price: 23.99
+price: 24.90
 horas: 11
 aulas: 98
 secoes: 13
