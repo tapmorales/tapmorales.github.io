@@ -1,0 +1,98 @@
+@media screen and (min-width: 978px) {
+  .videoWrapper {
+    padding-bottom: 515px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .card {
+    width: 45%;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+  .card:nth-child(2n) {
+    margin: -45px 0 -45px auto;
+  }
+  #topo {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  #navMob {
+    display: none;
+  }
+  .topo__logo {
+    display: inline-block;
+  }
+  .topo__logo__img {
+    margin: 10px 0 0;
+    max-width: 70%;
+  }
+  .topo__container {
+    position: relative;
+  }
+  .container {
+    width: 940px;
+  }
+  .topo__mainMenu {
+    position: absolute;
+    right: 0;
+    top: 0.5em;
+    font-size: 1.1em;
+    font-weight: lighter;
+    width: 80%;
+  }
+  .topo__mainMenu ul {
+    text-align: right;
+  }
+  .bannerDestaque {
+    background-position: center bottom;
+    height: 250px;
+    padding-top: 12em;
+    font-size: 100%;
+  }
+  .bannerDestaque__titulo {
+    width: 70%;
+    margin-top: 1em;
+    text-shadow: 0.2em 0.2em 2px #213a36;
+    font-size: 2.2em;
+    margin-top: 0;
+  }
+  .videoWrapper {
+    transform: translateY(-80px);
+    top: 0;
+  }
+  .video {
+    border-bottom: none;
+  }
+}
+.post-heading-course .btn {
+  width: 96%;
+  margin-top: 5px;
+}
+@media screen and (min-width: 400px) {
+  .post-heading-course .btn {
+    width: 48%;
+  }
+  .post-heading-course .btn:last-child {
+    width: 96%;
+    width: calc(96% + 5px);
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 630px) {
+  .post-heading-course .btn,
+  .post-heading-course .btn:last-child {
+    width: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .course-preview .col-xs-6 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .course-preview:nth-child(odd) .col-xs-6 {
+    clear: left;
+  }
+}
