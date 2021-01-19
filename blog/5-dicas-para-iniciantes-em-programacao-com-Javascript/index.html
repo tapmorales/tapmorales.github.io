@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <!--Description-->
+    
+        <meta name="description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Daniel Tapias Morales">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="5 dicas para iniciantes em programação com Javascript">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+    
+    <meta property="og:url" content="https://serfrontend.com/blog/5-dicas-para-iniciantes-em-programacao-com-Javascript/index.html"> 
+    <!-- <meta property="og:image" content="http://serfrontend.com/imagens/capa.jpg">  -->
+    <meta property="og:site_name" content="SerFrontend"> 
+    <meta property="og:locale" content="pt_br"> 
+
+    <!--Open Graph Site Name-->
+    <!--<meta property="og:site_name" content="Blog sobre tecnologias Frontend"/>-->
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <link rel="canonical" href="https://serfrontend.com/blog/5-dicas-para-iniciantes-em-programacao-com-Javascript/index.html">
+    <!--<script>
+        console.log('env', [object Object]);
+        console.log('path', blog/5-dicas-para-iniciantes-em-programacao-com-Javascript/index.html);
+    </script>-->
+
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary">
+    
+        <meta name="twitter:site" content="https://twitter.com/serfrontend>">
+    
+    <meta name="twitter:title" content="5 dicas para iniciantes em programação com Javascript">
+    
+        <meta name="twitter:description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+    
+
+
+    
+        <meta itemprop="description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+    
+    
+    <meta itemprop="description" content>
+
+
+    <!-- Title -->
+    
+    
+    
+        <title>5 dicas para iniciantes em programação com Javascript - Blog sobre tecnologias Frontend</title>
+    
+
+
+
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" /> -->
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-73075491-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="/favicon.ico">
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<header id="topo">
+    <div class="container topo__container">
+        
+        <div class="topo__logo"><a href="/" title="serfrontend">
+            <img class="topo__logo__img" src="/img/logo_ser-frontend.svg" alt="serfrontend"></a>
+        </div>
+        
+        
+        <nav class="topo__mainMenu">
+            <ul>
+
+                
+                    <li>
+                        <a href="/blog">
+                            
+                                Blog
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/cursos">
+                            
+                                Cursos
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+            
+            </ul>
+
+        </nav>
+    </div>
+</header>
+<div id="navMob">
+    <a href="#">
+        <img src="/img/menu.svg" alt>
+    </a>
+</div>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg4.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>5 dicas para iniciantes em programação com Javascript</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            31-10-2020
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                
+                
+                    <div class="col-lg-10 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                        
+                            
+
+
+<a href="/tags/javascript/">#javascript</a>
+
+
+                        
+                    </div>
+                
+            
+
+            <!-- Gallery -->
+            
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Quando estamos ingressando na área de programação, alguns conceitos fundamentais ficam bem obscuros na nossa mente. Por exemplo, quando estamos iniciando na carreira, termos como “linguagem fortemente tipada” ou “instâncias de classes”, por mais que sejam o arroz com feijão para quem já trabalha na área a algum tempo, não são tão claros para quem está iniciando.</p>
+<p>Este artigo é voltado para as pessoas que estão começando na área. Pretendo explicar de forma simples alguns termos que parecem ser complexos, mas que na verdade são bem mais simples do que parecem.</p>
+<p>Simbora?</p>
+<h2 id="1-Tipo-de-dados-ou-datatypes"><a href="#1-Tipo-de-dados-ou-datatypes" class="headerlink" title="1 - Tipo de dados ou datatypes"></a>1 - Tipo de dados ou datatypes</h2><p>Antes de falarmos sobre tipos de dados, vamos valar de variáveis.<br>Uma variável é um lugar na memória onde podemos armazenar valores, certo? Mas podemos armazenar qualquer valor em uma varíavel? Em javascript, sim.</p>
+<p>Podemos armazenar uma string, um número, um booleano, undefined, uma array, um objeto, uma função, um symbol. Enfim, em javascript podemos armazenar qualquer valor numa variável. Podemos inclusive armazenar valores de tipos diferentes na mesma variável. Mas você não vai querer fazer isso, acredite.</p>
+<p>Ou seja, em javascript, se fizermos:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> foo = <span class="literal">null</span></span><br><span class="line">foo = <span class="string">"texto"</span></span><br><span class="line">foo = <span class="number">10</span></span><br></pre></td></tr></table></figure>
+<p>Não haverá qualquer problema de sintaxe e o código vai funcionar sem problemas, mas não devemos trocar deliberadamente os tipos de dados que armazenamos para não obtermos resultados indesejados.</p>
+<p>Quando falamos “tipos de dados” em programação, estamos nos refereindo sobre tipos de valores que podemos armazenar numa variável ou num parâmetro de função.</p>
+<p>Em javascript há 7 tipos primitivos:</p>
+<ul>
+<li>string</li>
+<li>number</li>
+<li>boolean</li>
+<li>null</li>
+<li>undefined</li>
+<li>symbol (somente no ES2015 +)</li>
+<li>bigint (sinceramente, nunca precisei usar, e não é incomum achar em sites de renome que há apenas 6 tipos primitivos em javascript, e não 7).</li>
+</ul>
+<p>Em javascript, tudo que não é um valor primitivo, é objeto.</p>
+<p>Uma Array? É objeto. </p>
+<p>Uma function? É um objeto - com a incrível capacidade de ser executado mas ainda assim, é um objeto. </p>
+<p>Um Set? Objeto também. </p>
+<p>Um Object? Esse não precisa nem falar né? 🤪</p>
+<p>Então quando você ouvir falar em tipos de dados saiba que é simplesmente uma maneira de identificar que tipo de valor uma informação é.</p>
+<p><strong>Importante</strong>: Há diferentes tipos em diferentes linguagens. Mas em javascript temos os 7 tipos primitivos e mais os objetos.</p>
+<p>A próxima dica é quase que uma continuação da dica número 1. Eu estou falando de: </p>
+<h2 id="2-–-Linguagem-fortemente-ou-fracamente-tipada"><a href="#2-–-Linguagem-fortemente-ou-fracamente-tipada" class="headerlink" title="2 – Linguagem fortemente ou fracamente tipada."></a>2 – Linguagem fortemente ou fracamente tipada.</h2><p>Em algumas linguagens de programação precisamos informar qual o tipo de dado que uma variável irá armazenar no momento de sua declaração. </p>
+<p>Por exemplo: em typescript, temos a seguinte sintaxe:</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> meuTexto: <span class="built_in">string</span></span><br></pre></td></tr></table></figure>
+<p>Ou seja, falamos que esta variável aceita receber apenas strings.</p>
+<p>Nesse caso específico não é uma boa prática deixar da forma acima devido a um conceito chamado “inferência de tipos”. Ou seja, em typescript, basta criar a variável normalmente com o seu valor que o typescript irá saber que se trata de uma variável que aceita apenas strings.</p>
+<p>Veja outro exemplo em typescript:</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isOdd</span>(<span class="params">n: <span class="built_in">number</span></span>): <span class="title">boolean</span> </span>&#123; <span class="keyword">return</span> n % <span class="number">2</span> &#125;</span><br></pre></td></tr></table></figure>
+<p>Repare que estamos definindo o tipo de parâmetro que a função isOdd aceita além do tipo de retorno. Quando fazemos isso, podemos dizer que estamos tipando o parâmetro e o retorno da função.</p>
+<p>Há linguagens que essa tipagem explicita é obrigatória, portanto, dizemos que é fortemente tipada. Já o javascript, que é uma linguagem fracamente tipada, não nos obriga definir os tipos para nada.</p>
+<p>Para tornar o desenvolvimento com javascript um mais seguro com relação à tipagem, nasceu o Typescript, que é um superset que vai transformar um código typescript (opcionalmente tipado) em javascript (fracamente tipado)</p>
+<h2 id="3-Orientacao-a-objetos"><a href="#3-Orientacao-a-objetos" class="headerlink" title="3 - Orientação à objetos"></a>3 - Orientação à objetos</h2><p>Não, orientação à objetos <strong>não é uma forma de criar softwares arrastando objetos na tela</strong> como disse um “especialista” que deu entrevista pra rede globo.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EK49T77VQOQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Uma linguagem que trabalha com o paradigma orientação de objetos é uma linguagem que trabalha com alguns conceitos onde o pilar nesse tipo de programação é que tudo é um objeto. E por objeto entende-se um conjunto de características (propriedades) e funções (métodos).</p>
+<p>Mas se tudo é objeto, o que são as classes? Pois bem, uma classe é como se fosse uma função que devolve um objeto com propriedades e métodos pré-definidos.</p>
+<p>No javascript, por exemplo, quando fazemos:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> hoje = <span class="keyword">new</span> <span class="built_in">Date</span>()</span><br></pre></td></tr></table></figure>
+<p>Estamos criando um objeto (chamado hoje) a partir de uma classe (Date). Esse objeto possui várias propriedades e métodos, como getDate(), getFullYear() e mais um monte de métodos.<br>Repare o que aconteceu aqui: criamos um objeto novinho com várias coisas pré-definidas.</p>
+<p>Numa linguagem orientada a objetos há a possibilidade de criarmos as nossas próprias classes que, ao serem utilizadas, vão devolver objetos.</p>
+<p>Exemplo clássico:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> eu = <span class="keyword">new</span> Pessoa()</span><br></pre></td></tr></table></figure>
+<p>Ou seja, a classe Pessoa cria e retorna um objeto, que agora está armazenado na const eu.</p>
+<h2 id="4-DOM"><a href="#4-DOM" class="headerlink" title="4 - DOM"></a>4 - DOM</h2><p>Também respondo muitas dúvidas sobre esse tal de DOM.</p>
+<p>Entendê-lo não é complicado. DOM (Document Object Model) nada mais é do que a representação em formado de objetos daquilo que o usuário vê na tela, ou seja, do html. Sempre que você digita “document.” Está, na verdade, acessando o DOM.</p>
+<p>A confusão se dá quando elementos do DOM são armazenado em variáveis. Se esse é o seu caso, não se preocupe. É normal.</p>
+<p>Uma dica que posso te dar é criar o seu código primeiro sem armazenar nada em variável.<br>Espalhe document.getElementById, document.querySelector etc pelo seu código. Depois, tente colocar elementos repetidos numa variável e ir substituindo onde necessário. Lembra que em javascript uma variável pode armazenar qualquer valor? Pois bem, isso inclui referencias do DOM.</p>
+<h2 id="5-A-ordem-importa"><a href="#5-A-ordem-importa" class="headerlink" title="5 - A ordem importa."></a>5 - A ordem importa.</h2><p>Eu vejo muita gente que está iniciando na área errar nesse ponto.<br>Imagine um formulário com um input e um botão. Imaginou? Agora veja o seguinte código.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> valor = <span class="built_in">document</span>.querySelector(<span class="string">"input"</span>).value</span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">"form"</span>).addEventListener(<span class="string">"submit"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">	e.preventDefault()</span><br><span class="line">	<span class="built_in">console</span>.log(valor)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>O que vai acontecer quando o usuário digitar um valor no input e pressionar o botão? Se respondeu que não será mostrado nada no console, parabéns! É isso mesmo.<br>Esse código está mal pois no momento que o código é executado o input estará vazio e “valor” armazenará uma string vazia.</p>
+<p>Mesmo que depois o usuário digite algo no input, esse “algo” não será refletido na variável. Por isso nada será exibido no console. O que queremos fazer, na verdade, é guardar o texto digitado na variável apenas quando o usuário clicar no botão, e não antes.<br>É isso por hoje. Espero que tenham curtido. </p>
+<h3 id="Dica-extra"><a href="#Dica-extra" class="headerlink" title="Dica extra:"></a>Dica extra:</h3><p>Não se esqueça que um sinal de igual é operador de atribuição e dois ou três iguais é operador de comparação.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> isValid = <span class="literal">false</span></span><br><span class="line"><span class="keyword">if</span>(isValid = <span class="literal">true</span>)&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"é válido"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Não só vai executar o trecho do bloco if como também vai inserir true na isValid que antes era false.</p>
+<p>Cuidado com isso. Não cometa essa falha terrivelmente amadora.</p>
+<p>PS: Fiz exatamente isso no trabalho poucos dias antes de escrever esse artigo. Hahaha. Somos humanos. Cometemos falhas.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr>
+    <h3>Comentários:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer style="background: #ccc; margin-top: 3em;">
+    <div class="container">
+        <div class="row">
+            <p class="copyright text-muted" style="margin: 0 0 15px;">
+                    &copy; 2020 - Tema original (<a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a>) editado por Daniel Tapias Morales
+                </p>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center" style="font-size: 14px;">
+                    
+                        <li>
+                            <a href="https://twitter.com/serfrontend" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.facebook.com/serfrontend/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/tapmorales" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/serfrontend" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
+
+<!-- Bootstrap -->
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+<!-- Gallery -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'serfrontend';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>
