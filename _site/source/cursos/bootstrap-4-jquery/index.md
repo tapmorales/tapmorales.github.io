@@ -2,9 +2,9 @@
 title: Web design responsivo com Bootstrap 4 e jQuery
 subtitle: "Crie aplicações web muito mais rapidamente com o Bootstrap 4 e o Jquery. Projetos reais e aulas 100% práticas."
 layout: curso
-linkUdemy: "https://www.udemy.com/curso-bootstrap-4-e-jquery-desenvolvimento-web-responsivo/?couponCode=CP-DESC-20210101"
+linkUdemy: "https://www.udemy.com/curso-bootstrap-4-e-jquery-desenvolvimento-web-responsivo/?couponCode=CP-DESC-20210202"
 normalPrice: 84.99
-price: 24.90
+price: 27.90
 horas: 19
 aulas: 136
 secoes: 19
