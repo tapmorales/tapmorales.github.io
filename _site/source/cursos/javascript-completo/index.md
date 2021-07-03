@@ -2,7 +2,7 @@
 title: Seja Mestre em Javascript
 subtitle: "Desenvolva aplicações reais com Javascript com este curso 100% prático e direto ao ponto. Aprenda de verdade Javascript."
 layout: curso
-linkUdemy: "https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=CP-DESC-20210603"
+linkUdemy: "https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=CP-DESC-20210703"
 normalPrice: 114.99
 price: 27.90
 horas: 35
