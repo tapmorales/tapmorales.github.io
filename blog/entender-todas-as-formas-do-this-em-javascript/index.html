@@ -2,7 +2,9 @@
 <html lang="pt">
 
 <!-- Head tag -->
-<head><meta name="generator" content="Hexo 3.8.0">
+
+<head>
+    <meta name="generator" content="Hexo 3.8.0">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,36 +12,39 @@
     <meta name="robots" content="index, follow">
 
     <!--Description-->
-    
-        <meta name="description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
-    
+
+    <meta name="description"
+        content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
+
 
     <!--Author-->
-    
-        <meta name="author" content="Daniel Tapias Morales">
-    
+
+    <meta name="author" content="Daniel Tapias Morales">
+
 
     <!--Open Graph Title-->
-    
-        <meta property="og:title" content="Entender todas as formas do this em javascript">
-    
+
+    <meta property="og:title" content="Entender todas as formas do this em javascript">
+
 
     <!--Open Graph Description-->
-    
-        <meta property="og:description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
-    
-    <meta property="og:url" content="https://serfrontend.com/blog/entender-todas-as-formas-do-this-em-javascript/index.html"> 
+
+    <meta property="og:description"
+        content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
+
+    <meta property="og:url"
+        content="https://serfrontend.com/blog/entender-todas-as-formas-do-this-em-javascript/index.html">
     <!-- <meta property="og:image" content="http://serfrontend.com/imagens/capa.jpg">  -->
-    <meta property="og:site_name" content="SerFrontend"> 
-    <meta property="og:locale" content="pt_br"> 
+    <meta property="og:site_name" content="SerFrontend">
+    <meta property="og:locale" content="pt_br">
 
     <!--Open Graph Site Name-->
     <!--<meta property="og:site_name" content="Blog sobre tecnologias Frontend"/>-->
 
     <!--Type page-->
-    
-        <meta property="og:type" content="article">
-    
+
+    <meta property="og:type" content="article">
+
 
     <link rel="canonical" href="https://serfrontend.com/blog/entender-todas-as-formas-do-this-em-javascript/index.html">
     <!--<script>
@@ -49,31 +54,34 @@
 
 
     <!--Page Cover-->
-    
+
 
     <meta name="twitter:card" content="summary">
-    
-        <meta name="twitter:site" content="https://twitter.com/serfrontend>">
-    
+
+    <meta name="twitter:site" content="https://twitter.com/serfrontend>">
+
     <meta name="twitter:title" content="Entender todas as formas do this em javascript">
-    
-        <meta name="twitter:description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
-    
+
+    <meta name="twitter:description"
+        content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
 
 
-    
-        <meta itemprop="description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
-    
-    
-    <meta itemprop="description" content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
+
+
+    <meta itemprop="description"
+        content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
+
+
+    <meta itemprop="description"
+        content="Entenda a natureza do escopo léxico e dinâmico do javascript e evite possíveis dores de cabeça">
 
 
     <!-- Title -->
-    
-    
-    
-        <title>Entender todas as formas do this em javascript - Blog sobre tecnologias Frontend</title>
-    
+
+
+
+    <title>Entender todas as formas do this em javascript - Blog sobre tecnologias Frontend</title>
+
 
 
 
@@ -89,7 +97,9 @@
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -102,12 +112,14 @@
     <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" /> -->
 
     <!-- Google Analytics -->
-    
+
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-73075491-3', 'auto');
         ga('send', 'pageview');
@@ -117,10 +129,10 @@
 
 
     <!-- favicon -->
-    
+
     <link rel="icon" href="/favicon.ico">
-    
-	
+
+
 </head>
 
 
@@ -128,209 +140,525 @@
 
     <!-- Menu -->
     <!-- Navigation -->
-<header id="topo">
-    <div class="container topo__container">
-        
-        <div class="topo__logo"><a href="/" title="serfrontend">
-            <img class="topo__logo__img" src="/img/logo_ser-frontend.svg" alt="serfrontend"></a>
-        </div>
-        
-        
-        <nav class="topo__mainMenu">
-            <ul>
+    <header id="topo">
+        <div class="container topo__container">
 
-                
+            <div class="topo__logo"><a href="/" title="serfrontend">
+                    <img class="topo__logo__img" src="/img/logo_ser-frontend.svg" alt="serfrontend"></a>
+            </div>
+
+
+            <nav class="topo__mainMenu">
+                <ul>
+
+
                     <li>
                         <a href="/blog">
-                            
-                                Blog
-                            
+
+                            Blog
+
                         </a>
                     </li>
-                
+
                     <li>
                         <a href="/cursos">
-                            
-                                Cursos
-                            
+
+                            Cursos
+
                         </a>
                     </li>
-                
+
                     <li>
                         <a href="/tags">
-                            
-                                Tags
-                            
+
+                            Tags
+
                         </a>
                     </li>
-                
-            
-            </ul>
 
-        </nav>
+
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <div id="navMob">
+        <a href="#">
+            <img src="/img/menu.svg" alt>
+        </a>
     </div>
-</header>
-<div id="navMob">
-    <a href="#">
-        <img src="/img/menu.svg" alt>
-    </a>
-</div>
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in your post front-matter: cover -->
+    <!-- Set your background image for this header in your post front-matter: cover -->
 
-<header class="intro-header" style="background-image: url('/img/home-bg4.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>Entender todas as formas do this em javascript</h1>
-                    
-                    <span class="meta">
-                        <!-- Date and Author -->
-                        
-                        
-                            27-09-2017
-                        
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-            <!-- Tags and categories -->
-           
-                
-                
-                    <div class="col-lg-10 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                        
-                            
-
-
-<a href="/tags/javascript/">#javascript</a>
-
-
-                        
-                    </div>
-                
-            
-
-            <!-- Gallery -->
-            
-            
-
-            <!-- Post Main Content -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Quando estamos aprendendo Javascript uma das coisas mais complicadas para entender (pelo menos foi para mim) é a natureza dinâmica do escopo do “this”.</p>
-<p>Eu sempre ficava na dúvida se aquele this que eu estava escrevendo no código representava o que eu queria que representasse. E isso me fez escrever muitos consoles.log() e colocar vários breakpoints no meu código que hoje se tornaram desnecessários na maior parte das vezes.</p>
-<p>O meu intuito com este artigo é elucidar as várias formas que o this se apresenta e mostrar alguns padrões de escrita no código que refletem diretamente no valor que será armazenado em this. </p>
-<p>Antes de responder o que o “this” está referenciando, precisamos responder várias questões previamente, a saber:</p>
-<ul><br>    <li>Estamos no escopo global?</li><br>    <li>Há presença da diretiva “use strict”?</li><br>    <li>Como a função foi executada? Normal? Com call() ou apply()?</li><br>    <li>Quando a função foi implementada, foi usado o bind()?</li><br>    <li>A função está atrelada a algum evento?</li><br>    <li>A função é literal ou arrow function?</li><br>    <li>A função está dentro de um objeto literal?</li><br>    <li>A função está dentro de um objeto criado a partir de uma função construtora ou classe?</li><br></ul>
-
-<p>Note que os itens acima não são excludentes, ou seja, o fato de responder positivamente para uma das perguntas não significa que não pode ser intercambiada com outra resposta positiva, como por exemplo, escrevi “this” dentro de uma função construtora que foi criada dentro de uma IIFE contendo a diretiva “use strict”.</p>
-<p>E ai? Estamos prontos para entender que raios este “this” representa? Então vamos começar.</p>
-<h2 id="This-no-escopo-global"><a href="#This-no-escopo-global" class="headerlink" title="This no escopo global"></a>This no escopo global</h2><p>O lugar mais fácil para entender o this é estando no escopo global ou ainda dentro de uma IIFE que foi executada pelo - advinha - escopo global. Nesses casos, o “this” representa o próprio escopo global que, no caso do javascript estar sendo interpretado por um browser, é o objeto window. Já se você estiver desenvolvendo para para o node o objeto “pai de todos” chama-se global. </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//window</span></span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//window</span></span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
-<p>Obs 1: Ao longo deste artigo vou me referir várias vezes ao objeto global, mas enteda que este é o objeto acima de todos que, no caso do browser é o window e no caso do node chama-se simplesmente global. Não confunda “objeto global” com o “global” do node, ok?<br>Obs 2: Vou supor que você está testando os códigos no console do browser, portanto, o seu objeto global é o window.</p>
-<p>O objeto global é onde ficam todas as variáveis e funções que são acessíveis por toda a aplicação. É por isso que alert(‘uma coisa’) ou window.alert(‘outra coisa’) são comandos válidos. Uma observação importante: as variáveis que ficam no objeto global são aquelas definidas com a palavra <code>var</code>. O mesmo não vale para <code>let</code> e <code> const</code>. Obrigado <a href="https://medium.com/@felquis/javascript-o-global-object-e-o-this-ceda36059cff" target="_blank" rel="noopener">@felquis</a></p>
-<p>Até aqui creio que não haja nenhuma novidade. A grande questão é quando usamos a diretiva <code>“use strict”</code> dentro de uma função, pois isso muda completamente o que o “this” representa:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//window</span></span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="meta">  "use strict"</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//undefined</span></span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
-<p>A diretiva “use strict” foi acrescentada na javascript para resolver algumas falhas da linguagem. Mais a frente veremos onde a sua ausência pode gerar problemas, mas por hora, vamos entender que dentro de uma função, seja auto-invocável ou não, a presença do “use strict” faz com que o “this” assuma o valor <code>undefined</code>.</p>
-<p>Um outro ponto que temos que prestar atenção é a partir de quem foi executada determinada função. Veja mais um exemplo:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  minhaFunc: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.minhaFunc(); <span class="comment">//obj</span></span><br><span class="line"></span><br><span class="line">minhaFunc(); <span class="comment">//window</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>Repare que está claro quando olhamos para a implementação da função quem é o this. Então vamos obscurecer um pouco as coisas.</p>
-<p>Atenção: O motivo de eu estar utilizando o “var” e não o “let” para criar algumas variáveis é que se você copiar e colar o código no console para testar, você não conseguirá criar duas variáveis com mesmo nome se usar o “let”. Utilizando o “var” pode copiar e colar a vontade para testar a saída no console.</p>
-<p>Voltando ao código:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  minhaFunc2: minhaFunc</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.minhaFunc2(); <span class="comment">//obj</span></span><br><span class="line"></span><br><span class="line">minhaFunc(); <span class="comment">//window</span></span><br></pre></td></tr></table></figure></p>
-<p>Repare que agora atrelamos a <b>mesma</b> função <code>minhaFunc()</code> como método do objeto, ou seja, temos agora <b>uma única função</b> e  portando, apenas um <code>console.log(this)</code>. Mas isso não impede que a natureza dinâmica do this venha brilhar aos nossos olhos. A lição aprendida aqui é que não importa COMO você escreveu a função literal. O que importa é QUEM chamou esta função. Isso porque o escopo de funções literais é dinâmico. O mesmo “this” pode representar o window ou qualquer outro objeto, tudo depende de quem executou a função.</p>
-<h2 id="Mas-da-pra-mudar-o-this"><a href="#Mas-da-pra-mudar-o-this" class="headerlink" title="Mas dá pra mudar o this?"></a>Mas dá pra mudar o this?</h2><p>Funções são objetos com a incrível capacidade de serem executados. A forma mais comum de executar uma função é esta que acabou de passar pela sua cabeça:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">minhaFunc();</span><br></pre></td></tr></table></figure>
-<p>Só isso. Basta abrir e fechar parenteses que a mágica acontece.</p>
-<p>Mas não existe só uma maneira de executarmos uma função. Também podemos fazer assim:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">minhaFunc.call(<span class="keyword">this</span>) </span><br><span class="line"></span><br><span class="line">minhaFunc.apply(<span class="keyword">this</span>)</span><br></pre></td></tr></table></figure>
-<p>Já vamos ver a diferença entre eles. Por hora, entenda qualquer um dos dois como uma maneira de executar uma função informando programaticamente quem deve ser o “this”. Veja:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">minhaFunc(); <span class="comment">//window</span></span><br><span class="line">minhaFunc.call(obj); <span class="comment">//obj</span></span><br><span class="line">minhaFunc.apply(obj); <span class="comment">//obj</span></span><br></pre></td></tr></table></figure>
-<p>Ou seja, eu consigo passar por parâmetro quem deve ser o this dentro da função. Nesse momento você pode estar se perguntando: Mas e se <code>minhaFunc()</code> espera receber parâmetros? E é aí que reside a diferença entre o call() e o apply(). Este recebe como segundo parâmetro um array de argumentos. Aquele recebe os demais argumentos logo depois do this. É mais fácil ver com um exemplo:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//executa a função minhaFunc mudando o escopo do this e passando por parâmetro três valores: true, "ola mundo", 10</span></span><br><span class="line">minhaFunc(obj, <span class="literal">true</span>, <span class="string">"ola mundo"</span>, <span class="number">10</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//executa a função minhaFunc mudando o escopo do this e passando por parâmetro três valores: true, "ola mundo", 10, mas desta vez dentro de um array</span></span><br><span class="line">minhaFunc(obj, [<span class="literal">true</span>, <span class="string">"ola mundo"</span>, <span class="number">10</span>]);</span><br></pre></td></tr></table></figure>
-<p>Tanto call() quanto apply() são primos muito próximos. A única diferença é COMO passar os argumento para a função sendo executada.</p>
-<p>Se você reparar bem nos exemplos acima, o responsável por informar quem deve ser o “this” é quem está executando a função. Mas também é possível alterarmos o “this” no momento da implementação da função. Veja mais este exemplo:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> minhaFuncComBind = minhaFunc.bind(obj);</span><br><span class="line"></span><br><span class="line">minhaFuncComBind(); <span class="comment">//obj</span></span><br></pre></td></tr></table></figure>
-<p>Repare que exceto pelo nome da função que possui a palavra Bind por motivos didáticos, quem utiliza a função não tem como saber qual será o contexto do this. Veja um exemplo mais obscuro:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> minhaFunc2 = minhaFunc.bind(obj);</span><br><span class="line"></span><br><span class="line">minhaFunc2(); <span class="comment">//obj</span></span><br></pre></td></tr></table></figure>
-<p>Perceba que o <code>bind()</code> muda o contexto do this na implementação da função (tomando emprestado outra função: minhaFunc), mas essa implementação pode ficar escondida de quem está usando a função.</p>
-<p>Um uso muito comum para o bind() é nos ouvistes de eventos. Veja:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>, minhaFunc);</span><br></pre></td></tr></table></figure>
-<p>No exemplo acima o this por padrão é o dono do evento, ou seja, o elemento o qual foi atrelado o evento. Faça um teste e veja que ao clicar no elemento este é mostrado no console. Para testar rapidamente, escreva no console: </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">"click"</span>, minhaFunc);</span><br></pre></td></tr></table></figure>
-
-Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso código inserindo o bind na jogada?
-
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>, minhaFunc.bind(obj));</span><br></pre></td></tr></table></figure>
-<p>Agora o próprio objeto é mostrado no console (ou qualquer outro elemento que tiver sido passado por parâmentro para o bind, até mesmo uma string funcionaria, mesmo que seja um exemplo com pouquíssima aplicação prática).</p>
-<p>Pensando um pouco mais em tudo que vimos até agora, o que será mostrado no console no exemplo abaixo</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>, minhaFunc.bind(<span class="keyword">this</span>));</span><br></pre></td></tr></table></figure>
-<p>Perceba que o this do exemplo acima que foi passado por parâmetro no bind() está fora da função atrelada, portanto, esse this, que é dinâmico, pode representar o window (se no escopo global, sem a diretiva “use strict” ou undefined se no escopo global com a diretiva “use strict”).</p>
-<p>Mas será que existe alguma maneira de mudarmos o escopo dinâmico do “this”? em outras palavras, podemos impedir que o this sofra variações dependendo do contexto em que foi executado?</p>
-<h2 id="O-escopo-lexico-das-arrows-functions"><a href="#O-escopo-lexico-das-arrows-functions" class="headerlink" title="O escopo léxico das arrows functions"></a>O escopo léxico das arrows functions</h2><p>No EcmaScript2015 (antigamente chamado de ES6) foi introduzido o conceito de Arrow function. A princípio pode parecer somente uma maneira mais enxuta de escrever funções (e é mesmo), mas também é uma maneira de deixarmos o this com escopo léxico, ou seja, não mais dinâmico como acontece com as nossas funções literais.</p>
-<p>Vamos ao código:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//mostrará $elemento</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>,() =&gt;&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//mostrará window</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<p>Ou seja, ao criar suas arrows functions o this será representado pelo valor que ele tinha no momento da implementação da função (escopo léxico) e não mais no momento da invocação (escopo dinâmico).</p>
-<p>Isso significa que você não deve usar as arrow functions só pra se sentir mais moderno. Use-as sabendo desse efeito. </p>
-<p>Se você precisar que dentro de funcões atreladas a eventos o “this” seja o próprio elemento que disparou tal evento, você deverá usar as boas e velhas funções literais.</p>
-<p>Contudo, quero mostrar dois exemplos em que arrow functions são especialmente úteis:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">  arr: [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],</span><br><span class="line">  count: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.arr.forEach( <span class="function">(<span class="params">item</span>) =&gt;</span> &#123;<span class="keyword">this</span>.count++; <span class="built_in">console</span>.log( <span class="keyword">this</span>); &#125; );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.foo() <span class="comment">// mostra o obj tres vezes. com seus valores de count atualizados.</span></span><br></pre></td></tr></table></figure>
-<p>Isso significa que o this dentro de uma arrow function pode ser acessado mesmo dentro de um forEach. Se você usasse uma literal, veria que o this iria representar o window, e não mais o objeto o qual foi definida a função</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">  arr: [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],</span><br><span class="line">  count: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.arr.forEach( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//window</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Se não fosse pelas arrow functions você teria que criar uma variavel adicional (normalmente _self ou _this) e acessá-la dentro do clousure, mas isso é outra historia.</p>
-<p>Para encerrar, vou explicar o que acontece quando usamos o this dentro de uma função que foi invocada com o operador new, aka, função construtora ou classe. Veja o código</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MeuConstruct</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.ts = +<span class="keyword">new</span> <span class="built_in">Date</span>(),</span><br><span class="line">    <span class="keyword">this</span>.foo = <span class="string">"bar"</span>,</span><br><span class="line">    <span class="keyword">this</span>.mostraThis = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MeuConstructNovo</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>()&#123;</span><br><span class="line">        <span class="keyword">this</span>.ts = +<span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">        <span class="keyword">this</span>.foo = <span class="string">"bar"</span>;</span><br><span class="line">        <span class="keyword">this</span>.mostraThis = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj1 = <span class="keyword">new</span> MeuConstruct();</span><br><span class="line">obj1.mostraThis() <span class="comment">// Objeto do tipo MeuConstruct.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj2 = <span class="keyword">new</span> MeuConstructNovo();</span><br><span class="line">obj2.mostraThis() <span class="comment">// Objeto do tipo MeuConstruct.</span></span><br></pre></td></tr></table></figure>
-<p>No exemplo acima, ao criarmos um objeto novo com o operador new, o javascript criou um objeto vazio e atribuiu as propriedades e métodos à esse objeto recém-criado através da palavra this, ou seja, este this aponta para o objeto criado.</p>
-<p>Um fato curioso é que, se alguém atribuir a uma variável qualquer a função MeuConstruct SEM utilizar o operador new, o this de dentro da função irá representar o objeto window, o que pode gerar uma série de problemas imprevisíveis. Para impedir que isso aconteça temos que usar a diretiva “use strict”.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MeuConstruct</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="meta">    "use strict"</span>;</span><br><span class="line">    <span class="keyword">this</span>.ts = +<span class="keyword">new</span> <span class="built_in">Date</span>(),</span><br><span class="line">    <span class="keyword">this</span>.foo = <span class="string">"bar"</span>,</span><br><span class="line">    <span class="keyword">this</span>.mostraThis = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj1 = <span class="keyword">new</span> MeuConstruct(); <span class="comment">// funfa e o this aponta para o objeto obj1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj2 = MeuConstruct(); <span class="comment">// dispara um erro no console porque o this é undefined</span></span><br></pre></td></tr></table></figure>
-<p>O mesmo não acontece se você utilizar a palavra reservada class para criar suas classes. Se você tentar atribuir uma classe a uma variável sem utilizar o operador new um erro será apresentado no console. </p>
-<p>Espero ter sanado possíveis dúvidas quanto ao que representa o this dentro das mais diversas situações. Fique a vontade para dar sua opinião e me avise se eu escrevi alguma besteira.</p>
-<p>Aproveito para fazer o meu jabá e dizer que o meu curso de <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE23" target="_blank" rel="noopener">Javascript Completo</a> tem um desconto bacanão se você utilizar o cupom <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/?couponCode=PROSITE23" target="_blank" rel="noopener">PROSITE23</a>. </p>
-<p>Um abraço</p>
-
-
-                
-            </div>
-
-            <!-- Comments -->
-            
+    <header class="intro-header" style="background-image: url('/img/home-bg4.jpg')">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    
-    <hr>
-    <h3>Comentários:</h3>
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+                    <div class="post-heading">
+                        <h1>Entender todas as formas do this em javascript</h1>
+
+                        <span class="meta">
+                            <!-- Date and Author -->
+
+
+                            27-09-2017
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+
+                <!-- Tags and categories -->
+
+
+
+                <div class="col-lg-10 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+
+
+
+
+                    <a href="/tags/javascript/">#javascript</a>
 
 
 
                 </div>
-            
+
+
+
+                <!-- Gallery -->
+
+
+
+                <!-- Post Main Content -->
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>Quando estamos aprendendo Javascript uma das coisas mais complicadas para entender (pelo menos
+                        foi para mim) é a natureza dinâmica do escopo do “this”.</p>
+                    <p>Eu sempre ficava na dúvida se aquele this que eu estava escrevendo no código representava o que
+                        eu queria que representasse. E isso me fez escrever muitos consoles.log() e colocar vários
+                        breakpoints no meu código que hoje se tornaram desnecessários na maior parte das vezes.</p>
+                    <p>O meu intuito com este artigo é elucidar as várias formas que o this se apresenta e mostrar
+                        alguns padrões de escrita no código que refletem diretamente no valor que será armazenado em
+                        this. </p>
+                    <p>Antes de responder o que o “this” está referenciando, precisamos responder várias questões
+                        previamente, a saber:</p>
+                    <ul><br>
+                        <li>Estamos no escopo global?</li><br>
+                        <li>Há presença da diretiva “use strict”?</li><br>
+                        <li>Como a função foi executada? Normal? Com call() ou apply()?</li><br>
+                        <li>Quando a função foi implementada, foi usado o bind()?</li><br>
+                        <li>A função está atrelada a algum evento?</li><br>
+                        <li>A função é literal ou arrow function?</li><br>
+                        <li>A função está dentro de um objeto literal?</li><br>
+                        <li>A função está dentro de um objeto criado a partir de uma função construtora ou classe?</li>
+                        <br>
+                    </ul>
+
+                    <p>Note que os itens acima não são excludentes, ou seja, o fato de responder positivamente para uma
+                        das perguntas não significa que não pode ser intercambiada com outra resposta positiva, como por
+                        exemplo, escrevi “this” dentro de uma função construtora que foi criada dentro de uma IIFE
+                        contendo a diretiva “use strict”.</p>
+                    <p>E ai? Estamos prontos para entender que raios este “this” representa? Então vamos começar.</p>
+                    <h2 id="This-no-escopo-global"><a href="#This-no-escopo-global" class="headerlink"
+                            title="This no escopo global"></a>This no escopo global</h2>
+                    <p>O lugar mais fácil para entender o this é estando no escopo global ou ainda dentro de uma IIFE
+                        que foi executada pelo - advinha - escopo global. Nesses casos, o “this” representa o próprio
+                        escopo global que, no caso do javascript estar sendo interpretado por um browser, é o objeto
+                        window. Já se você estiver desenvolvendo para para o node o objeto “pai de todos” chama-se
+                        global. </p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//window</span></span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//window</span></span><br><span class="line">&#125;)();</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Obs 1: Ao longo deste artigo vou me referir várias vezes ao objeto global, mas enteda que este é
+                        o objeto acima de todos que, no caso do browser é o window e no caso do node chama-se
+                        simplesmente global. Não confunda “objeto global” com o “global” do node, ok?<br>Obs 2: Vou
+                        supor que você está testando os códigos no console do browser, portanto, o seu objeto global é o
+                        window.</p>
+                    <p>O objeto global é onde ficam todas as variáveis e funções que são acessíveis por toda a
+                        aplicação. É por isso que alert(‘uma coisa’) ou window.alert(‘outra coisa’) são comandos
+                        válidos. Uma observação importante: as variáveis que ficam no objeto global são aquelas
+                        definidas com a palavra <code>var</code>. O mesmo não vale para <code>let</code> e
+                        <code> const</code>. Obrigado <a
+                            href="https://medium.com/@felquis/javascript-o-global-object-e-o-this-ceda36059cff"
+                            target="_blank" rel="noopener">@felquis</a></p>
+                    <p>Até aqui creio que não haja nenhuma novidade. A grande questão é quando usamos a diretiva
+                        <code>“use strict”</code> dentro de uma função, pois isso muda completamente o que o “this”
+                        representa:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//window</span></span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="meta">  "use strict"</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//undefined</span></span><br><span class="line">&#125;)();</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>A diretiva “use strict” foi acrescentada na javascript para resolver algumas falhas da linguagem.
+                        Mais a frente veremos onde a sua ausência pode gerar problemas, mas por hora, vamos entender que
+                        dentro de uma função, seja auto-invocável ou não, a presença do “use strict” faz com que o
+                        “this” assuma o valor <code>undefined</code>.</p>
+                    <p>Um outro ponto que temos que prestar atenção é a partir de quem foi executada determinada função.
+                        Veja mais um exemplo:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  minhaFunc: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.minhaFunc(); <span class="comment">//obj</span></span><br><span class="line"></span><br><span class="line">minhaFunc(); <span class="comment">//window</span></span><br><span class="line"></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Repare que está claro quando olhamos para a implementação da função quem é o this. Então vamos
+                        obscurecer um pouco as coisas.</p>
+                    <p>Atenção: O motivo de eu estar utilizando o “var” e não o “let” para criar algumas variáveis é que
+                        se você copiar e colar o código no console para testar, você não conseguirá criar duas variáveis
+                        com mesmo nome se usar o “let”. Utilizando o “var” pode copiar e colar a vontade para testar a
+                        saída no console.</p>
+                    <p>Voltando ao código:<br>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  minhaFunc2: minhaFunc</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.minhaFunc2(); <span class="comment">//obj</span></span><br><span class="line"></span><br><span class="line">minhaFunc(); <span class="comment">//window</span></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    </p>
+                    <p>Repare que agora atrelamos a <b>mesma</b> função <code>minhaFunc()</code> como método do objeto,
+                        ou seja, temos agora <b>uma única função</b> e portando, apenas um
+                        <code>console.log(this)</code>. Mas isso não impede que a natureza dinâmica do this venha
+                        brilhar aos nossos olhos. A lição aprendida aqui é que não importa COMO você escreveu a função
+                        literal. O que importa é QUEM chamou esta função. Isso porque o escopo de funções literais é
+                        dinâmico. O mesmo “this” pode representar o window ou qualquer outro objeto, tudo depende de
+                        quem executou a função.</p>
+                    <h2 id="Mas-da-pra-mudar-o-this"><a href="#Mas-da-pra-mudar-o-this" class="headerlink"
+                            title="Mas dá pra mudar o this?"></a>Mas dá pra mudar o this?</h2>
+                    <p>Funções são objetos com a incrível capacidade de serem executados. A forma mais comum de executar
+                        uma função é esta que acabou de passar pela sua cabeça:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line">minhaFunc();</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Só isso. Basta abrir e fechar parenteses que a mágica acontece.</p>
+                    <p>Mas não existe só uma maneira de executarmos uma função. Também podemos fazer assim:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line">minhaFunc.call(<span class="keyword">this</span>) </span><br><span class="line"></span><br><span class="line">minhaFunc.apply(<span class="keyword">this</span>)</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Já vamos ver a diferença entre eles. Por hora, entenda qualquer um dos dois como uma maneira de
+                        executar uma função informando programaticamente quem deve ser o “this”. Veja:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line">minhaFunc(); <span class="comment">//window</span></span><br><span class="line">minhaFunc.call(obj); <span class="comment">//obj</span></span><br><span class="line">minhaFunc.apply(obj); <span class="comment">//obj</span></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Ou seja, eu consigo passar por parâmetro quem deve ser o this dentro da função. Nesse momento
+                        você pode estar se perguntando: Mas e se <code>minhaFunc()</code> espera receber parâmetros? E é
+                        aí que reside a diferença entre o call() e o apply(). Este recebe como segundo parâmetro um
+                        array de argumentos. Aquele recebe os demais argumentos logo depois do this. É mais fácil ver
+                        com um exemplo:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="comment">//executa a função minhaFunc mudando o escopo do this e passando por parâmetro três valores: true, "ola mundo", 10</span></span><br><span class="line">minhaFunc(obj, <span class="literal">true</span>, <span class="string">"ola mundo"</span>, <span class="number">10</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//executa a função minhaFunc mudando o escopo do this e passando por parâmetro três valores: true, "ola mundo", 10, mas desta vez dentro de um array</span></span><br><span class="line">minhaFunc(obj, [<span class="literal">true</span>, <span class="string">"ola mundo"</span>, <span class="number">10</span>]);</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Tanto call() quanto apply() são primos muito próximos. A única diferença é COMO passar os
+                        argumento para a função sendo executada.</p>
+                    <p>Se você reparar bem nos exemplos acima, o responsável por informar quem deve ser o “this” é quem
+                        está executando a função. Mas também é possível alterarmos o “this” no momento da implementação
+                        da função. Veja mais este exemplo:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> minhaFuncComBind = minhaFunc.bind(obj);</span><br><span class="line"></span><br><span class="line">minhaFuncComBind(); <span class="comment">//obj</span></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Repare que exceto pelo nome da função que possui a palavra Bind por motivos didáticos, quem
+                        utiliza a função não tem como saber qual será o contexto do this. Veja um exemplo mais obscuro:
+                    </p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> minhaFunc2 = minhaFunc.bind(obj);</span><br><span class="line"></span><br><span class="line">minhaFunc2(); <span class="comment">//obj</span></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Perceba que o <code>bind()</code> muda o contexto do this na implementação da função (tomando
+                        emprestado outra função: minhaFunc), mas essa implementação pode ficar escondida de quem está
+                        usando a função.</p>
+                    <p>Um uso muito comum para o bind() é nos ouvistes de eventos. Veja:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>, minhaFunc);</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>No exemplo acima o this por padrão é o dono do evento, ou seja, o elemento o qual foi atrelado o
+                        evento. Faça um teste e veja que ao clicar no elemento este é mostrado no console. Para testar
+                        rapidamente, escreva no console: </p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">"click"</span>, minhaFunc);</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+
+                    Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso código inserindo o bind
+                    na jogada?
+
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>, minhaFunc.bind(obj));</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Agora o próprio objeto é mostrado no console (ou qualquer outro elemento que tiver sido passado
+                        por parâmentro para o bind, até mesmo uma string funcionaria, mesmo que seja um exemplo com
+                        pouquíssima aplicação prática).</p>
+                    <p>Pensando um pouco mais em tudo que vimos até agora, o que será mostrado no console no exemplo
+                        abaixo</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>, minhaFunc.bind(<span class="keyword">this</span>));</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Perceba que o this do exemplo acima que foi passado por parâmetro no bind() está fora da função
+                        atrelada, portanto, esse this, que é dinâmico, pode representar o window (se no escopo global,
+                        sem a diretiva “use strict” ou undefined se no escopo global com a diretiva “use strict”).</p>
+                    <p>Mas será que existe alguma maneira de mudarmos o escopo dinâmico do “this”? em outras palavras,
+                        podemos impedir que o this sofra variações dependendo do contexto em que foi executado?</p>
+                    <h2 id="O-escopo-lexico-das-arrows-functions"><a href="#O-escopo-lexico-das-arrows-functions"
+                            class="headerlink" title="O escopo léxico das arrows functions"></a>O escopo léxico das
+                        arrows functions</h2>
+                    <p>No EcmaScript2015 (antigamente chamado de ES6) foi introduzido o conceito de Arrow function. A
+                        princípio pode parecer somente uma maneira mais enxuta de escrever funções (e é mesmo), mas
+                        também é uma maneira de deixarmos o this com escopo léxico, ou seja, não mais dinâmico como
+                        acontece com as nossas funções literais.</p>
+                    <p>Vamos ao código:<br>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">minhaFunc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//mostrará $elemento</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">$elemento.addEventListener(<span class="string">"click"</span>,() =&gt;&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//mostrará window</span></span><br><span class="line">&#125;);</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    </p>
+                    <p>Ou seja, ao criar suas arrows functions o this será representado pelo valor que ele tinha no
+                        momento da implementação da função (escopo léxico) e não mais no momento da invocação (escopo
+                        dinâmico).</p>
+                    <p>Isso significa que você não deve usar as arrow functions só pra se sentir mais moderno. Use-as
+                        sabendo desse efeito. </p>
+                    <p>Se você precisar que dentro de funcões atreladas a eventos o “this” seja o próprio elemento que
+                        disparou tal evento, você deverá usar as boas e velhas funções literais.</p>
+                    <p>Contudo, quero mostrar dois exemplos em que arrow functions são especialmente úteis:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">  arr: [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],</span><br><span class="line">  count: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.arr.forEach( <span class="function">(<span class="params">item</span>) =&gt;</span> &#123;<span class="keyword">this</span>.count++; <span class="built_in">console</span>.log( <span class="keyword">this</span>); &#125; );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.foo() <span class="comment">// mostra o obj tres vezes. com seus valores de count atualizados.</span></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Isso significa que o this dentro de uma arrow function pode ser acessado mesmo dentro de um
+                        forEach. Se você usasse uma literal, veria que o this iria representar o window, e não mais o
+                        objeto o qual foi definida a função</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">  arr: [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],</span><br><span class="line">  count: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.arr.forEach( <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//window</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Se não fosse pelas arrow functions você teria que criar uma variavel adicional (normalmente _self
+                        ou _this) e acessá-la dentro do clousure, mas isso é outra historia.</p>
+                    <p>Para encerrar, vou explicar o que acontece quando usamos o this dentro de uma função que foi
+                        invocada com o operador new, aka, função construtora ou classe. Veja o código</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MeuConstruct</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.ts = +<span class="keyword">new</span> <span class="built_in">Date</span>(),</span><br><span class="line">    <span class="keyword">this</span>.foo = <span class="string">"bar"</span>,</span><br><span class="line">    <span class="keyword">this</span>.mostraThis = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MeuConstructNovo</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>()&#123;</span><br><span class="line">        <span class="keyword">this</span>.ts = +<span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">        <span class="keyword">this</span>.foo = <span class="string">"bar"</span>;</span><br><span class="line">        <span class="keyword">this</span>.mostraThis = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj1 = <span class="keyword">new</span> MeuConstruct();</span><br><span class="line">obj1.mostraThis() <span class="comment">// Objeto do tipo MeuConstruct.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj2 = <span class="keyword">new</span> MeuConstructNovo();</span><br><span class="line">obj2.mostraThis() <span class="comment">// Objeto do tipo MeuConstruct.</span></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>No exemplo acima, ao criarmos um objeto novo com o operador new, o javascript criou um objeto
+                        vazio e atribuiu as propriedades e métodos à esse objeto recém-criado através da palavra this,
+                        ou seja, este this aponta para o objeto criado.</p>
+                    <p>Um fato curioso é que, se alguém atribuir a uma variável qualquer a função MeuConstruct SEM
+                        utilizar o operador new, o this de dentro da função irá representar o objeto window, o que pode
+                        gerar uma série de problemas imprevisíveis. Para impedir que isso aconteça temos que usar a
+                        diretiva “use strict”.</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MeuConstruct</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="meta">    "use strict"</span>;</span><br><span class="line">    <span class="keyword">this</span>.ts = +<span class="keyword">new</span> <span class="built_in">Date</span>(),</span><br><span class="line">    <span class="keyword">this</span>.foo = <span class="string">"bar"</span>,</span><br><span class="line">    <span class="keyword">this</span>.mostraThis = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj1 = <span class="keyword">new</span> MeuConstruct(); <span class="comment">// funfa e o this aponta para o objeto obj1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj2 = MeuConstruct(); <span class="comment">// dispara um erro no console porque o this é undefined</span></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>O mesmo não acontece se você utilizar a palavra reservada class para criar suas classes. Se você
+                        tentar atribuir uma classe a uma variável sem utilizar o operador new um erro será apresentado
+                        no console. </p>
+                    <p>Espero ter sanado possíveis dúvidas quanto ao que representa o this dentro das mais diversas
+                        situações. Fique a vontade para dar sua opinião e me avise se eu escrevi alguma besteira.</p>
+                    <p>Aproveito para fazer o meu jabá e dizer que o meu curso de <a href="/cursos/javascript-completo/"
+                            target="_blank" rel="noopener">Javascript Completo</a> tem um desconto bacanão se você <a
+                            href="/cursos/javascript-completo/" target="_blank" rel="noopener">adquirir através dessa
+                            página </a>. </p>
+                    <p>Um abraço</p>
+
+
+
+                </div>
+
+                <!-- Comments -->
+
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                    <hr>
+                    <h3>Comentários:</h3>
+                    <div id="disqus_thread">
+                        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments
+                                powered by Disqus.</a></noscript>
+                    </div>
+
+
+
+                </div>
+
+            </div>
         </div>
-    </div>
-</article>
+    </article>
 
 
     <!-- Footer -->
     <!-- Footer -->
-<footer style="background: #ccc; margin-top: 3em;">
-    <div class="container">
-        <div class="row">
-            <p class="copyright text-muted" style="margin: 0 0 15px;">
-                    &copy; 2020 - Tema original (<a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a>) editado por Daniel Tapias Morales
+    <footer style="background: #ccc; margin-top: 3em;">
+        <div class="container">
+            <div class="row">
+                <p class="copyright text-muted" style="margin: 0 0 15px;">
+                    &copy; 2020 - Tema original (<a target="_blank"
+                        href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a>) editado por
+                    Daniel Tapias Morales
                 </p>
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center" style="font-size: 14px;">
-                    
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center" style="font-size: 14px;">
+
                         <li>
                             <a href="https://twitter.com/serfrontend" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -339,9 +667,9 @@ Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso có
                                 </span>
                             </a>
                         </li>
-                    
 
-                    
+
+
                         <li>
                             <a href="https://www.facebook.com/serfrontend/" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -350,9 +678,9 @@ Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso có
                                 </span>
                             </a>
                         </li>
-                    
 
-                    
+
+
                         <li>
                             <a href="https://github.com/tapmorales" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -361,9 +689,9 @@ Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso có
                                 </span>
                             </a>
                         </li>
-                    
 
-                    
+
+
                         <li>
                             <a href="https://www.linkedin.com/in/serfrontend" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -372,42 +700,42 @@ Entretanto, o que será mostrado no console se alterarmos ligeiramente nosso có
                                 </span>
                             </a>
                         </li>
-                    
 
-                    
 
-                    
-                </ul>
+
+
+
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
     <!-- After footer scripts -->
-    
-<!-- jQuery -->
-<!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
 
-<!-- Bootstrap -->
-<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <!-- jQuery -->
+    <!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
 
-<!-- Gallery -->
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+    <!-- Bootstrap -->
+    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 
-<!-- Disqus Comments -->
+    <!-- Gallery -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
 
-<script type="text/javascript">
-    var disqus_shortname = 'serfrontend';
+    <!-- Disqus Comments -->
 
-    (function(){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
+    <script type="text/javascript">
+        var disqus_shortname = 'serfrontend';
+
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
 
 
 
