@@ -2,7 +2,9 @@
 <html lang="pt">
 
 <!-- Head tag -->
-<head><meta name="generator" content="Hexo 3.8.0">
+
+<head>
+    <meta name="generator" content="Hexo 3.8.0">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,38 +12,40 @@
     <meta name="robots" content="index, follow">
 
     <!--Description-->
-    
-        <meta name="description" content="Aprenda iterar sobre arrays, objetos e arrays-like com javascript..">
-    
+
+    <meta name="description" content="Aprenda iterar sobre arrays, objetos e arrays-like com javascript..">
+
 
     <!--Author-->
-    
-        <meta name="author" content="Daniel Tapias Morales">
-    
+
+    <meta name="author" content="Daniel Tapias Morales">
+
 
     <!--Open Graph Title-->
-    
-        <meta property="og:title" content="maneiras de lidar com arrays, objetos e arrays-like - parte 1">
-    
+
+    <meta property="og:title" content="maneiras de lidar com arrays, objetos e arrays-like - parte 1">
+
 
     <!--Open Graph Description-->
-    
-        <meta property="og:description" content="Aprenda iterar sobre arrays, objetos e arrays-like com javascript..">
-    
-    <meta property="og:url" content="https://serfrontend.com/blog/maneiras-de-lidar-com-arrays-objetos-e-arrays-like-parte-1/index.html"> 
+
+    <meta property="og:description" content="Aprenda iterar sobre arrays, objetos e arrays-like com javascript..">
+
+    <meta property="og:url"
+        content="https://serfrontend.com/blog/maneiras-de-lidar-com-arrays-objetos-e-arrays-like-parte-1/index.html">
     <!-- <meta property="og:image" content="http://serfrontend.com/imagens/capa.jpg">  -->
-    <meta property="og:site_name" content="SerFrontend"> 
-    <meta property="og:locale" content="pt_br"> 
+    <meta property="og:site_name" content="SerFrontend">
+    <meta property="og:locale" content="pt_br">
 
     <!--Open Graph Site Name-->
     <!--<meta property="og:site_name" content="Blog sobre tecnologias Frontend"/>-->
 
     <!--Type page-->
-    
-        <meta property="og:type" content="article">
-    
 
-    <link rel="canonical" href="https://serfrontend.com/blog/maneiras-de-lidar-com-arrays-objetos-e-arrays-like-parte-1/index.html">
+    <meta property="og:type" content="article">
+
+
+    <link rel="canonical"
+        href="https://serfrontend.com/blog/maneiras-de-lidar-com-arrays-objetos-e-arrays-like-parte-1/index.html">
     <!--<script>
         console.log('env', [object Object]);
         console.log('path', blog/maneiras-de-lidar-com-arrays-objetos-e-arrays-like-parte-1/index.html);
@@ -49,31 +53,31 @@
 
 
     <!--Page Cover-->
-    
+
 
     <meta name="twitter:card" content="summary">
-    
-        <meta name="twitter:site" content="https://twitter.com/serfrontend>">
-    
+
+    <meta name="twitter:site" content="https://twitter.com/serfrontend>">
+
     <meta name="twitter:title" content="maneiras de lidar com arrays, objetos e arrays-like - parte 1">
-    
-        <meta name="twitter:description" content="Aprenda iterar sobre arrays, objetos e arrays-like com javascript..">
-    
+
+    <meta name="twitter:description" content="Aprenda iterar sobre arrays, objetos e arrays-like com javascript..">
 
 
-    
-        <meta itemprop="description" content="Aprenda iterar sobre arrays, objetos e arrays-like com javascript..">
-    
-    
+
+
+    <meta itemprop="description" content="Aprenda iterar sobre arrays, objetos e arrays-like com javascript..">
+
+
     <meta itemprop="description" content="Aprenda iterar sobre arrays, objetos e arrays-like com javascript..">
 
 
     <!-- Title -->
-    
-    
-    
-        <title>maneiras de lidar com arrays, objetos e arrays-like - parte 1 - Blog sobre tecnologias Frontend</title>
-    
+
+
+
+    <title>maneiras de lidar com arrays, objetos e arrays-like - parte 1 - Blog sobre tecnologias Frontend</title>
+
 
 
 
@@ -89,7 +93,9 @@
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -102,12 +108,14 @@
     <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" /> -->
 
     <!-- Google Analytics -->
-    
+
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-73075491-3', 'auto');
         ga('send', 'pageview');
@@ -117,10 +125,10 @@
 
 
     <!-- favicon -->
-    
+
     <link rel="icon" href="/favicon.ico">
-    
-	
+
+
 </head>
 
 
@@ -128,180 +136,342 @@
 
     <!-- Menu -->
     <!-- Navigation -->
-<header id="topo">
-    <div class="container topo__container">
-        
-        <div class="topo__logo"><a href="/" title="serfrontend">
-            <img class="topo__logo__img" src="/img/logo_ser-frontend.svg" alt="serfrontend"></a>
-        </div>
-        
-        
-        <nav class="topo__mainMenu">
-            <ul>
+    <header id="topo">
+        <div class="container topo__container">
 
-                
+            <div class="topo__logo"><a href="/" title="serfrontend">
+                    <img class="topo__logo__img" src="/img/logo_ser-frontend.svg" alt="serfrontend"></a>
+            </div>
+
+
+            <nav class="topo__mainMenu">
+                <ul>
+
+
                     <li>
                         <a href="/blog">
-                            
-                                Blog
-                            
+
+                            Blog
+
                         </a>
                     </li>
-                
+
                     <li>
                         <a href="/cursos">
-                            
-                                Cursos
-                            
+
+                            Cursos
+
                         </a>
                     </li>
-                
+
                     <li>
                         <a href="/tags">
-                            
-                                Tags
-                            
+
+                            Tags
+
                         </a>
                     </li>
-                
-            
-            </ul>
 
-        </nav>
+
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <div id="navMob">
+        <a href="#">
+            <img src="/img/menu.svg" alt>
+        </a>
     </div>
-</header>
-<div id="navMob">
-    <a href="#">
-        <img src="/img/menu.svg" alt>
-    </a>
-</div>
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in your post front-matter: cover -->
+    <!-- Set your background image for this header in your post front-matter: cover -->
 
-<header class="intro-header" style="background-image: url('/img/home-bg4.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>maneiras de lidar com arrays, objetos e arrays-like - parte 1</h1>
-                    
-                    <span class="meta">
-                        <!-- Date and Author -->
-                        
-                        
-                            04-07-2018
-                        
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-            <!-- Tags and categories -->
-           
-                
-                
-                    <div class="col-lg-10 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                        
-                            
-
-
-<a href="/tags/javascript/">#javascript</a>
-
-
-                        
-                    </div>
-                
-            
-
-            <!-- Gallery -->
-            
-            
-
-            <!-- Post Main Content -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Antes de falar como percorrer os elementos de objetos, vou focar em arrays e arrays-like.</p>
-<p>Os arrays-likes são estruturas que podem ter seus elementos acessados através de seu índice mas não possuem alguns métodos úteis que as arrays possuem, como push, slice, splice etc. Exemplos de arrays-like são objetos do DOM e o objeto interno arguments de uma função.</p>
-<p>Há várias maneiras de percorrer os elementos de uma array. Normalmente usamos loops simples como o loop for, while ou do … while.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="string">"maria"</span>, <span class="string">"jose"</span>, <span class="string">"joão"</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(arr.length)&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(arr.pop());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Ao final do loop while acima a arr será uma array vazia. Foi um exemplo simples e pouco prático pra demonstrar um pouco de código.</p>
-<p>Contudo, podemos iterar sobre arrays sem precisarmos escrever loops for ou até mesmo while. Nós podemos utilizar métodos de arrays para percorrer os seus elementos e invocar uma função de callback para cada um dos elementos.</p>
-<p>O primeiro método que veremos é o forEach(), que executa a função passada por parâmetro em cada elemento da array.</p>
-<p>Reescrevendo o exemplo acima, teríamos:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="string">"maria"</span>, <span class="string">"jose"</span>, <span class="string">"joão"</span>];</span><br><span class="line"></span><br><span class="line">arr.forEach( <span class="function"><span class="params">nome</span> =&gt;</span> <span class="built_in">console</span>.log(nome) )</span><br></pre></td></tr></table></figure>
-<p>Nesse exemplo executo uma arrow function em cada elemento da array e o mostro no console. Sem grandes problemas.</p>
-<p>O segundo método que veremos é o map(), que executa a função de callback passada por parâmetro em cada elemento e retorna uma nova array. No exemplo abaixo, vamos criar uma array de números inteiros a partir de uma array de números decimais.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arrFloat = [<span class="number">2.545</span>, <span class="number">10.887</span>, <span class="number">3.4541</span>];</span><br><span class="line"><span class="keyword">const</span> arrInt = arrFloat .map( <span class="function"><span class="params">n</span> =&gt;</span> <span class="built_in">parseInt</span>(n, <span class="number">10</span>))</span><br><span class="line"><span class="built_in">console</span>.log(arrFloat); <span class="comment">//[2.545, 10.887, 3.4541]</span></span><br><span class="line"><span class="built_in">console</span>.log(arrInt); <span class="comment">//[2, 10, 3]</span></span><br></pre></td></tr></table></figure>
-<p>Bacana! Vimos que podemos iterar sobre arrays com loops tradicionais ou alguns métodos próprios para isso. Agora vamos ver como faríamos para iterar sobre arrays-likes. Para isso, vou criar um NodeList utilizando a API querySelectorAll</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>link 1 <span class="tag">&lt;/<span class="name">a</span>&gt;</span> | </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>link 2 <span class="tag">&lt;/<span class="name">a</span>&gt;</span> | </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>link 3 <span class="tag">&lt;/<span class="name">a</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span> </span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> $links = <span class="built_in">document</span>.querySelectorAll(<span class="string">'a'</span>); </span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>Agora vou percorrer essa NodeList utilizando o loop for</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; $links.length; i++)&#123;</span><br><span class="line">  <span class="built_in">console</span>.log($links[i].textContent)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Funcionou. O código acima mostra no console os textos de cada um dos links.</p>
-<p>Digamos que, para demonstrar, eu queira obter uma array contendo as strings de cada um dos links. Poderíamos pensar em algo como:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> linksStr = $links</span><br><span class="line">		.map( <span class="function"><span class="params">text</span> =&gt;</span> text.textContent );</span><br></pre></td></tr></table></figure>
-<p>A ideia é percorrer os elementos da NodeList e, para cada elemento, retornar o seu textContent e armazenar em linksStr. Porém isso não funciona, pois uma NodeList (que é um array-like) não possui o método map(). </p>
-<p>Então como resolver? Da maneira antiga, teríamos que “pegar emprestado” o método map do prototype da array da seguinte forma:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> linksStr = <span class="built_in">Array</span>.prototype.map.call($links, text =&gt; text.textContent);</span><br></pre></td></tr></table></figure>
-<p>Na linha acima, eu acesso direto o método map do protótipo da array e executo - com o call() - passando qual será o this - $links - e passando a função que será executada - text =&gt; text.textContent.</p>
-<p>Essa era a única forma de chegarmos nesse resultado antes da ES2015. Eu disse, antes.</p>
-<p>Utilizar o prototype pode parecer um pouco confuso para iniciantes. A boa notícia é que não precisamos recorrer ao protótipo para termos resultados parecidos com o exemplo acima. </p>
-<p>Com a chegada da ES2015 (ES6 para alguns), temos maneiras mais elegantes de chegarmos no mesmo resultado. Veremos algumas delas</p>
-<h2 id="Array-from"><a href="#Array-from" class="headerlink" title="Array.from()"></a>Array.from()</h2><p>Array.from() cria uma array a partir de outra array, de uma array-like ou um objeto iterável. Veja um exemplo:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> linksStr = <span class="built_in">Array</span></span><br><span class="line">		.from($links)</span><br><span class="line">		.map(<span class="function"><span class="params">text</span> =&gt;</span> text.textContent);</span><br></pre></td></tr></table></figure>
-<p>A linha acima transforma o NodeList $links em uma array pura - Array.from() - e depois percorre cada elemento e retorna o respectivo textContent. Muito mais elegante, não é mesmo?</p>
-<h2 id="Array-of-e-spread-operator-…"><a href="#Array-of-e-spread-operator-…" class="headerlink" title="Array.of() e spread operator (…)"></a>Array.of() e spread operator (…)</h2><p>Array.of() cria uma array contendo quantos argumentos forem passados. Exemplo: Array.of(1,2,3) retorna [1,2,3].<br>Já o spread operator “espalha” os elementos de uma array ou array-like passando-os como argumentos separados para uma função. Exemplo:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> linksStr = <span class="built_in">Array</span></span><br><span class="line">		.of(...$links)</span><br><span class="line">		.map(<span class="function"><span class="params">text</span> =&gt;</span> text.textContent);</span><br></pre></td></tr></table></figure>
-<p>O código acima “espalha” cada um dos elementos do DOM - …$links - e os passa como argumentos separados para a função Array.of(). Depois efetua o .map() normalmente como nos exemplos anteriores.</p>
-<p>Se você achou o código acima muito verboso e quer digitar menos, não se preocupe, seus problemas acabaram:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> linksStr = [...$links]</span><br><span class="line">		.map(<span class="function"><span class="params">text</span> =&gt;</span> text.textContent);</span><br></pre></td></tr></table></figure>
-<p>[…$links] simplesmente cria uma array de verdade com base no spread operator da NodeList. Fantástico! </p>
-<p>Provavelmente existem outras formas de chegarmos no mesmo resultado, mas estas que eu passei são suficientes para iterarmos sobre arrays e arrays-like sem ficar utilizando loops ou até mesmo criando variáveis desnecessárias.</p>
-<p>No próximo artigo irei explorar sobre a iteração em objetos. Aguarde!</p>
-<h2 id="Bonus"><a href="#Bonus" class="headerlink" title="Bônus"></a>Bônus</h2><p>Se você ficou com a pulga atras da orelha sobre o motivo de utilizar Array.of(), segue um código de exemplo:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//cria uma array com três posições vazias, enquanto:</span></span><br><span class="line"><span class="keyword">const</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//cria uma array com uma única posição, contendo o número 3. Até onde eu sei, essa é a única diferença entre new Array() e Array.of().</span></span><br><span class="line"><span class="keyword">const</span> arr = <span class="built_in">Array</span>.of(<span class="number">3</span>);</span><br></pre></td></tr></table></figure></p>
-<p>Forte abraço e até a próxima</p>
-
-
-                
-            </div>
-
-            <!-- Comments -->
-            
+    <header class="intro-header" style="background-image: url('/img/home-bg4.jpg')">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    
-    <hr>
-    <h3>Comentários:</h3>
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+                    <div class="post-heading">
+                        <h1>maneiras de lidar com arrays, objetos e arrays-like - parte 1</h1>
+
+                        <span class="meta">
+                            <!-- Date and Author -->
+
+
+                            04-07-2018
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+
+                <!-- Tags and categories -->
+
+
+
+                <div class="col-lg-10 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+
+
+
+
+                    <a href="/tags/javascript/">#javascript</a>
 
 
 
                 </div>
-            
+
+
+
+                <!-- Gallery -->
+
+
+
+                <!-- Post Main Content -->
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>Antes de falar como percorrer os elementos de objetos, vou focar em arrays e arrays-like.</p>
+                    <p>Os arrays-likes são estruturas que podem ter seus elementos acessados através de seu índice mas
+                        não possuem alguns métodos úteis que as arrays possuem, como push, slice, splice etc. Exemplos
+                        de arrays-like são objetos do DOM e o objeto interno arguments de uma função.</p>
+                    <p>Há várias maneiras de percorrer os elementos de uma array. Normalmente usamos loops simples como
+                        o loop for, while ou do … while.</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">const</span> arr = [<span class="string">"maria"</span>, <span class="string">"jose"</span>, <span class="string">"joão"</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(arr.length)&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(arr.pop());</span><br><span class="line">&#125;</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Ao final do loop while acima a arr será uma array vazia. Foi um exemplo simples e pouco prático
+                        pra demonstrar um pouco de código.</p>
+                    <p>Contudo, podemos iterar sobre arrays sem precisarmos escrever loops for ou até mesmo while. Nós
+                        podemos utilizar métodos de arrays para percorrer os seus elementos e invocar uma função de
+                        callback para cada um dos elementos.</p>
+                    <p>O primeiro método que veremos é o forEach(), que executa a função passada por parâmetro em cada
+                        elemento da array.</p>
+                    <p>Reescrevendo o exemplo acima, teríamos:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">const</span> arr = [<span class="string">"maria"</span>, <span class="string">"jose"</span>, <span class="string">"joão"</span>];</span><br><span class="line"></span><br><span class="line">arr.forEach( <span class="function"><span class="params">nome</span> =&gt;</span> <span class="built_in">console</span>.log(nome) )</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Nesse exemplo executo uma arrow function em cada elemento da array e o mostro no console. Sem
+                        grandes problemas.</p>
+                    <p>O segundo método que veremos é o map(), que executa a função de callback passada por parâmetro em
+                        cada elemento e retorna uma nova array. No exemplo abaixo, vamos criar uma array de números
+                        inteiros a partir de uma array de números decimais.</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">const</span> arrFloat = [<span class="number">2.545</span>, <span class="number">10.887</span>, <span class="number">3.4541</span>];</span><br><span class="line"><span class="keyword">const</span> arrInt = arrFloat .map( <span class="function"><span class="params">n</span> =&gt;</span> <span class="built_in">parseInt</span>(n, <span class="number">10</span>))</span><br><span class="line"><span class="built_in">console</span>.log(arrFloat); <span class="comment">//[2.545, 10.887, 3.4541]</span></span><br><span class="line"><span class="built_in">console</span>.log(arrInt); <span class="comment">//[2, 10, 3]</span></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Bacana! Vimos que podemos iterar sobre arrays com loops tradicionais ou alguns métodos próprios
+                        para isso. Agora vamos ver como faríamos para iterar sobre arrays-likes. Para isso, vou criar um
+                        NodeList utilizando a API querySelectorAll</p>
+                    <figure class="highlight html">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>link 1 <span class="tag">&lt;/<span class="name">a</span>&gt;</span> | </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>link 2 <span class="tag">&lt;/<span class="name">a</span>&gt;</span> | </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>link 3 <span class="tag">&lt;/<span class="name">a</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span> </span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> $links = <span class="built_in">document</span>.querySelectorAll(<span class="string">'a'</span>); </span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Agora vou percorrer essa NodeList utilizando o loop for</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; $links.length; i++)&#123;</span><br><span class="line">  <span class="built_in">console</span>.log($links[i].textContent)</span><br><span class="line">&#125;</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Funcionou. O código acima mostra no console os textos de cada um dos links.</p>
+                    <p>Digamos que, para demonstrar, eu queira obter uma array contendo as strings de cada um dos links.
+                        Poderíamos pensar em algo como:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">const</span> linksStr = $links</span><br><span class="line">		.map( <span class="function"><span class="params">text</span> =&gt;</span> text.textContent );</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>A ideia é percorrer os elementos da NodeList e, para cada elemento, retornar o seu textContent e
+                        armazenar em linksStr. Porém isso não funciona, pois uma NodeList (que é um array-like) não
+                        possui o método map(). </p>
+                    <p>Então como resolver? Da maneira antiga, teríamos que “pegar emprestado” o método map do prototype
+                        da array da seguinte forma:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">const</span> linksStr = <span class="built_in">Array</span>.prototype.map.call($links, text =&gt; text.textContent);</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>Na linha acima, eu acesso direto o método map do protótipo da array e executo - com o call() -
+                        passando qual será o this - $links - e passando a função que será executada - text =&gt;
+                        text.textContent.</p>
+                    <p>Essa era a única forma de chegarmos nesse resultado antes da ES2015. Eu disse, antes.</p>
+                    <p>Utilizar o prototype pode parecer um pouco confuso para iniciantes. A boa notícia é que não
+                        precisamos recorrer ao protótipo para termos resultados parecidos com o exemplo acima. </p>
+                    <p>Com a chegada da ES2015 (ES6 para alguns), temos maneiras mais elegantes de chegarmos no mesmo
+                        resultado. Veremos algumas delas</p>
+                    <h2 id="Array-from"><a href="#Array-from" class="headerlink" title="Array.from()"></a>Array.from()
+                    </h2>
+                    <p>Array.from() cria uma array a partir de outra array, de uma array-like ou um objeto iterável.
+                        Veja um exemplo:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">const</span> linksStr = <span class="built_in">Array</span></span><br><span class="line">		.from($links)</span><br><span class="line">		.map(<span class="function"><span class="params">text</span> =&gt;</span> text.textContent);</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>A linha acima transforma o NodeList $links em uma array pura - Array.from() - e depois percorre
+                        cada elemento e retorna o respectivo textContent. Muito mais elegante, não é mesmo?</p>
+                    <h2 id="Array-of-e-spread-operator-…"><a href="#Array-of-e-spread-operator-…" class="headerlink"
+                            title="Array.of() e spread operator (…)"></a>Array.of() e spread operator (…)</h2>
+                    <p>Array.of() cria uma array contendo quantos argumentos forem passados. Exemplo: Array.of(1,2,3)
+                        retorna [1,2,3].<br>Já o spread operator “espalha” os elementos de uma array ou array-like
+                        passando-os como argumentos separados para uma função. Exemplo:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">const</span> linksStr = <span class="built_in">Array</span></span><br><span class="line">		.of(...$links)</span><br><span class="line">		.map(<span class="function"><span class="params">text</span> =&gt;</span> text.textContent);</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>O código acima “espalha” cada um dos elementos do DOM - …$links - e os passa como argumentos
+                        separados para a função Array.of(). Depois efetua o .map() normalmente como nos exemplos
+                        anteriores.</p>
+                    <p>Se você achou o código acima muito verboso e quer digitar menos, não se preocupe, seus problemas
+                        acabaram:</p>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="keyword">const</span> linksStr = [...$links]</span><br><span class="line">		.map(<span class="function"><span class="params">text</span> =&gt;</span> text.textContent);</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <p>[…$links] simplesmente cria uma array de verdade com base no spread operator da NodeList.
+                        Fantástico! </p>
+                    <p>Provavelmente existem outras formas de chegarmos no mesmo resultado, mas estas que eu passei são
+                        suficientes para iterarmos sobre arrays e arrays-like sem ficar utilizando loops ou até mesmo
+                        criando variáveis desnecessárias.</p>
+                    <p>No próximo artigo irei explorar sobre a iteração em objetos. Aguarde!</p>
+                    <h2 id="Bonus"><a href="#Bonus" class="headerlink" title="Bônus"></a>Bônus</h2>
+                    <p>Se você ficou com a pulga atras da orelha sobre o motivo de utilizar Array.of(), segue um código
+                        de exemplo:<br>
+                    <figure class="highlight js">
+                        <table>
+                            <tr>
+                                <td class="gutter">
+                                    <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+                                </td>
+                                <td class="code">
+                                    <pre><span class="line"><span class="comment">//cria uma array com três posições vazias, enquanto:</span></span><br><span class="line"><span class="keyword">const</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//cria uma array com uma única posição, contendo o número 3. Até onde eu sei, essa é a única diferença entre new Array() e Array.of().</span></span><br><span class="line"><span class="keyword">const</span> arr = <span class="built_in">Array</span>.of(<span class="number">3</span>);</span><br></pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </figure>
+                    </p>
+                    <p>Forte abraço e até a próxima</p>
+
+
+
+                </div>
+
+                <!-- Comments -->
+
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                    <hr>
+                    <h3>Comentários:</h3>
+                    <div id="disqus_thread">
+                        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments
+                                powered by Disqus.</a></noscript>
+                    </div>
+
+
+
+                </div>
+
+            </div>
         </div>
-    </div>
-</article>
+    </article>
 
 
     <!-- Footer -->
     <!-- Footer -->
-<footer style="background: #ccc; margin-top: 3em;">
-    <div class="container">
-        <div class="row">
-            <p class="copyright text-muted" style="margin: 0 0 15px;">
-                    &copy; 2020 - Tema original (<a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a>) editado por Daniel Tapias Morales
+    <footer style="background: #ccc; margin-top: 3em;">
+        <div class="container">
+            <div class="row">
+                <p class="copyright text-muted" style="margin: 0 0 15px;">
+                    &copy; 2020 - Tema original (<a target="_blank"
+                        href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a>) editado por
+                    Daniel Tapias Morales
                 </p>
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center" style="font-size: 14px;">
-                    
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center" style="font-size: 14px;">
+
                         <li>
                             <a href="https://twitter.com/serfrontend" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -310,9 +480,9 @@
                                 </span>
                             </a>
                         </li>
-                    
 
-                    
+
+
                         <li>
                             <a href="https://www.facebook.com/serfrontend/" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -321,9 +491,9 @@
                                 </span>
                             </a>
                         </li>
-                    
 
-                    
+
+
                         <li>
                             <a href="https://github.com/tapmorales" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -332,9 +502,9 @@
                                 </span>
                             </a>
                         </li>
-                    
 
-                    
+
+
                         <li>
                             <a href="https://www.linkedin.com/in/serfrontend" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -343,42 +513,58 @@
                                 </span>
                             </a>
                         </li>
-                    
+                        <li>
+                            <a href="https://youtube.com/serfrontend" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/serfrontendcursos" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
 
-                    
 
-                    
-                </ul>
+
+
+
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
     <!-- After footer scripts -->
-    
-<!-- jQuery -->
-<!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
 
-<!-- Bootstrap -->
-<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <!-- jQuery -->
+    <!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
 
-<!-- Gallery -->
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+    <!-- Bootstrap -->
+    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 
-<!-- Disqus Comments -->
+    <!-- Gallery -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
 
-<script type="text/javascript">
-    var disqus_shortname = 'serfrontend';
+    <!-- Disqus Comments -->
 
-    (function(){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
+    <script type="text/javascript">
+        var disqus_shortname = 'serfrontend';
+
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
 
 
 

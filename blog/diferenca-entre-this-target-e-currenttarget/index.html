@@ -295,7 +295,8 @@
                     </figure>
                     <p>Nos dois trechos de código acima o <code>this</code> representa um elemento diferente daquele
                         mostrado inicialmente neste artigo. No meu caso esse objeto diferemte é o global
-                        <code>window</code> (pois não estou usando a diretiva <code>&quot;use strict&quot;</code>). </p>
+                        <code>window</code> (pois não estou usando a diretiva <code>&quot;use strict&quot;</code>).
+                    </p>
                     <p>De qualquer forma, as propriedades <code>target</code> e <code>currentTarget</code> ainda são o
                         mesmo objeto. </p>
                     <p>Então porque existem duas propriedades que aparentemente são a mesma coisa? Para entender isso,
@@ -327,12 +328,14 @@
                         hieraquia do DOM que recebeu o evento, ou seja, no exemplo acima, é o alvo do click.</p>
                     <p>Pensando ainda no exemplo de uma tabela, o <code>target</code> pode ser uma tag <code>tr</code>,
                         <code>td</code> ou qualquer elemento dentro de uma <code>td</code>, como um <code>button</code>,
-                        por exemplo.</p>
+                        por exemplo.
+                    </p>
                     <h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2>
                     <p>Escrever um simples addEventListener adotando o bind() ou as arrow functions em conjunto com o
                         conceito de delegação de eventos para melhorar a performace de sua aplicação resultará em
                         referências distintas tanto para o <code>this</code> quanto para as propriedades
-                        <code>target</code> e <code>currentTarget</code> do objeto Event.</p>
+                        <code>target</code> e <code>currentTarget</code> do objeto Event.
+                    </p>
                     <p>Essa foi uma dica bastante rápida mas que pode ser muito útil em algumas situações.</p>
                     <p>Aproveito para fazer o meu jabá e dizer que qualquer um dos <a href="/cursos">meus cursos tem um
                             descontão se você utilizar este link</a>.</p>
@@ -413,6 +416,22 @@
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/serfrontend" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/serfrontendcursos" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
