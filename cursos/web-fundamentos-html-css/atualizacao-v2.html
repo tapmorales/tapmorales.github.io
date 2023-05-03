@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!-- Head tag -->
+
+<head>
+    <meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <!--Description-->
+
+    <meta name="description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+
+
+    <!--Author-->
+
+    <meta name="author" content="Daniel Tapias Morales">
+
+
+    <!--Open Graph Title-->
+
+    <meta property="og:title" content="Web Design Fundamentos. Aprenda HTML CSS e Javascript">
+
+
+    <!--Open Graph Description-->
+
+    <meta property="og:description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+
+    <meta property="og:url" content="https://serfrontend.com/cursos/web-fundamentos-html-css/index.html">
+    <!-- <meta property="og:image" content="http://serfrontend.com/imagens/capa.jpg">  -->
+    <meta property="og:site_name" content="SerFrontend">
+    <meta property="og:locale" content="pt_br">
+
+    <!--Open Graph Site Name-->
+    <!--<meta property="og:site_name" content="Blog sobre tecnologias Frontend"/>-->
+
+    <!--Type page-->
+
+    <meta property="og:type" content="article">
+
+
+    <link rel="canonical" href="https://serfrontend.com/cursos/web-fundamentos-html-css/index.html">
+    <!--<script>
+        console.log('env', [object Object]);
+        console.log('path', cursos/web-fundamentos-html-css/index.html);
+    </script>-->
+
+
+    <!--Page Cover-->
+
+
+    <meta name="twitter:card" content="summary">
+
+    <meta name="twitter:site" content="https://twitter.com/serfrontend>">
+
+    <meta name="twitter:title" content="Web Design Fundamentos. Aprenda HTML CSS e Javascript">
+
+    <meta name="twitter:description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+
+
+
+
+    <meta itemprop="description" content="Blog e cursos on-line sobre o mundo de desenvolvimento Frontend">
+
+
+    <meta itemprop="description" content>
+
+
+    <!-- Title -->
+
+
+
+    <title>Web Design Fundamentos. Aprenda HTML CSS e Javascript - Blog sobre tecnologias Frontend</title>
+
+
+
+
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" /> -->
+
+    <!-- Google Analytics -->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-73075491-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- favicon -->
+
+    <link rel="icon" href="/favicon.ico">
+
+    <style>
+        summary {
+            /* font-weight: bold; */
+            /* margin: -0.5em -0.5em 0;
+            padding: 0.5em; */
+        }
+
+        details {
+            padding: 0.5em;
+        }
+
+        details[open] {
+            padding: 0.5em 0.5em 2em;
+        }
+
+        summary {
+            display: list-item;
+            cursor: pointer;
+        }
+
+        details[open] summary {
+            /* border-bottom: 1px solid #aaa; */
+            margin-bottom: 0.5em;
+            color: #d03735;
+        }
+
+        table {
+            width: 100%;
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        td {
+            width: 50%;
+            vertical-align: top;
+        }
+
+        .legado {
+            background-color: yellow;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+    <header id="topo">
+        <div class="container topo__container">
+
+            <div class="topo__logo"><a href="/" title="serfrontend">
+                    <img class="topo__logo__img" src="/img/logo_ser-frontend.svg" alt="serfrontend"></a>
+            </div>
+
+
+            <nav class="topo__mainMenu">
+                <ul>
+
+
+                    <li>
+                        <a href="/blog">
+
+                            Blog
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/cursos">
+
+                            Cursos
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/tags">
+
+                            Tags
+
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <div id="navMob">
+        <a href="#">
+            <img src="/img/menu.svg" alt>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+
+
+    <header class="intro-header intro-header-course"
+        style="background-image: url('/img/home-bg4.jpg'); margin-bottom: 0">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="post-heading post-heading-course" style="padding: 6em 0 0;">
+                        <h1>Atualização Curso Web Design Fundamentos</h1>
+
+                        <p class="post-subheading" style="font-size: 26px;">
+                            Diferenças entre a versão 1 e a versão atualizada (versão 2)
+                        </p>
+
+                        <p>Última atualização: <time datetime="2023-05-03"> 03/05/2023</time></p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="main">
+        <!-- Page Header -->
+        <!-- Set your background image for this header in your post front-matter: cover -->
+
+
+
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+
+                    <!-- Tags and categories -->
+
+
+                    <!-- Gallery -->
+
+
+
+                    <!-- Post Main Content -->
+                    <div class="col-sm-12">
+                        <h2 id="Web-Design-Fundamentos-Aprenda-HTML-CSS-e-Javascript">Histórico de atualização</h2>
+                        <p>Abaixo você confere as seções em ambas as versões e a relação entre elas.</p>
+                        <p> Por exemplo,
+                            na versão 1, a "Seção 1: Introdução" foi totalmente revista e regravada. Por esse motivo o
+                            novo
+                            conteúdo foi adicionado e o conteúdo antigo foi renomeado para "Seção 15: [LEGADO]
+                            Introdução" na versão atualizada.</p>
+                        <p>Clique sobre cada uma das seções abaixo para obter maiores detalhes.</p>
+                    </div>
+
+                    <div class="col-sm-12">
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Versão 1</th>
+                                    <th>Versão 2</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 1: Introdução ao HTML</summary>
+                                            Todas as aulas desta seção foram revistas e regravadas. Aula anteior: Seção
+                                            15: <span class="legado">[LEGADO]</span> Introdução
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 2: Introdução ao CSS</summary>
+                                            Todas as aulas desta seção foram revistas e regravadas. Aula anteior: Seção
+                                            16: <span class="legado">[LEGADO]</span> Introdução ao CSS
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 3: Trabalhando com imagens</summary>
+                                            A versão atualizada ganhou uma seção exclusiva para falar de imagens. Esse
+                                            conteúdo estava na seção com o título "Seção 3: Mais sobre o visual - parte
+                                            1" da primeira versão desse curso. Atualmente, esta é a seção 17: <span
+                                                class="legado">[LEGADO]</span>
+                                            Mais sobre o visual - parte
+                                            1.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 4: Estrutura semântica</summary>
+                                            A versão atualizada ganhou uma seção exclusiva para falar dos primeiros
+                                            passos com relação à semântica. Esse
+                                            conteúdo estava na seção com o título "Seção 3: Mais sobre o visual - parte
+                                            1" da primeira versão desse curso. Atualmente, esta é a seção 17: <span
+                                                class="legado">[LEGADO]</span>
+                                            Mais sobre o visual - parte
+                                            1.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 5: Flexbox</summary>
+                                            Uma das diferenças mais notáveis da versão atualizada é que, nesta versão,
+                                            desde o início trabalhamos com Flexbox. Na primeira versão, esse conteúdo
+                                            era visto muito tardiamente. Atualmente, trata-se da Seção de número 28.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 6: Projeto Lista de Contatos</summary>
+                                            Projeto não existente na primeira versão desse curso.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 7: Página escolha seu plano</summary>
+                                            Projeto não existente na primeira versão desse curso.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 8: Avançando com CSS</summary>
+                                            Muitos assuntos presentes nessa seção estavam na Seção 7 do curso na
+                                            primeira versão. Atualmente, este conteúdo está repetido na Seção 21:
+                                            Efeitos com CSS
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 9: Projeto Aprenser</summary>
+                                            Este projeto substitui o Projeto Fashion, da primeira versão, que estava na
+                                            Seção 4. Atualmente, o Projeto Fashion se encontra em Seção 18: <span
+                                                class="legado">[LEGADO]</span>
+                                            Mais sobre o Visual - parte 2
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 10: Listas, Tabelas e details</summary>
+                                            Parte deste conteúdo estava presenta na Seção 5 do curso na primeira versão.
+                                            Atualmente, trata-se da Seção 19: <span class="legado">[LEGADO]</span>
+                                            Listas, tables e overflow.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 11: Formulários</summary>
+                                            Parte deste conteúdo estava presenta na Seção 6 do curso na primeira versão.
+                                            Atualmente, trata-se da Seção 20: <span class="legado">[LEGADO]</span>
+                                            Formulários.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 12: Projeto 6 Formulário de Contato</summary>
+                                            Projeto não existente na primeira versão desse curso.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 13: Seletores avançados</summary>
+                                            Parte deste conteúdo estava presenta na Seção 9 do curso na primeira versão.
+                                            Atualmente, trata-se da Seção 23: Seletores avançados - seletores compostos,
+                                            pseudo-classes e pseudo elementos
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 14: transformações 2D</summary>
+                                            Na primeira versão desse curso este assunto era discutido numa única aula da
+                                            Seção 9, que atualmente, trata-se da Seção 23: Seletores avançados -
+                                            seletores compostos,
+                                            pseudo-classes e pseudo elementos. Nesta versão atualizada a propriedade
+                                            transform ganhou uma seção só pra ela.
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 1: Introdução</summary>
+                                            Atualmente trata-se da Seção 15 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 15: <span class="legado">[LEGADO]</span> Introdução</summary>
+                                            Trata-se da Seção 1 da primeira versão.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 2: Introdução ao CSS</summary>
+                                            Atualmente trata-se da Seção 16 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 16: <span class="legado">[LEGADO]</span> Introdução ao CSS
+                                            </summary>
+                                            Trata-se da Seção 2 da primeira versão.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 3: Mais Sobre o Visual - parte 1</summary>
+                                            Atualmente trata-se da Seção 17 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 17: <span class="legado">[LEGADO]</span> Mais Sobre o Visual
+                                                - parte 1</summary>
+                                            Trata-se da Seção 3 da primeira versão.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 4: Mais Sobre o Visual - parte 2</summary>
+                                            Atualmente trata-se da Seção 18 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 18: <span class="legado">[LEGADO]</span> Mais Sobre o Visual
+                                                - parte 2</summary>
+                                            Trata-se da Seção 4 da primeira versão.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 5: Listas, tabelas e overflow</summary>
+                                            Atualmente trata-se da Seção 19 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 19: <span class="legado">[LEGADO]</span> Listas, tabelas e
+                                                overflow</summary>
+                                            Trata-se da Seção 5 da primeira versão.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 6: Formulários</summary>
+                                            Atualmente trata-se da Seção 20 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 20: <span class="legado">[LEGADO]</span> Formulários
+                                            </summary>
+                                            Trata-se da Seção 6 da primeira versão.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 7: Efeitos com CSS</summary>
+                                            Atualmente trata-se da Seção 21 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 21: Efeitos com CSS</summary>
+                                            Trata-se da Seção 7 da primeira versão. Esta seção ainda não foi atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 8: Projeto Strata</summary>
+                                            Atualmente trata-se da Seção 22 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 22: Projeto Strata</summary>
+                                            Trata-se da Seção 8 da primeira versão. Esta seção ainda não foi atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 9: Seletores avançados - seletores compostos,
+                                                pseudo-classes e pseudo elementos</summary>
+                                            Atualmente trata-se da Seção 23 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 23: Seletores avançados - seletores compostos,
+                                                pseudo-classes e pseudo elementos</summary>
+                                            Trata-se da Seção 9 da primeira versão. Esta seção ainda não foi atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 10: Responsividade</summary>
+                                            Atualmente trata-se da Seção 24 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 24: Responsividade</summary>
+                                            Trata-se da Seção 10 da primeira versão. Esta seção ainda não foi
+                                            atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 11: Incorporar conteúdo de audio, video, iframes e figure
+                                            </summary>
+                                            Atualmente trata-se da Seção 25 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 25: Incorporar conteúdo de audio, video, iframes e figure
+                                            </summary>
+                                            Trata-se da Seção 11 da primeira versão. Esta seção ainda não foi
+                                            atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 12: Imagens Responsivas de verdade</summary>
+                                            Atualmente trata-se da Seção 26 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 26: Imagens Responsivas de verdade</summary>
+                                            Trata-se da Seção 12 da primeira versão. Esta seção ainda não foi
+                                            atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 13: HSL Color e gradientes radiais</summary>
+                                            Atualmente trata-se da Seção 27 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 27: HSL Color e gradientes radiais</summary>
+                                            Trata-se da Seção 13 da primeira versão. Esta seção ainda não foi
+                                            atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 14: Flexbox</summary>
+                                            Atualmente trata-se da Seção 28 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 28: Flexbox</summary>
+                                            Trata-se da Seção 14 da primeira versão. Apesar deste conteúdo ter sido
+                                            abordado desde o início na versão atualizada, esta Seção ainda não está como
+                                            [LEGADA] para não prejudicar quem já havia começado o curso antes da
+                                            atualização, portanto, esta seção ainda não foi atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 15: CSS Grid ou Grid Layout, como preferir</summary>
+                                            Atualmente trata-se da Seção 29 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 29: CSS Grid ou Grid Layout, como preferir</summary>
+                                            Trata-se da Seção 15 da primeira versão. Esta seção ainda não foi
+                                            atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 16: Mais sobre semântica</summary>
+                                            Atualmente trata-se da Seção 30 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 30: Mais sobre semântica</summary>
+                                            Trata-se da Seção 16 da primeira versão. Esta seção ainda não foi
+                                            atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 17: Animação</summary>
+                                            Atualmente trata-se da Seção 31 da versão atualizada.
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 31: Animação</summary>
+                                            Trata-se da Seção 17 da primeira versão. Esta seção ainda não foi
+                                            atualizada.
+                                        </details>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 18: Lógica de programação</summary>
+                                            Atualmente trata-se da Seção 32 da versão atualizada. A partir desde ponto,
+                                            segue-se as
+                                            aulas normalmente, sem qualquer alteração
+                                        </details>
+                                    </td>
+                                    <td>
+                                        <details>
+                                            <summary>Seção 32: Lógica de programação</summary>
+                                            Trata-se da Seção 18 da primeira versão. A partir desde ponto, segue-se as
+                                            aulas normalmente, sem qualquer alteração.
+                                        </details>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Comments -->
+
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                        <hr>
+                        <h3>Comentários:</h3>
+                        <div id="disqus_thread">
+                            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments
+                                    powered by Disqus.</a></noscript>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <div class="fullscreen" style="background: #12303a; color: white; text-align: center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h3 style="color: #f34e2a"> Invista em sua carreira</h3>
+                    <p>O treinamento será seu para sempre. Sem assinaturas ou mensalidades. </p>
+
+
+                    <p>
+                        <a href="https://www.udemy.com/curso-web-design-fundamentos-aprenda-html-css-e-javascript/?couponCode=CP-DESC-20230404"
+                            class="investimento__cta btn btn-primary btn-lg" aria="button"
+                            onclick="ga('send', 'event', 'cursos', 'click', 'Web Design Fundamentos. Aprenda HTML CSS e Javascript')">Adquira
+                            Já</a>
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full fullscreen" style="background: #83251e; color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h3 style="text-align: center">Instrutor</h3>
+                    <p>O curso será ministrado por Daniel Tapias, profissional com mais de 10 anos de experiência no
+                        mercado de trabalho e mais de 6 anos de experiência como instrutor de tecnologias voltadas para
+                        o desenvolvimento de interfaces gráficas para a web.
+                    </p>
+                    <p>
+                        Já desenvolveu sites com tabelas no frontpage, golive e macromedia dreamweaver ultradev. Também
+                        já fez sites inteiros em flash com um botão “Clique aqui para entrar no site”. Isso tudo foi um
+                        pouco antes do ICQ.
+                    </p>
+                    <p>
+                        Já presenciou a guerra dos navegadores e já teve que fazer sites específicos para IE5 e
+                        Netscape.
+                    </p>
+                    <p>
+                        Atualmente, trabalha como desenvolvedor front-end e ministra aulas de HTML5, CSS e Javascript.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer style="background: #ccc; margin-top: 3em;">
+        <div class="container">
+            <div class="row">
+                <p class="copyright text-muted" style="margin: 0 0 15px;">
+                    &copy; 2020 - Tema original (<a target="_blank"
+                        href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a>) editado por
+                    Daniel Tapias Morales
+                </p>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center" style="font-size: 14px;">
+
+                        <li>
+                            <a href="https://twitter.com/serfrontend" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+
+
+
+                        <li>
+                            <a href="https://www.facebook.com/serfrontend/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+
+
+
+                        <li>
+                            <a href="https://github.com/tapmorales" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+
+
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/serfrontend" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/serfrontend" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/serfrontendcursos" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- After footer scripts -->
+
+    <!-- jQuery -->
+    <!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> -->
+
+    <!-- Bootstrap -->
+    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+    <!-- Gallery -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+
+    <!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'serfrontend';
+
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+
+</body>
+
+</html>
