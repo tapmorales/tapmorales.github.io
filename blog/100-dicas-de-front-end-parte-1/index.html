@@ -57,7 +57,7 @@
 
     <meta name="twitter:card" content="summary">
 
-    <meta name="twitter:site" content="https://twitter.com/serfrontend>">
+    <meta name="twitter:site" content="https://twitter.com/serlivcursos>">
 
     <meta name="twitter:title" content="100 dicas de front-end (parte 1)">
 
@@ -251,7 +251,8 @@
                     <p>2 – Partindo desse princípio, não há nada de errado em usar corretamente a tag
                         <code>&lt;br&gt;</code> para gerar quebra de linha. Mas se você escrever dois
                         <code>&lt;br&gt;</code>’s seguidos provavelmente o que você está querendo, na verdade, são dois
-                        parágrafos.</p>
+                        parágrafos.
+                    </p>
                     <p>3 – Ainda sobre essa ótica, uma <code>&lt;aside&gt;</code> não precisa ficar, necessariamente, ao
                         lado. A tag <code>&lt;aside&gt;</code> está diretamente relacionada ao que ela representa e não
                         à sua posição no layout. Eu escrevi sobre isso aqui <a
@@ -268,7 +269,8 @@
                         marcação correta, ou seja,
                         <code>&lt;time datetime=&quot;22:00&quot;&gt;22h00&lt;/time&gt;</code>. Podemos, inclusive,
                         acrescentar informações sobre o horário universal UTC:
-                        <code>&lt;time datetime=&quot;22:00-03:00&quot;&gt;22h00&lt;/time&gt;</code>.</p>
+                        <code>&lt;time datetime=&quot;22:00-03:00&quot;&gt;22h00&lt;/time&gt;</code>.
+                    </p>
                     <p>6 – Quando você precisar representar uma tecla do teclado, use a tag <code>&lt;kbd&gt;</code>.
                         Exemplo:
                         <code>&lt;p&gt;Pressione &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;P&lt;/kbd&gt; Para imprimir&lt;/p&gt;</code>.
@@ -296,7 +298,8 @@
                             href="https://medium.com/@tapmorales/design-responsivo-nos-dias-de-hoje-838b869d5fc8"
                             target="_blank" rel="noopener">design responsivo nos dias de hoje</a>.</p>
                     <p>11 - Uma <code>&lt;dl&gt;</code> pode ter mais de um <code>&lt;dt&gt;</code> e
-                        <code>&lt;dd&gt;</code>.</p>
+                        <code>&lt;dd&gt;</code>.
+                    </p>
                     <p>Veja dois exemplos copiados na cara-de-pau do <a
                             href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank"
                             rel="noopener">MDN</a>.<br>
@@ -315,7 +318,8 @@
                     </p>
                     <p>12 – Sabe quando você quer destacar um pedaço do texto e acaba envolvendo-o dentro de uma
                         <code>&lt;span&gt;</code> com uma classe .destaque? Forte indício de que você estava querendo,
-                        na verdade, era usar a tag <code>&lt;mark&gt;</code>.</p>
+                        na verdade, era usar a tag <code>&lt;mark&gt;</code>.
+                    </p>
                     <p>13 – Utilize as tags <code>&lt;del&gt;</code> e <code>&lt;ins&gt;</code> para representar textos
                         removidos ou inseridos, respectivamente.</p>
                     <p>14 – O HTML5 possui um atributo que informa ao agente de usuário que o conteúdo de determinada
@@ -336,7 +340,8 @@
                     <p>15 – Por padrão, a tag <code>&lt;a&gt;</code> recebe o foco quando o usuário navega pelo teclado.
                         Se você precisar que outro elemento tenha o mesmo comportamento, utilize o atributo
                         <code>tabindex</code>. Este atributo recebe um numero inteiro que representa a ordem de
-                        navegação.</p>
+                        navegação.
+                    </p>
                     <p>16 – É possível incluir links que, ao serem clicados, abre o telefone em aparelhos mobile:<br>
                     <figure class="highlight html">
                         <table>
@@ -402,7 +407,8 @@
                     </figure>
                     <p>20 – Se possível, inclua <code>&lt;caption&gt;</code> como primeiro filho de suas
                         <code>&lt;table&gt;</code> contendo uma descrição dos dados da tabela. Note que o atributo
-                        summary foi depreciado</p>
+                        summary foi depreciado
+                    </p>
                     <p>21 – Nas células de sua tabela que representam cabeçalhos, troque as suas <code>&lt;td&gt;</code>
                         por <code>&lt;th&gt;</code>.</p>
                     <p>22 – Inclua atributos scope nas suas <code>&lt;th&gt;</code> para informar ao agente de usuário
@@ -416,7 +422,8 @@
                     <p>24 – A tag <code>&lt;legend&gt;</code> acrescenta uma descrição ao <code>&lt;fieldset&gt;</code>.
                     </p>
                     <p>25 – Faça um vínculo entre o texto que aparece ao usuário e o seu respectivo input com a tag
-                        <code>&lt;label&gt;</code>. Voce pode fazer esse vínculo de duas formas:</p>
+                        <code>&lt;label&gt;</code>. Voce pode fazer esse vínculo de duas formas:
+                    </p>
                     <p>26 – Com o atributo id que deve ter o mesmo valor do atributo for do <code>&lt;label&gt;</code>.
                     </p>
                     <p>Veja um exemplo:<br>
@@ -451,14 +458,17 @@
                     <p>28 – Nunca, mas NUNCA, crie um <code>&lt;input type=&quot;radio&quot;&gt;</code> ou
                         <code>&lt;input type=&quot;checkbox&quot;&gt;</code> sem um <code>&lt;label&gt;</code>
                         relacionado. Isso cria um vínculo entre o campo e o texto que aparece para o usuário. Isso é
-                        regra básica para melhorar a acessibilidade de sua interface.</p>
+                        regra básica para melhorar a acessibilidade de sua interface.
+                    </p>
                     <p>30 – É permitido ter dois <code>&lt;label&gt;</code> para o mesmo input. Não há nada de errado
                         com isso.</p>
                     <p>31 – Se a função da sua página é fazer com que o usuário digite algo em um input, como por
                         exemplo uma página de busca ou um formulário de login, acrescente um atributo
-                        <code>autofocos</code> no seu input. Isso também facilita a usabilidade</p>
+                        <code>autofocos</code> no seu input. Isso também facilita a usabilidade
+                    </p>
                     <p>32 – Voce pode utilizar a tag <code>&lt;optgroup&gt;</code> para agrupar
-                        <code>&lt;option&gt;</code> dentro de um <code>&lt;select&gt;</code>.</p>
+                        <code>&lt;option&gt;</code> dentro de um <code>&lt;select&gt;</code>.
+                    </p>
                     <figure class="highlight html">
                         <table>
                             <tr>
@@ -474,7 +484,8 @@
                     <p>33 – Se vc tem um texto muito grande sem espaço (exemplo de uma URL) e está quebrando em
                         aparelhos mobile, pode colocar <code>&lt;br&gt;</code> opcionais. Como? Com a tag
                         <code>&lt;wbr&gt;</code>. É só colocar essa tag onde você quer que quebre para a próxima linha
-                        se for necessário.</p>
+                        se for necessário.
+                    </p>
                     <p>Exemplo:<br>
                     <figure class="highlight html">
                         <table>
@@ -679,7 +690,8 @@
                     <p>48 – Já tentou aplicar <code>box-shadow</code> num elemento com transparência e o resultado não
                         foi exatamente o que você esperava? Tente trocar o <code>box-shadow</code> por
                         <code>filter: drop-shadow()</code>. A diferença é que este respeita a transparência do conteúdo,
-                        seja um .png transparente, um svg ou até mesmo um desenho criado pelo próprio CSS.</p>
+                        seja um .png transparente, um svg ou até mesmo um desenho criado pelo próprio CSS.
+                    </p>
                     <p>49 – Sabia que dá pra utilizar no CSS qualquer valor passado por atributo HTML? Para isso, basta
                         usar o <code>attr()</code>. Veja um exemplo:</p>
                     <figure class="highlight html">
@@ -767,7 +779,7 @@
                     <ul class="list-inline text-center" style="font-size: 14px;">
 
                         <li>
-                            <a href="https://twitter.com/serfrontend" target="_blank">
+                            <a href="https://twitter.com/serlivcursos" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -778,7 +790,7 @@
 
 
                         <li>
-                            <a href="https://www.facebook.com/serfrontend/" target="_blank">
+                            <a href="https://www.facebook.com/serlivcursos/" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -789,7 +801,7 @@
 
 
                         <li>
-                            <a href="https://github.com/tapmorales" target="_blank">
+                            <a href="https://github.com/serfrontend" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -800,7 +812,7 @@
 
 
                         <li>
-                            <a href="https://www.linkedin.com/in/serfrontend" target="_blank">
+                            <a href="https://www.linkedin.com/in/serliv" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -808,7 +820,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://youtube.com/serfrontend" target="_blank">
+                            <a href="https://youtube.com/@serliv" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
