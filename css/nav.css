@@ -10,35 +10,43 @@
   padding: 15px;
   border-bottom: solid 2px #011009;
 }
+
 #topo {
   height: auto;
-  background: #5b1716;
+  background: #151515;
   padding: 0 10px;
   z-index: 14;
   position: relative;
 }
+
 .topo__container {
   padding-bottom: 1px;
 }
+
 .topo__logo {
   max-width: 80%;
   margin: 0 auto;
 }
+
 .topo__logo__img {
   max-width: 100%;
   margin: 0.5em auto;
   display: block;
 }
+
 .topo__mainMenu {
   display: block;
   text-align: center;
 }
+
 .topo__mainMenu ul {
   padding-left: 0;
 }
+
 .topo__mainMenu li {
   list-style: none;
 }
+
 .topo__mainMenu a {
   color: #fff;
   text-decoration: none;
@@ -46,6 +54,7 @@
   padding: 1em;
   position: relative;
 }
+
 .topo__mainMenu a:after {
   content: '';
   display: block;
@@ -57,25 +66,31 @@
   background: #8b251d;
   transition: all 0.3s ease-in-out;
 }
+
 .topo__mainMenu a:hover:after {
   width: 100%;
   left: 0;
 }
+
 @media screen and (min-width: 760px) {
   .topo__mainMenu ul {
     margin: 0;
   }
+
   .topo__mainMenu li {
     display: inline-block;
   }
+
   .topo__mainMenu a {
     padding: 0.62em 0.8em;
   }
+
   .topo__mainMenu .adquira {
     background: #e44e2a;
     border-radius: 15px;
     padding: 9px 15px;
   }
+
   .topo__mainMenu .adquira:hover:after {
     display: none;
   }
